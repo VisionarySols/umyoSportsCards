@@ -1,460 +1,236 @@
-<section id="header" style="background: #6d8b3c !important">
+
+
+
+
+
+<section id="header" style="background:#00584C!important;">
   <div class="overlay"></div>
-  <div class="container-fluid">
-    <div class="container px-0">
-      <nav
-        class="navbar navbar-expand-xl"
-        style="border-bottom: 2px solid white"
-      >
-        <a href="index.html" class="navbar-brand">
-          <!-- <h1 class="text-white display-6">UMYO</h1> -->
-          <img
-            src="assets/entertainment/logo.png"
-            class="img-fluid rounded-circle"
-            style="width: 4rem; height: 4rem"
-          />
-        </a>
-        <button
-          class="navbar-toggler py-2 px-3"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="fa fa-bars text-primary"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav d-lg-none">
-            
-              <a class="nav-link nav-item" [routerLink]="['']">Home</a>
-            
-
-            
-              <a class="nav-link nav-item" href="https://umyonetwork.com/network"
-                >Network</a
-              >
-            
-            
-              <a class="nav-link nav-item" href="https://UartistTalk.site"
-                >Tweet</a
-              >
-            
-            
-              <a class="nav-link nav-item" href="https://edutainmentalks.site"
-                >Talk</a
-              >
-            
-            
-              <a class="nav-link nav-item" href="https://umyomusic.com"
-                >Music</a
-              >
-            
-            
-              <a class="nav-link nav-item" href="https://Umyoevents.site"
-                >Events</a
-              >
-            
-            
-              <a class="nav-link nav-item" href="https://UPMRadio.site"
-                >Radio</a
-              >
-            
-
-            
-              <a
-                class="nav-link nav-item"
-                style="white-space: nowrap"
-                href="http://Live.umyoconvo.site/"
-                >Podcast</a
-              >
-            
-            
-              <a
-                class="nav-link nav-item"
-                style="white-space: nowrap"
-                href="http://uchatyes.com/"
-                >ChatGpt</a
-              >
-            
-
-            
-              <a class="nav-link nav-item" style="white-space: nowrap" href="https://Umyoappt.site"
-                >Booking Appt</a
-              >
-            
-            
-              <a
-                class="nav-link nav-item"
-                style="white-space: nowrap"
-                [routerLink]="['/cf']"
-                >Card Features</a
-              >
-            
-            
-              <a
-                class="nav-link nav-item"
-                style="white-space: nowrap"
-                [routerLink]="['/package']"
-                >View Services</a
-              >
-            
-            
-              <a
-                class="nav-link nav-item"
-                style="white-space: nowrap"
-                [routerLink]="['/ai']"
-                >Additional Features</a
-              >
-            
+<div class="container-fluid">
+  
+  <div class="container px-0">
+      <nav class="navbar  navbar-expand-xl" style="border-bottom:2px solid white;">
+          <a [routerLink]="['']" class="navbar-brand">
+              <!-- <h1 class="text-white display-6">UMYO Non Profit</h1> -->
+              <img src="assets/non_profit/img/logonph.png" class="img-fluid" style="height:7rem;">
+          </a>
+          <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarCollapse">
+              <div class="navbar-nav d-lg-none">
+                  <a  [routerLink]="['']" class="nav-item nav-link">Home</a>
+                  <a href="http://unatalk.site/" class="nav-item nav-link">UNA Talk</a>
+                  <a href="http://vibetalktv.com/" class="nav-item nav-link">UNA Podcast</a>
+                    <!-- <a href="https://uchatyes.com/" class="nav-item nav-link">ChatGpt</a> -->
+                    <a class="nav-item nav-link" href="http://unatweet.site/">UNA Tweet</a>
+                  <a [routerLink]="['/cf']" class="nav-item nav-link">Card Features</a>
+                  <a [routerLink]="['/package']" class="nav-item nav-link">View Services</a>
+                  <a [routerLink]="['/ai']" class="nav-item nav-link">Additional Features</a>                              <a href="https://umyoanimate.site" class="nav-item nav-link">ChatGpt</a>
+                  <a href="https://upmradio.site" class="nav-item nav-link">Radio DJ</a>
+                  <a href="https://umyoevent.site" class="nav-item nav-link">Event</a>
+                    <a class="nav-item nav-link" href="https://umyoappt.site">Booking</a>
+                  <a href="https://live.umyoconvo.site" class="nav-item nav-link">Webinar</a>
+                  <a href="https://faithlearn.site" class="nav-item nav-link">UMYO LMS</a>
+              </div>
+              <div class="d-flex m-3 ms-auto">
+                  <!-- <p class="text-white" style="margin: 2px 25px;    font-size: 25px;">Additional Features</p> -->
+                  <button class="btn-search btn border border-white btn-md-square rounded-circle  me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-white"></i></button>
+                  <a href="#" class="position-relative me-4 my-auto">
+                      <i class="fa fa-shopping-cart text-white fa-2x"></i>
+                      
+                  </a>
+                  <a href="#" class="my-auto">
+                      <button class="btn btn-primary bg-white text-dark border-0 p-2">Get Started</button>
+                  </a>
+              </div>
           </div>
-          <div class="d-flex m-3 ms-auto">
-            <p class="text-white" style="margin: 2px 25px; font-size: 25px">
-              UMYO
-            </p>
-            <button
-              class="btn-search btn border border-white btn-md-square rounded-circle me-4"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-            >
-              <i class="fas fa-search text-white"></i>
-            </button>
-            <a href="#" class="position-relative me-4 my-auto">
-              <i class="fa fa-shopping-cart text-white fa-2x"></i>
-            </a>
-            <a href="#" class="my-auto">
-              <button class="btn btn-primary bg-white text-dark border-0 p-2">
-                Get Started
-              </button>
-            </a>
-          </div>
-        </div>
       </nav>
-      <nav class="navbar navbar-expand-lg d-lg-block d-none menu-nav2">
-        <div class="container-fluid p-0">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-5 pb-3 mb-lg-0">
-              <!-- <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Link Store
-  </a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-  </li>
-  <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Industries
-  </a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-  </li> -->
-              <li class="nav-item">
-                <a class="nav-link" [routerLink]="['']">Home</a>
-              </li>
+<nav class="navbar navbar-expand-lg d-lg-block d-none menu-nav2">
+<div class="container-fluid p-0 ">
 
-              <li class="nav-item">
-                <a class="nav-link" href="https://umyonetwork.com/network"
-                  >Network</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://UartistTalk.site"
-                  >Tweet</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://edutainmentalks.site"
-                  >Talk</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://umyomusic.com"
-                  >Music</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://Umyoevents.site"
-                  >Events</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://UPMRadio.site"
-                  >Radio</a
-                >
-              </li>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mb-5 pb-3 mb-lg-0">
 
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="white-space: nowrap"
-                  href="http://Live.umyoconvo.site/"
-                  >Podcast</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="white-space: nowrap"
-                  href="http://uchatyes.com/"
-                  >ChatGpt</a
-                >
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link" style="white-space: nowrap" href="https://Umyoappt.site"
-                  >Booking Appt</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="white-space: nowrap"
-                  [routerLink]="['/cf']"
-                  >Card Features</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="white-space: nowrap"
-                  [routerLink]="['/package']"
-                  >View Services</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="white-space: nowrap"
-                  [routerLink]="['/ai']"
-                  >Additional Features</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+<li class="nav-item">
+<a class="nav-link" [routerLink]="['/']">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="http://unatalk.site/">UNA Talk</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="http://vibetalktv.com/">UNA Podcast</a>
+</li>
+<li class="nav-item">
+<!-- <a href="https://uchatyes.com/" class="nav-link">ChatGpt</a> -->
+</li>
+<li class="nav-item">
+<a href="http://unatweet.site/" class="nav-link">UNA Tweet</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" [routerLink]="['/cf']">Card Features</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" [routerLink]="['/package']">View Services</a>
+</li>
+<li class="nav-item">        
+<a class="nav-link" [routerLink]="['/ai']">Additional Features</a>
+</li>
+
+<li class="nav-item">
+<a href="https://umyoanimate.site" class="nav-link">ChatGpt</a>
+</li>
+<li class="nav-item">
+  <a href="https://upmradio.site" class="nav-link">Radio DJ</a>
+                  
+</li>
+<li class="nav-item">
+  <a href="https://umyoevent.site" class="nav-link">Event</a>
+                    
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="https://umyoappt.site">Booking</a>
+
+</li>
+<li class="nav-item">
+  <a href="https://live.umyoconvo.site" class="nav-link">Webinar</a>
+</li>
+<li class="nav-item">
+  <a href="https://faithlearn.site" class="nav-item nav-link">UMYO LMS</a>
+
+</li>
+</ul>
+</div>
+</div>
+</nav>
   </div>
-  <!-- Navbar End -->
 
-  <!-- Modal Search Start -->
-  <div
-    class="modal fade"
-    id="searchModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-fullscreen">
+
+  
+</div>
+<!-- Navbar End -->
+
+
+<!-- Modal Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
       <div class="modal-content rounded-0">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body d-flex align-items-center">
-          <div class="input-group w-75 mx-auto d-flex">
-            <input
-              type="search"
-              class="form-control p-3"
-              placeholder="keywords"
-              aria-describedby="search-icon-1"
-            />
-            <span id="search-icon-1" class="input-group-text p-3"
-              ><i class="fa fa-search"></i
-            ></span>
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-        </div>
+          <div class="modal-body d-flex align-items-center">
+              <div class="input-group w-75 mx-auto d-flex">
+                  <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                  <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
-  <!-- Modal Search End -->
+</div>
+<!-- Modal Search End -->
 
-  <!-- Hero Start -->
-</section>
-<section id="page-top" class="lft-hero">
-  <div class="lft-video">
-    <!-- <video loop="" muted="" playsinline="" autoplay="" poster="https://cdn.shopify.com/s/files/1/0413/5891/7796/files/lft-hero.jpg?v=1678132516">
-  
-  <source src="https://cdn.shopify.com/videos/c/o/v/5bc68d777dab433ebc9f9f62d35dcd80.mp4" type="video/mp4">
-  </video> -->
-    <video
-      autoplay
-      loop
-      [src]="videoUrl"
-      style="width: 100%; height: 100%"
-      [muted]="true"
-    ></video>
 
-    <div class="overlay"></div>
-  </div>
+<!-- Hero Start -->
 
-  <div class="container py-5">
-    <div class="row g-5 align-items-center">
-      <div class="col-md-12 col-lg-7">
-        <div class="page-width">
-          <div class="lft-hero__content">
-            <h1 class="mb-3">Artists Connect</h1>
-            <p class="mb-5">
-              Presents an Innovative Networking Solution Exclusively for Artists
-              and the Entertainment Industry.
-            </p>
-            <div class="moretext-he" style="display: none">
-              <p class="mb-5">
-                Our groundbreaking app unites business owners, community
-                members, local professionals, educational institutions, and
-                affiliated organizations on a specialized platform, dedicated to
-                advancing the growth of entertainment businesses and promoting
-                the well-being of the local community. Our app is the first in
-                its category, enabling community members and businesses to
-                engage in the vibrant entertainment scene within their city. An
-                app for networking with fellow businesses, local experts, and
-                organizations while showcasing their skills and expertise,
-                receiving the recognition and support they rightfully deserve.
-              </p>
+  </section>
+
+  <div class="container-fluid featurs pt-3 mt-3 mb-5">
+    <div class="container">
+        <div class="row features">
+            <div class="col-md-4">
+                <img src="assets/non_profit/img/imgs/1.png" class="img-fluid">
+                <h5 class="text-center mt-3">Alleviating poverty</h5>
             </div>
-            <a
-              class="moreless-button-he text-white btn btn-dark"
-              style="text-decoration: none"
-              href="#he"
-              >Read more</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12 col-lg-5 px-5">
-        <div class="grid__item medium-up--one-half">
-          <div class="videos__wrapper">
-            <div class="videos__wrapper--video">
-              <iframe
-                width="560"
-                height="315"
-                src="https://umyovideo.com/embed/2o8UCd5PfgIyv68?color=04abf2"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+            <div class="col-md-4">
+                <img src="assets/non_profit/img/imgs/2.jpg" class="img-fluid">
+                <h5 class="text-center mt-3">Advancing education</h5>
             </div>
-          </div>
+            <div class="col-md-4">
+                <img src="assets/non_profit/img/imgs/3.jpg" class="img-fluid">
+                 <h5 class="text-center mt-3">Disaster relief</h5>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/non_profit/img/imgs/6.jpg" class="img-fluid">
+                 <h5 class="text-center mt-3">Public policy</h5>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/non_profit/img/imgs/7.jpg" class="img-fluid m-auto d-block">
+                 <h5 class="text-center mt-3">Changes in laws</h5>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/non_profit/img/imgs/8.jpg" class="img-fluid">
+                 <h5 class="text-center mt-3">Societal behavior</h5>
+            </div>
+            
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="page-width">
-  <div class="lft-hero__content">
-  <h1>CREATE IMPRESSIVE MILITARY CARDS</h1>
-      <p>UMYO Entertainment Connect introduces an innovative networking solution exclusively for military personnel.</p>
-  
-  
-  <a class="button js-no-transition" href="#linq-form" onclick="track('Clicked LFT hero cta')">Read More</a>
-  </div>
-  </div> -->
-</section>
+        <div class="row g-4 justify-content-center mt-3">
+            <div class="col-lg-8 p-3 bg-light text-dark px-5 rounded">
+                <h4 style="color: #4390B3;">Crafting a Digital Haven for Nonprofit Organizations: Introducing a Revolutionary Platform for Nonprofits and Their Supporters</h4>
+                <p class="my-4">In the dynamic landscape of nonprofit organizations, we’ve come together to build a game-changing virtual platform, exclusively designed to empower nonprofits and their supporters. This platform serves as a thriving ecosystem where nonprofits and their loyal clients can go beyond just making connections. It’s a collaborative space that allows nonprofits with a significant clientele to engage their supporters, create networking opportunities, share business connections, and even monetize their services.</p>
+                
+                 <div class="moretext-he" style="display:none;">
+                <p class="my-4">Creating a dedicated social media platform for 501(c)(3) organizations can offer several powerful advantages </p>
+                <p class="my-4">
 
-<section id="logo-slider" style="background: #6d8b3c !important">
-  <div class="container-fluid mt-5">
-    <div class="container-fluid mt-1 mobile" style="overflow-x: hidden">
-      <h1 class="text-center mb-5 text-white">
-        THE "UMYO" All in one Networking App
-      </h1>
-      <ngx-slick-carousel
-        #slickModal1="slick-carousel"
-        [config]="slideConfig1"
-        class="carousel"
-      >
-        <div ngxSlickItem *ngFor="let slide of slides1" class="slide">
-          <div class="mb-5"><img [src]="slide.img" /></div>
-        </div>
-      </ngx-slick-carousel>
+1. Focused Community Engagemet. A social media platform specifically designed for 501(c)(3) organizations would allow non-profits to connect, collaborate, and engage with their target audiences in a focused environment. This platform could facilitate meaningful discussions, share best practices, and promote events or initiatives relevant to the non-profit sector. By fostering a community of like-minded organizations, it would enhance networking opportunities and encourage partnerships that can amplify their impact.
+</p>
+<p class="my-4">
 
-      <ngx-slick-carousel
-        #slickModal2="slick-carousel"
-        [config]="slideConfig2"
-        class="carousel"
-        [dir]="'rtl'"
-      >
-        <div ngxSlickItem *ngFor="let slide of slides2" class="slide">
-          <div class="mb-5"><img [src]="slide.img" /></div>
-        </div>
-      </ngx-slick-carousel>
-    </div>
-    <div class="container-fluid mt-1 mobile2" style="overflow-x: hidden">
-      <h1 class="text-center mb-5 text-white">
-        THE "UMYO" All in one Networking App
-      </h1>
-      <ngx-slick-carousel
-        #slickModal1="slick-carousel"
-        [config]="slideConfig5"
-        class="carousel"
-      >
-        <div ngxSlickItem *ngFor="let slide of slides1" class="slide">
-          <div class="mb-5"><img [src]="slide.img" /></div>
-        </div>
-      </ngx-slick-carousel>
+2. Tailored Features for Non-Profit Needs**: Unlike mainstream social media platforms, a dedicated platform could be designed with features that cater specifically to the needs of non-profits. This could include tools for fundraising, volunteer recruitment, event management, and impact reporting. By providing resources and functionalities that are directly relevant to their missions, non-profits could more effectively mobilize support, engage with their communities, and showcase their work, ultimately leading to greater visibility and funding opportunities.
+</p>
+<p class="my-4">
 
-      <ngx-slick-carousel
-        #slickModal2="slick-carousel"
-        [config]="slideConfig6"
-        class="carousel"
-        [dir]="'rtl'"
-      >
-        <div ngxSlickItem *ngFor="let slide of slides2" class="slide">
-          <div class="mb-5"><img [src]="slide.img" /></div>
-        </div>
-      </ngx-slick-carousel>
-    </div>
-    <div class="container-fluid mt-1 desktop" style="overflow-x: hidden">
-      <h1 class="text-center mb-5 text-white">
-        THE "UMYO" All in one Networking App
-      </h1>
-      <ngx-slick-carousel
-        #slickModal1="slick-carousel"
-        [config]="slideConfig3"
-        class="carousel"
-      >
-        <div ngxSlickItem *ngFor="let slide of slides1" class="slide">
-          <div class="mb-5"><img [src]="slide.img" /></div>
-        </div>
-      </ngx-slick-carousel>
+3. **Control Over Data and Privacy**: A social media platform created by and for 501(c)(3) organizations would allow them to maintain control over their data and user privacy. Many non-profits are concerned about the ethical implications of data usage on mainstream platforms, where algorithms can obscure their messages and limit their reach. By having their own platform, non-profits can ensure that user data is handled responsibly, prioritize transparency, and create a safe space for their communities to interact without the distractions and potential exploitation found on larger social media networks.
+</p>
+<p class="my-4">
 
-      <ngx-slick-carousel
-        #slickModal2="slick-carousel"
-        [config]="slideConfig4"
-        class="carousel"
-        [dir]="'rtl'"
-      >
-        <div ngxSlickItem *ngFor="let slide of slides2" class="slide">
-          <div class="mb-5"><img [src]="slide.img" /></div>
-        </div>
-      </ngx-slick-carousel>
+These reasons highlight the potential benefits of a dedicated social media platform for 501(c)(3) organizations, enabling them to collaborate more effectively, serve their missions better, and protect their communities.
+</p>
+<p class="my-4">
+
+See Features 
+</p>
+                <h4 class="my-4">Name and Likeness Financial Partnerships:</h4>
+                <p class="my-4">
+This platform opens new revenue streams by allowing sports teams, celebrities, influencers, and organizations to align their personal brands with unique financial opportunities—directly through their own platforms. Nonprofits and their supporters can tap into innovative ways to generate income while amplifying their missions.</p>
+                
+<h4 class="my-4">Daily Prize Giveaways:</h4>
+<p class="my-4"> Digital communities built around each organization’s brand will feature daily contests, prize giveaways, and incentives that keep supporters engaged and excited. These interactions not only strengthen connections within the community but also offer tangible financial rewards, ensuring that participants stay motivated and involved.</p>
+<h4 class="my-4">Global Community Impact:</h4>
+<p class="my-4"> By uniting diverse groups—irrespective of race, creed, color, or gender—our platform fosters inclusivity and empowerment. It’s more than just business; it’s about creating a space where everyone feels a sense of belonging. This platform serves as a vehicle for nonprofits to give back to their communities while making a lasting impact on a global scale.</p>
+<h4 class="my-4">Shared Interest and Growth:</h4>
+<p class="my-4">Partners within this initiative will benefit from shared success. As the platform grows, so do the opportunities for nonprofits and their supporters. Aligned interests and mutual growth across sectors will ensure that every organization can flourish, creating a positive ripple effect for all involved.</p>
+<h4 class="my-4">The Power of Digital Communities for Unlimited Entities:</h4>
+<p class="my-4"> At the core of this platform is the ability to build customized digital communities for an unlimited number of entities—be it nonprofit organizations, sports teams, athletes, influencers, or businesses. Each organization will have its own private, secure space for collaboration, engagement, and networking with like-minded individuals and other organizations. This will foster privacy, strengthen communities, and facilitate meaningful partnerships at every level.</p>
+<h4 class="my-4">Data Control in the Hands of Communities:</h4>
+<p class="my-4"> Our platform prioritizes user autonomy, returning control of personal and collective data to the communities themselves. By decentralizing data management, users can maintain control over their information. This approach not only empowers organizations but also ensures that any revenue generated through the platform’s interactions can flow directly back into the community, creating a sustainable financial ecosystem for all.</p>
+<h4 class="my-4">Million-Dollar Platforms for the People:</h4>
+<p class="my-4"> With this initiative, we’ve created a series of Million-Dollar platforms—ones that generate significant revenue while ensuring every participant benefits. By combining fourteen platforms into one, we’re providing nonprofits and their supporters with a financial ecosystem designed for success. The proceeds from these platforms are reinvested back into the communities, fueling economic empowerment and sustained growth.</p>
+<p class="my-4"> This is more than just a platform; it’s a movement that reimagines the future of nonprofit organizations and the communities they serve. By combining innovation, collaboration, and economic empowerment, we’re laying the groundwork for a brighter, more sustainable future for all.
+</p>
+
+
+                 </div>
+            <a class="moreless-button-he btn btn-dark" style="text-decoration: none; " href="#moreless-button-he">Read more</a>
+            </div>
+            </div>
     </div>
-  </div>
-</section>
+</div>
+
+
 
 <!-- Hero End -->
 <!------- tab section start-------->
-<section id="header" style="background: #6d8b3c !important">
+<section id="header" style="background: #00584C !important">
   <div class="container-fluid srice py-5">
     <div class="container py-5">
       <h1 class="text-white text-center mb-3" style="font-weight: 600">
-        Search For Artists of All Types
+        Search For UMYO Non Profit
       </h1>
       <div class="row">
         <div class="col-lg-5">
-          <h4 class="mb-4 text-white">
-            Search For The Entertainment Community
-          </h4>
+          
           <form [formGroup]="form2" class="text-center">
             <div class="row">
               <div class="col-lg-6 mb-4">
@@ -466,14 +242,51 @@
                 />
               </div>
 
+
+
+
+
+
+              <!-- race -->
+
+              
               <div class="col-lg-6 mb-4">
                 <select
                   class="form-select"
                   aria-label="Default select example"
-                  formControlName="selectedTalent"
+                  formControlName="selectedRace"
                 >
-                  <option selected value="" disabled>Talent Type</option>
-                  <option *ngFor="let item of talentType" [value]="item">
+                  <option selected value="" disabled>Race</option>
+                  <option *ngFor="let item of race" [value]="item">
+                    {{ item }}
+                  </option>
+                </select>
+              </div>
+             
+
+
+              <div class="col-lg-6 mb-4">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedGender"
+                >
+                  <option selected value="" disabled>Gender</option>
+                  <option *ngFor="let item of gender" [value]="item">
+                    {{ item }}
+                  </option>
+                </select>
+              </div>
+
+
+              <div class="col-lg-6 mb-4">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedOrganization"
+                >
+                  <option selected value="" disabled>Non Profit Organization Types</option>
+                  <option *ngFor="let item of organizationType" [value]="item">
                     {{ item }}
                   </option>
                 </select>
@@ -490,6 +303,11 @@
                   </option>
                 </select>
               </div>
+              <div class="col-lg-6">
+                <h4 class="mb-4 text-white text-center">
+                  "IAM" Pledge To Report Violent Crime
+                </h4>
+              </div>
               <div class="col-lg-6 mb-4">
                 <select
                   class="form-select"
@@ -501,20 +319,6 @@
                     {{ item }}
                   </option>
                 </select>
-              </div>
-
-              <div class="col-lg-6">
-                <h4 class="mb-4 text-white text-center">
-                  "IAM" Pledge To Report Violent Crime
-                </h4>
-              </div>
-              <div class="col-lg-6 mb-4">
-                <input
-                  type="name"
-                  formControlName="selectedCity"
-                  class="form-control"
-                  placeholder="City"
-                />
               </div>
               <div class="col-lg-6 mb-4">
                 <select
@@ -528,32 +332,20 @@
                   </option>
                 </select>
               </div>
-
+              
               <div class="col-lg-6 mb-4">
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  formControlName="selectedRace"
-                >
-                  <option selected value="" disabled>Race</option>
-                  <option *ngFor="let item of race" [value]="item">
-                    {{ item }}
-                  </option>
-                </select>
+                <input
+                  type="name"
+                  formControlName="selectedCity"
+                  class="form-control"
+                  placeholder="City"
+                />
               </div>
+             
+              
 
-              <div class="col-lg-6 mb-4">
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  formControlName="selectedGender"
-                >
-                  <option selected value="" disabled>Gender</option>
-                  <option *ngFor="let item of gender" [value]="item">
-                    {{ item }}
-                  </option>
-                </select>
-              </div>
+
+             
 
               <div class="col-lg-6 mb-4">
                 <button
@@ -613,10 +405,9 @@
               >
                 <form [formGroup]="form">
                   <div class="row">
-                    <h1 class="text-center">UMYO For Entertainment</h1>
+                    <h1 class="text-center">UMYO Non Profit</h1>
                     <p class="text-center">
-                      Register to Connect with Artists, Entertainment &
-                      Businesses
+                      Register to Connect with Your Community
                     </p>
                     <!-- <p class="text-center">(same-day options navailable).</p> -->
                     <br /><br /><br /><br /><br /><br />
@@ -918,18 +709,18 @@
                     </div>
                     <div class="col-lg-6 mb-4">
                       <label style="font-size: 20px; font-weight: 600"
-                        >Talent Type<sup style="color: red; font-size: 20px"
+                        >Non Profit Organization Types<sup style="color: red; font-size: 20px"
                           >*</sup
                         >
                       </label>
                       <select
-                        formControlName="registerTalent"
+                        formControlName="registerOrganization"
                         class="form-select"
                         aria-label="Default select example"
                         [ngClass]="{
                           'invalid-input':
-                            (!form3.get('registerTalent')?.touched ||
-                              !form3.get('registerTalent')?.valid) &&
+                            (!form3.get('registerOrganization')?.touched ||
+                              !form3.get('registerOrganization')?.valid) &&
                             submitButtonClicked &&
                             !form3.valid
                         }"
@@ -937,7 +728,7 @@
                         <option value="" disabled selected>
                           Please Select
                         </option>
-                        <option *ngFor="let item of talentType" [value]="item">
+                        <option *ngFor="let item of organizationType" [value]="item">
                           {{ item }}
                         </option>
                       </select>
@@ -1121,49 +912,9 @@
           </div>
         </div>
       </div>
-      <h1 class="text-white my-3 featurs">
-        Entertainment businesses and the local community
-      </h1>
-      <p class="text-white my-3">
-        hrough Umyo Entertainment Businesses and Community Connect, you can
-        effortlessly upload your business records, community achievements...
-      </p>
-      <div class="moretext" style="display: none">
-        <p class="text-white my-3">
-          interviews, local insights, images, and community milestones for a
-          wide-reaching audience. It's the premier destination for entertainment
-          businesses and those involved in the local community, providing them
-          with a safe space exclusively for them.
-        </p>
-        <p class="text-white my-3">
-          Entertainment businesses and community professionals can reciprocate
-          the support provided by organizations that support the local
-          community. Business owners now have the opportunity to register their
-          companies and connect them with specific community members using
-          unique ID codes during the registration process.
-        </p>
-        <p class="text-white my-3">
-          Umyo Entertainment Businesses and Community Connect is a
-          groundbreaking social network app designed exclusively for the local
-          community, connecting businesses, community members, local experts,
-          and organizations eager to support the growth of our community as they
-          strive for success.
-        </p>
-        <p class="text-white my-3">
-          Share your Business Portfolio, Community Achievements, Local Insights,
-          Interviews, Experiences, Images, and Community Highlights for a wide
-          audience to explore. This all-in-one platform is essential for local
-          professionals seeking greater visibility using virtual interactive
-          concepts to network with others just like you. A safe and positive
-          place to thrive in the local community.
-        </p>
-      </div>
-      <a
-        class="moreless-button btn btn-light"
-        style="text-decoration: none"
-        (click)="toggleMoreText2()"
-        >Read more</a
-      >
+      
+     
+      
     </div>
   </div>
 </section>
@@ -1473,589 +1224,276 @@
   </div>
 </div>
 
-<!------- tab section end ---------->
-<div class="container-fluid featurs pt-3 mt-3 mb-5">
+
+
+
+
+
+<div class="container-fluid bg">
   <div class="container">
-    <div class="row g-4">
-      <div class="col-12">
-        <h1 class="text-center">Single Application, Multiple Platforms</h1>
-        <!-- <h1 class="text-center text-white w-75 display-1 p-2" style="   background: linear-gradient(269deg, rgba(0,87,206) 0%, rgba(0,87,206) 33%, rgba(0,87,206) 50%);margin: auto; ">#1 Networking Solution</h1> -->
+          <div class="row">
+          <div class="col-md-12">
+          <div class="program my-5 text-center">
+              <!-- <h1>UMYO Non Profit</h1> -->
+              <img src="assets/non_profit/img/logonp.png" class="" height="200px">
+
+          </div>
       </div>
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text1">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/1.png" class="img-fluid" />
+  </div>
+   <div class="row justify-content-center">
+      <div class="col-md-4" id="text1">
+          <div class="card">
+              <img src="assets/non_profit/img/imgs/4.jpg" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Educational resources</h4>
+               
               </div>
             </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Virtual Interactive Entertainment Card Directory</h2>
-        <div class="moretext1" style="display: none">
-          <p>1. A Social Networking Platform & Search Engine Directory</p>
-          <p>
-            2. Virtual Business and Community Cards /with Social Media Icons
-            that Links to Social Media & Websites.
-          </p>
-          <p>
-            3. Members Befriend, Network, Chat and Share Members ID cards via
-            Social Media.
-          </p>
-          <p>
-            4. Search Engine for community, visitors & members to find
-            registered businesses.
-          </p>
-          <p>5. Daily $$$ giveaways to military officers and family.</p>
-        </div>
-        <a class="moreless-button1 btn btn-dark" href="#text1">Read more</a>
       </div>
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text2">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/2.png" class="img-fluid" />
+      <div class="col-md-4" id="text2">
+          <div class="card">
+              <img src="assets/non_profit/img/imgs/11.jpg" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Religious beliefs</h4>
+                
               </div>
             </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Timeline</h2>
-        <div class="moretext2" style="display: none">
-          <p>
-            <strong>**Timeline:** </strong> Stay in the loop with the latest
-            posts, photos, and life events of your friends. Scroll through your
-            personalized timeline to ensure you never miss a moment.
-          </p>
-        </div>
-        <a class="moreless-button2 btn btn-dark" href="#text2">Read more</a>
       </div>
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text3">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/3.png" class="img-fluid" />
+      <div class="col-md-4" id="text3">
+          <div class="card">
+              <img src="assets/non_profit/img/imgs/13.png" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Food and Shelter</h4>
               </div>
             </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Live</h2>
-        <div class="moretext3" style="display: none">
-          <p>
-            <strong>**Live:**</strong> Share live broadcasts with your followers
-            or tune in to watch live content from around the world from other
-            community members, their family, friends. Interact with broadcasters
-            in real-time.
-          </p>
-        </div>
-        <a class="moreless-button3 btn btn-dark" href="#text3">Read more</a>
+      </div>
+      <div class="col-md-4" id="text4">
+          <div class="card">
+              <img src="assets/non_profit/img/imgs/8.jpg" class="img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Healthcare</h4>
+               
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4" id="text5">
+          <div class="card">
+              <img src="assets/non_profit/img/imgs/9.jpg" class=" img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Legal</h4>
+              </div>
+            </div>
+      </div>
+      <div class="col-md-4" id="text5">
+          <div class="card">
+              <img src="assets/non_profit/img/imgs/10.jpg" class=" img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Arts and Culture</h4>
+              </div>
+            </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text4">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/4.png" class="img-fluid" />
-              </div>
+  </div>
+  <div class="row">
+      
+    <div class="col-md-4" id="text5">
+          <div class="card">
+              <img src="assets/non_profit/img/imgs/12.png" class=" img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Public Health</h4>
             </div>
-          </div>
         </div>
-        <h2 class="mt-4">Chat</h2>
-        <div class="moretext4" style="display: none">
-          <p>
-            <strong>**Chat:**</strong> Connect with friends through private
-            messages or group chats. Share text, photos, videos, and more.
-          </p>
-        </div>
-        <a class="moreless-button4 btn btn-dark" href="#text4">Read more</a>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text5">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/5.png" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Calling</h2>
-        <div class="moretext5" style="display: none">
-          <p>
-            <strong>**Calling:**</strong> Make high-quality voice and video
-            calls to your contacts, keeping you connected no matter where you
-            are.
-          </p>
-        </div>
-        <a class="moreless-button5 btn btn-dark" href="#text5">Read more</a>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text6">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/6.png" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Events Booking</h2>
-        <div class="moretext6" style="display: none">
-          <p>
-            <strong>**Events Booking:**</strong> Discover and book events in
-            your area or share your own events with the community.
-          </p>
-        </div>
-        <a class="moreless-button6 btn btn-dark" href="#text6">Read more</a>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text7">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/7.png" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Dating</h2>
-        <div class="moretext7" style="display: none">
-          <p>
-            <strong>**Dating:**</strong> Find meaningful connections with
-            like-minded people through our dating feature. Entertainment
-            Connects is more than just a social app; it's a place to meet new
-            people and potentially find love.
-          </p>
-        </div>
-        <a class="moreless-button7 btn btn-dark" href="#text7">Read more</a>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text8">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/8.png" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Podcasts</h2>
-        <div class="moretext8" style="display: none">
-          <p>
-            <strong>**Podcasts:**</strong> Listen to and create your own
-            podcasts on topics you're passionate about. Share your voice with
-            the world.
-          </p>
-        </div>
-        <a class="moreless-button8 btn btn-dark" href="#text8">Read more</a>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text9">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/9.png" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Fundraising</h2>
-        <div class="moretext9" style="display: none">
-          <p>
-            <strong>**Fundraising:**</strong> Support and create fundraising
-            campaigns for causes that matter to you. Make a positive impact on
-            your community.
-          </p>
-        </div>
-        <a class="moreless-button9 btn btn-dark" href="#text9">Read more</a>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text10">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/10.png" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Artist Groups</h2>
-        <div class="moretext10" style="display: none">
-          <p>
-            Creating groups involves forming distinct communities within the
-            platform where Artist with common interests or affiliations can join
-            and interact. These groups provide a space for like-minded
-            entertainment to share content, engage in discussions, and connect
-            with one another based on shared topics, hobbies, or goals. Group
-            members can typically post and comment on discussions relevant to
-            the group's theme, fostering a more focused and engaged online
-            community.
-          </p>
-        </div>
-        <a class="moreless-button10 btn btn-dark" href="#text10">Read more</a>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text11">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/11.png" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Nearby Offers</h2>
-        <div class="moretext11" style="display: none">
-          <p>
-            <strong> **Nearby Offers:** </strong> Access exclusive offers and
-            discounts from businesses in your area. Entertainment Connects helps
-            you save from online registered businesses while you explore your
-            surroundings.
-          </p>
-        </div>
-        <a class="moreless-button11 btn btn-dark" href="#text11">Read more</a>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text12">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/12.png" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Short Video</h2>
-        <div class="moretext12" style="display: none">
-          <p>
-            Creating short videos entails producing and sharing concise video
-            content that is typically brief in duration, often lasting anywhere
-            from a few seconds to a few minutes. These short videos are designed
-            to capture attention quickly and are well-suited for sharing on
-            platforms like TikTok, Instagram Reels, or Snapchat. Users can use
-            various creative tools and features to record, edit, and enhance
-            their videos to tell stories, share moments, provide entertainment,
-            or convey messages in a concise and engaging format. The goal is to
-            engage the audience and make an impact in a short span of time.
-          </p>
-        </div>
-        <a class="moreless-button12 btn btn-dark" href="#text12">Read more</a>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-5 px-5" id="text15">
-        <div class="position-relative fruite-item">
-          <div class="fruite-img">
-            <div class="videos__wrapper">
-              <div class="videos__wrapper--video2">
-                <img src="assets/entertainment/13.png" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <h2 class="mt-4">Artists Tweets</h2>
-        <div class="moretext15" style="display: none">
-          <p>
-            Artist Tweets is a microblogging platform where users share short
-            messages called tweets, limited to 280 characters. It's a hub for
-            Artists to add real-time updates, discussions, and a variety of
-            content, often accompanied by hashtags to categorize topics.
-          </p>
-          <p>
-            Artists were crafted to provide a safe and inclusive space for our
-            artists and their families. Our robust privacy settings and content
-            moderation ensure a secure environment for all users.
-          </p>
-          <p>
-            Join the Artist community today and embark on a social media
-            experience like no other. - Where Artists Connections Come.
-          </p>
-        </div>
-        <a class="moreless-button15 btn btn-dark" href="#text15">Read more</a>
-      </div>
     </div>
-    <!-- <div class="row g-4 py-5">
-          <div class="col-lg-12 col-md-6 px-5 mt-5">
-          <img src="newlogo/naf.jpg" class="img-fluid">    
-          </div>
-      </div> -->
+    <div class="col-md-4" id="text5">
+          <div class="card">
+              <img src="assets/non_profit/img/imgs/14.jpg" class=" img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Diseases</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4" id="text5">
+          <div class="card">
+              <img src="assets/non_profit/img/imgs/16.png" class=" img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-title mb-4">Social Services</h4>
+            </div>
+        </div>
+    </div>
+    
   </div>
 </div>
+</div>
+
+
+<div class="container">
+    
+  <div class="row">
+      <h2 class="text-center mt-3">UMYO Non Profit Connects Packages, Products and Platforms</h2>
+      <div class="col-lg-3 col-md-6 my-4">
+          <div class="box1 b">
+          <h5>$75.00 weekly</h5>
+          <ul>
+              <li>120 Unique Video Cards</li>
+              <li> Virtual Touch Screen Coupon Booklet Business listing</li>
+              <li>choose three platform you want free access to - choose three paid platforms you want free access</li>
+          </ul>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 my-4">
+          <div class="box1 box2">
+          <h5>$50 weekly</h5>
+          <ul>
+              <li> QR Code for Customer Data Collection</li>
+              <li> 90 Cards</li>
+              <li>choose two paid platform you want free access </li>
+              
+          </ul>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-6 my-4">
+          <div class="box1 b">
+          <h5>$27.50 weekly </h5>
+          <ul>
+              <li>60 Unique Cards</li>
+              <li> QR Code at Business location </li>
+              <li> choose one paid platform you want free access </li>
+              </ul>
+              </div>
+      </div>
+      <div class="col-lg-3 col-md-6 my-4">
+          <div class="box1 box2">
+          <h5>$12.50 weekly</h5>
+          <ul>
+              <li>20 Unique Cards</li>
+              <li>Branded By Community <strong>(residential & business packages)</strong></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div style="margin: auto;display: table;margin-top: 1rem;margin-bottom: 4rem;">
+  <a href="pkg.html" class="btn btn-dark">Packages</a>
+  </div>
+  </div>
+
+
+  
+<!------ contact us ------>
+ <section id="contact-us">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="get">
+          <h5>Get in Touch</h5>
+        <div class="form">
+          <input type="text" name="" id="" placeholder="Name"><br>
+          <input type="email" name="" id="" placeholder="Email"><br>
+          <textarea name="" id="" cols="30" rows="7" placeholder="Message"></textarea><br>
+         <div class="select">
+          <input type="file" name="file" id="file" class="inputfile" />
+          <label for="file"><i class="fa-solid fa-paperclip"></i>Attach Files</label>
+                        <span>Attachments(0)</span>
+         </div>
+          <button type="submit">SEND MESSAGE</button><br>
+          <p class="button-para">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy </a>and <a href="#">Terms of Service</a> apply.</p>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+       <div class="better">
+        <h5>Better yet, see us in person!</h5>
+        <p>Get the quickest response by reaching out to us on our social media platforms! You can also contact us directly via phone call or text message. We're excited to engage with you and hear your thoughts!</p>
+        <p>Drop us a message, and we'll make it a priority to get back to you at the earliest convenience.</p>
+      <button type="button"><img src="img/new-icon-removebg-preview.png" alt="">Message us on WhatsApp</button>
+      <h6>UMYO Non Profit</h6>
+      <a href="#">682-231-2366</a>
+      <!-- <a href="#">cmoore@NBA.com</a> -->
+      <h6 class="hrs">Hours</h6>
+      <select name="" id="">
+        <option value="">Open today 09:00 am – 02:00 pm</option>
+        <option value="">Open today 09:00 am – 02:00 pm</option>
+        <option value="">Open today 09:00 am – 02:00 pm</option>
+        <option value="">Open today 09:00 am – 02:00 pm</option>
+        <option value="">Open today 09:00 am – 02:00 pm</option>
+        <option value="">Open today 09:00 am – 02:00 pm</option>
+        <option value="">Open today 09:00 am – 02:00 pm</option>
+      </select>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!----- subscribe -------->
+<section id="subscribe">
+  <div class="container">
+    <h2 class="text-center">Subscribe</h2>
+    <p class="text-center">Get 10% off your first purchase when you sign up for our newsletter!</p>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-7 ">
+       
+      <div class="email-form">
+        <input type="email" placeholder="Email">
+      </div>
+      </div>
+      <div class="col-md-2 pb-5">
+        <button type="button" class="email-button">SIGN UP</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Featurs Section End -->
-<div
-  class="container-fluid bg-dark text-white-50 footer"
-  style="background: #6d8b3c !important; height: 100% !important"
->
-  <div class="container py-5">
-    <div class="row g-4">
-      <div class="col-lg-2 col-md-6">
-        <h4 class="text-light"><b>Contact us</b></h4>
-        <div class="d-flex flex-column text-start footer-item">
-          <a class="btn-link" (click)="openPolicyModal()">Privacy Policy</a>
-          <a class="btn-link" (click)="openRefundModal()">Refund Policy</a>
-          <a class="btn-link" (click)="openTermsModal()">Terms Of Service</a>
-          <a class="btn-link" href="">Terms of Sales</a>
-          <a class="btn-link" href="">UMYO Profile</a>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="d-flex align-items-center">
-          <h4 class="text-light"><b>UMYO Community Categories</b></h4>
-          <a class="moreless-button13" href="#text13"
-            ><a class="moreless-button13" href="#text13"
-              ><span class="material-symbols-sharp ms-3">chevron_right</span></a
-            ></a
-          >
-        </div>
-        <div class="moretext13" style="display: none">
-          <div class="d-flex flex-column text-start footer-item">
-            <a class="btn-link" href="https://umyobizdfw.com" target="_blank"
-              >DFW connects</a
-            >
-            <a class="btn-link" href="https://umyomilitary.site" target="_blank"
-              >Military Connects</a
-            >
-            <a class="btn-link" href="https://umyotruckers.site" target="_blank"
-              >Truckers Connects</a
-            >
-            <a class="btn-link" href="https://umyoauto.site" target="_blank"
-              >Automotive Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyohighschool.site"
-              target="_blank"
-              >Students Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyosportscards.com"
-              target="_blank"
-              >Sports Athletes Connects</a
-            >
-            <a class="btn-link" href="https://umyorealtor.site" target="_blank"
-              >Realtors Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyorestaurant.com"
-              target="_blank"
-              >Restaurants Connects</a
-            >
-            <a class="btn-link" href="https://umyostylist.com" target="_blank"
-              >Hair & Beauty Connects</a
-            >
-            <a class="btn-link" href="https://umyonegocio.site" target="_blank"
-              >Hispanics Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://nubianbizcards.com"
-              target="_blank"
-              >Nubians Connects</a
-            >
-            <a class="btn-link" href="https://umyolawyer.site" target="_blank"
-              >Attorneys Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyoreligions.site"
-              target="_blank"
-              >Religions Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyoentertainment.site"
-              target="_blank"
-              >Entertainers Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyonightlife.site"
-              target="_blank"
-              >Night Life Connects</a
-            >
-          </div>
-        </div>
-      </div>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="d-flex align-items-center">
-          <h4 class="text-light"><b>UMYO Platforms</b></h4>
-          <a class="moreless-button14" href="#text14"
-            ><span class="material-symbols-sharp ms-3">chevron_right</span></a
-          >
-        </div>
-        <div class="moretext14" style="display: none">
-          <div class="d-flex flex-column text-start footer-item">
-            <a
-              class="btn-link"
-              href="https://live.umyoconvo.site"
-              target="_blank"
-              >UMYO Conferences</a
-            >
-            <a class="btn-link" href="https://umyomusic.com" target="_blank"
-              >UMYO Music</a
-            >
-            <a class="btn-link" href="https://umyopopup.site" target="_blank"
-              >UMYO Market</a
-            >
-            <a class="btn-link" href="https://umyohost.com" target="_blank"
-              >UMYO Hosting</a
-            >
-            <a class="btn-link" href="https://uchatyes.com" target="_blank"
-              >UMYO Chatgpt</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyotweets.com/guest"
-              target="_blank"
-              >UMYO Tweets</a
-            >
-            <a class="btn-link" href="https://cpswipe.com" target="_blank"
-              >UMYO Date</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO Tik Tok</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyonetwork.com/network"
-              target="_blank"
-              >UMYO Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO Mail</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO WhatsApp</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO Games</a
-            >
-            <a class="btn-link" href="https://umyotube.com" target="_blank"
-              >UMYO Tube</a
-            >
-            <a class="btn-link" href="https://umyosms.com" target="_blank"
-              >UMYO SMS</a
-            >
-            <a class="btn-link" href="https://vibetalktv.com" target="_blank"
-              >UMYO PPV</a
-            >
-            <a class="btn-link" href="https://umyoeducator.com" target="_blank"
-              >UMYO LMS</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO VPN</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyobiz.com/membership-packages/"
-              target="_blank"
-              >UMYO Store</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyobiz.com/network/"
-              target="_blank"
-              >UMYO Profile</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO Ambassadors</a
-            >
-            <a class="btn-link" href="https://umyoauthor.site" target="_blank"
-              >UMYO Authors</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="footer-item">
-          <h4 class="text-light mb-3">LET'S CONNECT</h4>
-          <p class="mb-4">
-            Subscribe to stay up to date on all the latest UMYO features,
-            products, stories, and more. You can also contact us at
-            contact@umyo.com.
-          </p>
-          <div class="position-relative mx-auto">
-            <input
-              class="form-control border-0 py-2 w-100"
-              type="text"
-              placeholder="Enter Your Email"
-            />
-            <button
-              type="submit"
-              class="btn btn-info border-0 border-secondary position-absolute py-2 text-white"
-              style="top: 0; right: 0"
-            >
-              Sent
-            </button>
-          </div>
-        </div>
-        <div class="d-flex pt-3">
-          <a
-            class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-youtube"></i
-          ></a>
-          <a
-            class="btn btn-outline-secondary btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-12 text-center text-md-start my-5 mb-md-0">
-      <p class="text-white text-center">
-        <a href="#" style="text-decoration: none; color: white"
-          ><i class="fas fa-copyright text-light me-2"></i> 2023 UMYO</a
-        >, All right reserved.
-      </p>
-    </div>
-  </div>
-</div>
 <!-- Footer Start -->
 
+
+<div class="container-fluid bg-dark text-white-50 footer" style="background:#00584C!important;height: 100%!important; ">
+  <div class="container py-5">
+          <div class="row g-4">
+
+              <div class="col-lg-4 col-md-6">
+                  <h4 class="text-light"><b>Contact us</b></h4>
+              <div class="d-flex flex-column text-start footer-item">
+                <a class="btn-link" (click)="openPolicyModal()">Privacy Policy</a>
+                <a class="btn-link" (click)="openRefundModal()">Refund Policy</a>
+                <a class="btn-link" (click)="openTermsModal()">Terms Of Service</a>
+                  <a class="btn-link" href="">Terms of Sales</a>
+                  <a class="btn-link" href="">UMYO Non Profit</a>
+                  
+              </div>
+          </div>
+              
+          
+          <div class="col-lg-4 col-md-6">
+              <div class="footer-item">
+                  <h4 class="text-light mb-3">LET'S CONNECT</h4>
+                  <p class="mb-4">Subscribe to stay up to date on all the latest Pro-Living features, products, stories, and more. You can also contact us at contact@Umyostylist.com.</p>
+                  <div class="position-relative mx-auto">
+                      <input class="form-control border-0 py-2 w-100" type="text" placeholder="Enter Your Email">
+                      <button type="submit" class="btn btn-info border-0 border-secondary position-absolute py-2 text-white" style="top: 0; right: 0;">Sent</button>
+                  </div>
+              </div>
+             
+          </div>
+          <div class="col-lg-4 col-md-6">
+               <div class="d-flex justify-content-center pt-3">
+                      <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                      <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                      <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+          </div>
+          </div>
+          <div class="col-md-12 text-center text-md-start my-5 mb-md-0">
+              <p class="text-white text-center"><a href="#" style="text-decoration: none;color: white; "><i class="fas fa-copyright text-light me-2"></i>2024 UMYO Non Profit</a>, All right reserved.</p>
+          </div>
+      
+  </div>
+</div>
 <div
   class="modal"
   tabindex="-1"
@@ -2087,7 +1525,7 @@
   
   Who We Are
   
-  Welcome! We are UMYO Entertainment  Inc., a Texas corporation, or as we prefer to be known, "UMYO Entertainment ,"
+  Welcome! We are Non-Profit Umyo  Inc., a Texas corporation, or as we prefer to be known, "Non-Profit Umyo ,"
   "we," "our," or "us." Our mission is to revolutionize how the world connects! We provide
   products,services, and technologies ("Products") allowing users ("Users") to organize,
   display, and share information with their contacts through our software, mobile
@@ -2101,7 +1539,7 @@
   How to Contact Us
   
   If you have any questions about our practices or this Policy, please reach out to us via
-  email at data-privacy@UMYO Entertainment .com or by mail at UMYO Entertainment  Inc., Attn: Data Privacy
+  email at data-privacy@Non-Profit Umyo .com or by mail at Non-Profit Umyo  Inc., Attn: Data Privacy
   Officer, 1709 Martin Luther King Blvd Dallas, Texas, 75215
   
   Application of this Policy
@@ -2285,8 +1723,8 @@
   confidentiality requirements, and prohibiting use for any purpose other than contract
    performance. We do not sell your Personal Information.
   
-  For Users with an account linked to a “UMYO Entertainment  for Teams” subscription, the administrator 
-  associated with your “UMYO Entertainment  for Teams” account may manage, access, view, or store your
+  For Users with an account linked to a “Non-Profit Umyo  for Teams” subscription, the administrator 
+  associated with your “Non-Profit Umyo  for Teams” account may manage, access, view, or store your
   Information, including Personal Information. We do not control or limit your account's
   accessibility, and we are not responsible for the administrator's access, disclosure, or
   processing of your Information.
@@ -2327,7 +1765,7 @@
   
   **Effective Date: [Date]**
   
-  Welcome to UMYO Entertainment ! This User Data Privacy Policy ("Policy") outlines how we collect,
+  Welcome to Non-Profit Umyo ! This User Data Privacy Policy ("Policy") outlines how we collect,
   use, disclose, and protect your information when you use our platform, products, and
   services ("Platform" or "Products"). Please read this Policy carefully to understand
   our practices regarding your information and how we will treat it.
@@ -2419,8 +1857,8 @@
   ### 7. **How to Exercise Your Rights**
   
   To exercise your rights or inquire about your Personal Information, contact us at 
-  [data-privacy@UMYO Entertainment .com] (mailto:data-privacy@UMYO Entertainment .com) or by mail at
-  UMYO Entertainment  Inc., Attn: Data Privacy Officer, [Address].
+  [data-privacy@Non-Profit Umyo .com] (mailto:data-privacy@Non-Profit Umyo .com) or by mail at
+  Non-Profit Umyo  Inc., Attn: Data Privacy Officer, [Address].
   
   We will confirm receipt of your request within ten (10) business days and aim to
   respond within one month, unless the request is complex. If applicable, any disclosures
@@ -2449,10 +1887,10 @@
   
   We do not sell Personal Information. If you are 16 or older, you can direct us not
   to sell your information at any time by contacting us at 
-  [data-privacy@UMYO Entertainment .com](mailto:data-privacy@UMYO Entertainment .com) or by mail at
-  UMYO Entertainment  Inc., Attn: Data Privacy Officer, 1709 MLK BLVD Dallas, Texas 75215
+  [data-privacy@Non-Profit Umyo .com](mailto:data-privacy@Non-Profit Umyo .com) or by mail at
+  Non-Profit Umyo  Inc., Attn: Data Privacy Officer, 1709 MLK BLVD Dallas, Texas 75215
   
-  **Changes to Our Privacy Policy at UMYO Entertainment **
+  **Changes to Our Privacy Policy at Non-Profit Umyo **
   
   You acknowledge that this Policy is subject to modification by us at any time,
   without prior written notice,and solely at our discretion. Any revisions to this
@@ -2495,7 +1933,7 @@
               overflow-x: hidden;
             "
           >
-              **Refund Policy at UMYO Entertainment **
+              **Refund Policy at Non-Profit Umyo **
   
   **Returns for Defective Items:**
   Our steadfast commitment to delivering high-quality custom items remains unwavering. In the
@@ -2568,9 +2006,9 @@
               overflow-x: hidden;
             "
           >
-              Welcome to UMYO Entertainment !
+              Welcome to Non-Profit Umyo !
   
-  **Terms of Service and Sale - UMYO Entertainment **
+  **Terms of Service and Sale - Non-Profit Umyo **
   
   **Last Revised: December 22, 2023**
   
@@ -2578,7 +2016,7 @@
   
   **Introduction**
   
-  Welcome! We are UMYO Entertainment , a Delaware corporation, known as "we," "our," or "us." Our mission
+  Welcome! We are Non-Profit Umyo , a Delaware corporation, known as "we," "our," or "us." Our mission
   is to redefine how the world connects. We provide Products, Services, and Technologies
   ("Products") that enable Users ("Users") to organize, display, and share information
   with others and third parties ("Services") through our software, mobile application, and
@@ -2678,11 +2116,11 @@
   
   ---
   
-  **UMYO Entertainment  App Terms of Service**
+  **Non-Profit Umyo  App Terms of Service**
   
   **1. Account Information and Updates**
   
-  (g) You must provide accurate, current, and complete information for your UMYO Entertainment 
+  (g) You must provide accurate, current, and complete information for your Non-Profit Umyo 
   account. Ensure timely updates for your billing account, including changes to
   billing address, credit card number, or expiration date. Promptly notify us or
   our payment processor about canceled payment methods or potential security breaches.
@@ -2699,7 +2137,7 @@
   
   **3. User-Generated Content**
   
-  (a) Users can post content ("Content") on UMYO Entertainment . Posted Content is not confidential,
+  (a) Users can post content ("Content") on Non-Profit Umyo . Posted Content is not confidential,
    treated as public information. By posting, users represent having the right to do so
   and grant us a non-exclusive license to use it for platform operation and promotion.
   

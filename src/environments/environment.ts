@@ -5,7 +5,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: "https://umyoentertainment.site/api_umyocards/public/api/"
+  apiUrl: "https://unpalliance.org/api_umyocards/public/api/"
 };
 
 

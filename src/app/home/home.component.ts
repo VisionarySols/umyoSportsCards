@@ -40,6 +40,8 @@ export class HomeComponent implements AfterViewInit {
   race:any
   talentType:any
   gender:any
+
+  organizationType:any
   
 
 
@@ -76,7 +78,7 @@ export class HomeComponent implements AfterViewInit {
 
     this.dropdownService.getDropdownOptions().subscribe(data => {
       this.specialityType = data.specialityType;
-      this.talentType = data.talentType;
+      this.organizationType = data.organizationType;
       this.location = data.location;
       this.state = data.state;
       this.gender = data.gender;
@@ -482,7 +484,7 @@ export class HomeComponent implements AfterViewInit {
         state : this.form2.get('selectedStateType').value,
        city : this.form2.get('selectedCity').value,
        type : this.form2.get('selectedType').value,
-       talent : this.form2.get('selectedTalent').value,
+       organization : this.form2.get('selectedOrganization').value,
        
        
 
@@ -679,7 +681,7 @@ export class HomeComponent implements AfterViewInit {
               console.error("Failed to execute billing agreement", error);
               this.showLoadingModal=false
                 alert("We're sorry, it seems that your payment through PayPal was not completed successfully. if you continue to experience difficulties, please contact us!")
-                window.location.href='https://umyoentertainment.site/'
+                window.location.href='https://unpalliance.org/'
             }
           );
         }
@@ -711,7 +713,7 @@ export class HomeComponent implements AfterViewInit {
         selectedGender: [''],
         selectedCity: [''],
         selectedType:[''],
-        selectedTalent:[''],
+        selectedOrganization:[''],
         
         
      
@@ -733,7 +735,7 @@ export class HomeComponent implements AfterViewInit {
   
 
         registerStateType: ['', Validators.required],
-        registerTalent: ['', Validators.required],
+        registerOrganization: ['', Validators.required],
       
         
 

@@ -108,7 +108,7 @@ if (expireInValue.includes("year")) {
               
 
               type: form3.get('registerType')?.value,
-              talent: form3.get('registerTalent')?.value,
+              organization: form3.get('registerorganization')?.value,
               
               subscription_id:"",
 
@@ -199,7 +199,7 @@ if (expireInValue.includes("year")) {
       study: form3.get('registerStudy')?.value,
       
       type: form3.get('registerType')?.value,
-      talent: form3.get('registerTalent')?.value,
+      organization: form3.get('registerorganization')?.value,
       
       subscription_id:"",
 
@@ -299,7 +299,7 @@ if (expireInValue.includes("year")) {
       position: form3.get('registerPositionType')?.value,
       
       type: form3.get('registerType')?.value,
-      talent: form3.get('registerTalent')?.value,
+      organization: form3.get('registerorganization')?.value,
       
       
       subscription_id:"",
