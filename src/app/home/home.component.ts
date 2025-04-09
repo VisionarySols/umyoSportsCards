@@ -698,7 +698,7 @@ study:any
               console.error("Failed to execute billing agreement", error);
               this.showLoadingModal=false
                 alert("We're sorry, it seems that your payment through PayPal was not completed successfully. if you continue to experience difficulties, please contact us!")
-                window.location.href='https://umyogreeks.site/'
+                window.location.href='https://umyogreek.site/'
             }
           );
         }
