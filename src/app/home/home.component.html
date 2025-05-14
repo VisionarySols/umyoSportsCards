@@ -713,10 +713,11 @@
 
                   <button
                     (click)="openAgeModal('login')"
+                                        [disabled]="!form.valid"
+
                     type="submit"
                     class="btn btn-info text-white mt-3 py-3 px-5"
                     style="margin: auto; display: block"
-                    [disabled]="!form.valid"
                   >
                     Submit
                   </button>
@@ -838,6 +839,8 @@
                         />
                       </div>
                     </div>
+
+
                     <div class="col-md-6 mb-3">
                       <div class="form-group">
                         <label style="font-size: 20px; font-weight: 600"
@@ -861,6 +864,8 @@
                         />
                       </div>
                     </div>
+
+
                     <div class="col-md-12 mb-3">
                       <div class="form-group">
                         <label style="font-size: 20px; font-weight: 600"
@@ -1823,7 +1828,7 @@
         </div>
         <div class="moretext13" style="display: none">
           <div class="d-flex flex-column text-start footer-item">
-            <a class="btn-link" href="https://umyobizdfw.com" target="_blank"
+            <a class="btn-link" href="https://revolution00.site" target="_blank"
               >DFW connects</a
             >
             <a class="btn-link" href="https://umyomilitary.site" target="_blank"
@@ -2076,7 +2081,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
-        <button type="button" class="close" (click)="closePolicyModal()">
+        <button type="button" class="close"  style="padding-left:10px;padding-right:10px"(click)="closePolicyModal()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -2490,7 +2495,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="refundModalLabel">Refund Policy</h5>
-        <button type="button" class="close" (click)="closeRefundModal()">
+        <button type="button" class="close"  style="padding-left:10px;padding-right:10px"(click)="closeRefundModal()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -2794,7 +2799,7 @@
         <h5 class="modal-title" id="exampleModalLongTitle">
           Select One Package
         </h5>
-        <button type="button" class="close" (click)="closePackageModal()">
+        <button type="button" class="close"  style="padding-left:10px;padding-right:10px"(click)="closePackageModal()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -2924,7 +2929,7 @@
         <h5 class="modal-title" id="exampleModalLongTitle">
           Pay Through Stripe
         </h5>
-        <button type="button" class="close" (click)="closeStripeModal()">
+        <button type="button" class="close"  style="padding-left:10px;padding-right:10px"(click)="closeStripeModal()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>

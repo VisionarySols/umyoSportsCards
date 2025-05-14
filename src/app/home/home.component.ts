@@ -132,6 +132,7 @@ export class HomeComponent implements AfterViewInit {
   });
         $('.moreless-button2').click(function() {
           event.preventDefault();
+          
     $('.moretext2').slideToggle();
     if ($('.moreless-button2').text() == "Read more") {
       $(this).text("Read less")
@@ -680,7 +681,7 @@ export class HomeComponent implements AfterViewInit {
               console.error("Failed to execute billing agreement", error);
               this.showLoadingModal=false
                 alert("We're sorry, it seems that your payment through PayPal was not completed successfully. if you continue to experience difficulties, please contact us!")
-                window.location.href='https://umyobizdfw.com/'
+                window.location.href='https://revolution00.site/'
             }
           );
         }

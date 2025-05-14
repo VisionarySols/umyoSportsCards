@@ -11,10 +11,10 @@ body, html {
 }
 
 body{
-	font-family: "Onest", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
+	font-family: "Onest", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-style: normal !important;
+    font-variation-settings :
     "wdth" 100;
 }
 :root{
@@ -1720,5 +1720,201 @@ h3.ms-3.aos-init.fa-2x.fw-bold.why.aos-animate {
     font-size: 16px;
     font-weight: 300;
 }
+
+}
+
+
+
+
+.custom-toast-position {
+  position: fixed;
+  top: 5rem; /* Adjust the top position as needed */
+  right: 5rem; /* Adjust the right position as needed */
+  text-align: center;
+  background-color: rgba(86, 249, 86, 0.799);
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px; 
+  color: #fff;
+  
+
+}
+
+/* *,html,body{
+overflow-x: hidden !important;
+}
+ */
+
+ /* .slick-prev{
+  left: 9px !important;
+  z-index: 11111 !important;
+}
+
+.slick-next {
+  right: 4px !important;
+  z-index: 1111111 !important;
+} */
+
+.custom-prev-arrow, .custom-next-arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+z-index: 1;
+}
+
+.custom-prev-arrow {
+left: 10px;
+}
+
+.custom-next-arrow {
+right: 10px;
+}
+
+.carousel-control-prev{
+left: -24px !important;
+}
+
+.carousel-control-prev{
+top: 142px !important;
+}
+.carousel-control-next{
+top: 142px !important;
+}
+.carousel-control-next{
+right: -18px !important;
+}
+
+
+.custom-toast-position {
+  position: fixed;
+  top: 5rem; /* Adjust the top position as needed */
+  right: 5rem; /* Adjust the right position as needed */
+  text-align: center;
+  background-color: rgba(86, 249, 86, 0.799);
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px; 
+  color: #fff;
+  
+
+}
+
+/* *,html,body{
+overflow-x: hidden !important;
+}
+ */
+
+ /* .slick-prev{
+  left: 9px !important;
+  z-index: 11111 !important;
+}
+
+.slick-next {
+  right: 4px !important;
+  z-index: 1111111 !important;
+} */
+
+.custom-prev-arrow, .custom-next-arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+cursor: pointer;
+z-index: 1;
+}
+
+.custom-prev-arrow {
+left: 10px;
+}
+
+.custom-next-arrow {
+right: 10px;
+}
+
+.carousel-control-prev{
+left: -24px !important;
+}
+
+.carousel-control-prev{
+top: 142px !important;
+}
+.carousel-control-next{
+top: 142px !important;
+}
+.carousel-control-next{
+right: -18px !important;
+}
+
+.slick-arrow.slick-disabled {
+  display: none !important;
+}
+.slick-slide img{
+  height: 140px !important;
+}
+
+ 
+.select-btn{height: 43px !important;
+}
+
+
+/*** Footer End ***/
+@media only screen and (max-width: 1280px) {
+    .slick-slide img {
+    height: 114px;
+}   
+}
+@media only screen and (max-width: 1140px) {
+    .slick-slide img {
+    height: 104px;
+}   
+}
+@media only screen and (max-width: 995px) {
+    .slick-slide img {
+    /*height: 80px;*/
+} 
+.footer {
+    height: 100%;
+}
+#card_section .pro_c {
+     margin-top: 0rem; 
+}  
+}
+@media only screen and (max-width: 768px) {
+   .slick-slide img {
+    /*height: 55px;*/
+}   
+#header h1{
+    font-size: 30px!important;
+}
+.lft-hero {
+    padding:120px 0;
+}
+}
+@media only screen and (max-width: 600px) {
+   .slick-slide img {
+    height: 120px;
+}   
+}
+
+@media only screen and (max-width: 480px) {
+   .slick-slide img {
+    height: 150px;
+}
+   
+}
+
+
+
+.bbody{
+    height: 100vh !important;
+    display: flex !important
+;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.cardSelect{
+  border: 3px solid #007bff;
+  box-shadow: 0 0 15px rgba(18, 41, 216, 0.7);
 
 }

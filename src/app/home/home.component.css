@@ -860,6 +860,10 @@ a.cto-link:hover {
   color: #000;
 }
 
+.active{
+  display: flex !important;
+}
+
 .business-card-section .tabs-wrapper .nav-link span {
   margin-left: 20px;
   font-weight: 550;

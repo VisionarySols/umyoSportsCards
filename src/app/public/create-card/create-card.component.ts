@@ -26,7 +26,7 @@ export class CreateCardComponent implements AfterViewInit {
       slidesToScroll: 1,
       nextArrow: '<div class="slick-next"></div>',
       prevArrow: '<div class="slick-prev"></div>',
-      autoplay:true,
+      autoplay:false,
         arrows: true,
         
         infinite: true,
