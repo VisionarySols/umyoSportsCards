@@ -1,1725 +1,945 @@
-<section id="header" style="background: #3f2305 !important">
-  <div class="overlay"></div>
-  <div class="container-fluid">
-    <div class="container px-0">
-      <nav
-        class="navbar navbar-expand-xl"
-        style="border-bottom: 2px solid white"
-      >
-        <a href="index.html" class="navbar-brand">
-          <!-- <h1 class="text-white display-6">UMYO</h1> -->
-          <img
-            src="assets/dfw/logo.png"
-            class="img-fluid rounded-circle"
-            style="width: 4rem; height: 4rem"
-          />
-        </a>
-        <button
-          class="navbar-toggler py-2 px-3"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="fa fa-bars text-primary"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav d-lg-none">
-            
-            
-            <a class="nav-link nav-item"  [routerLink]="['']">Home</a>
-            
-
-            
-            <a class="nav-link nav-item"  href="https://umyonetwork.com/network"
-              >Network</a
-            >
-          
-          
-            <a
-              style="white-space: nowrap"
-              href="https://dfwtalk.site"
-              class="nav-item nav-link"
-              >DFW Talk</a
-            >
-          
-          
-            <a
-              class="nav-link nav-item" 
-              style="white-space: nowrap"
-              href="https://Live.umyoconvo.site"
-              >Conference</a
-            >
-          
-          
-            <a
-              class="nav-link nav-item" 
-              style="white-space: nowrap"
-              href="https://UPMRadio.site"
-              >Radio</a
-            >
-          
-          
-            <a
-              class="nav-link nav-item" 
-              style="white-space: nowrap"
-              href="http://uchatyes.com/"
-              >ChatGpt</a
-            >
-          
-          
-            <a
-              class="nav-link nav-item" 
-              style="white-space: nowrap"
-              href="https://Dfwtweet.site"
-              >DFW Tweet</a
-            >
-          
-
-          
-            <a class="nav-link nav-item"  style="white-space: nowrap" href="https://Umyoappt.site"
-              >Booking Appt</a
-            >
-          
-          
-            <a class="nav-link nav-item"  style="white-space: nowrap" href="https://Umyoevents.site"
-              >Events</a
-            >
-          
-          
-            <a
-              class="nav-link nav-item" 
-              style="white-space: nowrap"
-              [routerLink]="['/cf']"
-              >Card Features</a
-            >
-          
-          
-            <a
-              class="nav-link nav-item" 
-              style="white-space: nowrap"
-              [routerLink]="['/package']"
-              >View Services</a
-            >
-          
-          
-            <a
-              class="nav-link nav-item" 
-              style="white-space: nowrap"
-              [routerLink]="['/ai']"
-              >Additional Features</a
-            >
-          
-
-          </div>
-          <div class="d-flex m-3 ms-auto">
-            <p class="text-white" style="margin: 2px 25px; font-size: 25px">
-              UMYO
-            </p>
-            <button
-              class="btn-search btn border border-white btn-md-square rounded-circle me-4"
-              data-bs-toggle="modal"
-              data-bs-target="#searchModal"
-            >
-              <i class="fas fa-search text-white"></i>
-            </button>
-            <a href="#" class="position-relative me-4 my-auto">
-              <i class="fa fa-shopping-cart text-white fa-2x"></i>
-            </a>
-            <a href="#" class="my-auto">
-              <button class="btn btn-primary bg-white text-dark border-0 p-2">
-                Get Started
-              </button>
-            </a>
-          </div>
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg d-lg-block d-none menu-nav2">
-        <div class="container-fluid p-0">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-5 pb-3 mb-lg-0">
-              <!-- <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Link Store
-  </a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-  </li>
-  <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Industries
-  </a>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-  </li> -->
-  <li class="nav-item">
-    <a class="nav-link" [routerLink]="['']">Home</a>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" href="https://umyonetwork.com/network"
-      >Network</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      style="white-space: nowrap"
-      href="https://dfwtalk.site"
-      class="nav-item nav-link"
-      >DFW Talk</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      href="https://Live.umyoconvo.site"
-      >Conference</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      href="https://UPMRadio.site"
-      >Radio</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      href="http://uchatyes.com/"
-      >ChatGpt</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      href="https://Dfwtweet.site"
-      >DFW Tweet</a
-    >
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" style="white-space: nowrap" href="https://Umyoappt.site"
-      >Booking Appt</a
-    >
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" style="white-space: nowrap" href="https://Umyoevents.site"
-      >Events</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      [routerLink]="['/cf']"
-      >Card Features</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      [routerLink]="['/package']"
-      >View Services</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      [routerLink]="['/ai']"
-      >Additional Features</a
-    >
-  </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<div style="position:relative; z-index: 100; width: 100%;">
+<nav class="navbar navbar-expand-md pt-0 " style="position: fixed; width: 100%;">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['']"><img class="lozad" src="assets/img/rev00.png"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-md-4" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" [routerLink]="['']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']">About Us</a>`
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/network']">Network</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/digital']">Digital Tribe</a>
+        </li>
+      </ul>
     </div>
   </div>
-  <!-- Navbar End -->
+</nav>
+</div>
 
-  <!-- Modal Search Start -->
-  <div
-    class="modal fade"
-    id="searchModal"
-    tabindex="-1"
-    aria-labelledby="exampleModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-fullscreen">
-      <div class="modal-content rounded-0">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body d-flex align-items-center">
-          <div class="input-group w-75 mx-auto d-flex">
-            <input
-              type="search"
-              class="form-control p-3"
-              placeholder="keywords"
-              aria-describedby="search-icon-1"
-            />
-            <span id="search-icon-1" class="input-group-text p-3"
-              ><i class="fa fa-search"></i
-            ></span>
-          </div>
+<section id="profit">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="non-profit" data-aos="fade-right">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(1).jpg" alt="Image">
+          <!-- <h3 class="text-center">Alleviating poverty</h3> -->
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Modal Search End -->
-
-  <!-- Hero Start -->
-</section>
-<!------- tab section end ---------->
-<section id="table-pkg">
-  <div class="container-fluid featurs pt-3 mt-3 mb-5">
-    <div class="container">
-      <div class="row g-4">
-        <h2 class="text-center">Community To Business Branding</h2>
-        <h4>UMYO DFW Community and Small Business Accountability Packages</h4>
-        <div class="col-lg-3">
-          <div class="bg2">
-            <h3 class="mt-4 small">Small <br />Biz Package</h3>
-            <div class="line"></div>
-            <p>www.umyobizdfw.com/</p>
-          </div>
-          <div class="th">
-            <h6>(109-$299 monthly)</h6>
-          </div>
-          <div class="th2">
-            <h6>Membership Cards</h6>
-          </div>
-          <div class="th">
-            <h6>IAM Pledge Cards</h6>
-          </div>
-          <div class="th2">
-            <h6>Coupon Kiosk</h6>
-          </div>
-          <div class="th">
-            <h6>Business Cards</h6>
-          </div>
-          <div class="th2">
-            <h6>Daily Prize Giveaways</h6>
-          </div>
-          <div class="th">
-            <h6>B2B Branding</h6>
-          </div>
-          <div class="th2">
-            <h6>Email Branding</h6>
-          </div>
-          <div class="th">
-            <h6>MP3 Branding</h6>
-          </div>
-          <div class="th2">
-            <h6>Conference Platform</h6>
-          </div>
-          <div class="th">
-            <h6>Commercial Contests Participation</h6>
-          </div>
-          <div class="th2">
-            <h6>Additional Platforms Access</h6>
-          </div>
-          <div class="th">
-            <h6>Community To Business Branding</h6>
-          </div>
-          <div class="th2">
-            <h6>Networking Platforms</h6>
-          </div>
-        </div>
-        <div class="col-lg-9">
-          <div class="d-flex align-items-center">
-            <div class="bgn">
-              <img src="assets/img/logo2.png" />
-              <h3>Starter Biz Package</h3>
-            </div>
-            <div class="bgn" style="background: #27b7be !important">
-              <img src="assets/img/logo2.png" />
-              <h3>Accountability Package</h3>
-            </div>
-            <div class="bgn" style="background: #f1c05a !important">
-              <img src="assets/img/logo2.png" />
-              <h3 class="h31">Free Package</h3>
-              <h3 class="h3">
-                Free<br />
-                Package
-              </h3>
-            </div>
-          </div>
-          <div class="th padd">
-            <div class="icon">
-              <h6>($49-$109 monthly)</h6>
-              <h6>($5.99 - $19.99 monthly)</h6>
-              <h6>Free</h6>
-            </div>
-          </div>
-          <div class="th2 padd">
-            <div class="icon">
-              <i class="fa fa-check"></i>
-              <i class="fa fa-check"></i>
-              <i class="fa fa-check"></i>
-            </div>
-          </div>
-          <div class="th padd">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 padd">
-            <div class="icon">
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th padd">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 padd">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th padd">
-            <div class="icon">
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 padd">
-            <div class="icon">
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th padd">
-            <div class="icon">
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 padd">
-            <p>
-              24/7 365 ( no time limits, live stream, podcast, webinar; $5.99 &
-              up)
-            </p>
-            <!-- <i class="fa fa-check" aria-hidden="true"></i>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <i class="fa fa-check" aria-hidden="true"></i> -->
-          </div>
-          <div class="th padd">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 padd">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th padd">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 padd">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="non-profit" data-aos="fade-up">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(2).png" alt="image">
+          <!-- <h3 class="text-center">Advancing education</h3> -->
         </div>
       </div>
-      <div class="row g-4">
-        <h4 class="mt-5 pt-5">
-          UMYO DFW Community Accountability & Business Cards Search Engine
-        </h4>
-        <div class="col-lg-3">
-          <div class="bg2">
-            <h4>Basic <br />Biz Package</h4>
-            <div class="line"></div>
-            <p>www.umyobizdfw.com/</p>
-          </div>
-          <div class="th">
-            <h6>(10k monthly)</h6>
-          </div>
-          <div class="th2">
-            <h6>Uchatyes.com</h6>
-          </div>
-          <div class="th">
-            <h6>Standing Kiosk</h6>
-          </div>
-          <div class="th2">
-            <h6>Sports Mag</h6>
-          </div>
-          <div class="th">
-            <h6>Coupon Kiosk</h6>
-          </div>
-          <div class="th2">
-            <h6>Commercial</h6>
-          </div>
-          <div class="th">
-            <h6>EPK</h6>
-          </div>
-          <div class="th2">
-            <h6>Google Ads</h6>
-          </div>
-          <div class="th">
-            <h6>SEO</h6>
-          </div>
-          <div class="th2">
-            <h6>SMS Marketing</h6>
-          </div>
-          <div class="th">
-            <h6>Unlimited Cards</h6>
-          </div>
-          <div class="th2">
-            <h6>B2B Branding</h6>
-          </div>
-          <div class="th">
-            <h6>Email Branding</h6>
-          </div>
-          <div class="th2">
-            <h6>Sponsor Ambassador</h6>
-          </div>
-          <div class="th">
-            <h6>MP3 Branding</h6>
-          </div>
-          <div class="th2">
-            <h6>Virtual Website</h6>
-          </div>
-          <div class="th">
-            <h6>Marketing Manager</h6>
-          </div>
-          <div class="th2">
-            <h6>Campaign Marketing</h6>
-          </div>
-          <div class="th">
-            <h6>Commercial Contests</h6>
-          </div>
-          <div class="th2">
-            <h6>Social Media Influencer</h6>
-          </div>
-          <div class="th">
-            <h6>Youth Social Media Branding</h6>
-          </div>
-          <div class="th2">
-            <h6>Full Platforms Access & Features</h6>
-          </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="non-profit" data-aos="fade-left">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(4).png" alt="Image">
+          <!-- <h3 class="text-center">Disaster relief</h3> -->
         </div>
-        <div class="col-lg-9">
-          <div class="d-flex align-items-center">
-            <div class="bgn bgn21">
-              <img src="assets/img/logo2.png" />
-              <h3>Custom Biz Package</h3>
-            </div>
-            <div class="bgn bgn21" style="background: #27b7be !important">
-              <img src="assets/img/logo2.png" />
-              <h3>Premium Biz Package</h3>
-            </div>
-            <div class="bgn bgn21" style="background: #f1c05a !important">
-              <img src="assets/img/logo2.png" />
-              <h3>Bronze Biz Package</h3>
-            </div>
-            <div class="bgn bgn21" style="background: #000 !important">
-              <img src="assets/img/logo2.png" />
-              <h3>Bronze Biz Package</h3>
-            </div>
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <h6>(5k monthly)</h6>
-              <h6>(3k monthly)</h6>
-              <h6>(1k monthly)</h6>
-              <h6>($500)</h6>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <i class="fa fa-check"></i>
-              <i class="fa fa-check"></i>
-              <i class="fa fa-check"></i>
-              <i class="fa fa-close"></i>
-            </div>
-          </div>
-          <div class="th thb padd">
-            <div class="icon">
-              <p>Floor Kiosk</p>
-              <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <p class="ml-auto">ADD</p>
-              <p>LOGO</p>
-              <p>Virtual Card</p>
-              <!-- <i class="fa fa-check" aria-hidden="true"></i>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <i class="fa fa-check" aria-hidden="true"></i> -->
-            </div>
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <p>Null</p>
-            <!-- <i class="fa fa-check" aria-hidden="true"></i>
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <i class="fa fa-check" aria-hidden="true"></i> -->
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <p>Null</p>
-            </div>
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <p>Null</p>
-            </div>
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <p>Null</p>
-            </div>
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-              <i class="fa fa-close" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="th2 thb">
-            <div class="icon">
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-              <i class="fa fa-check" aria-hidden="true"></i>
-            </div>
-          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="non-profit" data-aos="fade-right">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(5).png" alt="Image">
+          <!-- <h3 class="text-center">Public policy</h3> -->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="non-profit" data-aos="fade-up">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(9).png" alt="Image">
+          <!-- <h3 class="text-center">Changes in laws</h3> -->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="non-profit" data-aos="fade-left">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(6).png" alt="Image">
+          <!-- <h3 class="text-center">Societal behavior</h3> -->
         </div>
       </div>
     </div>
   </div>
 </section>
+<!---END HERO SECTION---->
 
-<!-- Footer Start -->
+<!---REVOLUTION SECTION---->
 
-<!-- Featurs Section End -->
-<div
-  class="container-fluid bg-dark text-white-50 footer"
-  style="background: #3f2305 !important; height: 100% !important"
->
-  <div class="container py-5">
-    <div class="row g-4">
-      <div class="col-lg-2 col-md-6">
-        <h4 class="text-light"><b>Contact us</b></h4>
-        <div class="d-flex flex-column text-start footer-item">
-          <a class="btn-link" (click)="openPolicyModal()">Privacy Policy</a>
-          <a class="btn-link" (click)="openRefundModal()">Refund Policy</a>
-          <a class="btn-link" (click)="openTermsModal()">Terms Of Service</a>
-          <a class="btn-link" href="">Terms of Sales</a>
-          <a class="btn-link" href="">UMYO Profile</a>
+<section>
+	<div class="resident  pt-5">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-9 ps-md-0 mb-5">
+          <div class="membership-cards">
+					<div class="tribe mt-md-5 card mb-5" id="tribe">
+						<h2 class="fw-bold">Welcome to Revolution 00 — Where Ownership Begins</h2>
+						<p data-aos="fade-up">Revolution 00 was built for us, by us — a digital nation where people of color can thrive without the exploitation, censorship, or chaos found on mainstream platforms. Here, we don’t just talk about change — we’ve built the infrastructure to create it. Whether you're an entrepreneur, student, creator, or community leader, <b>Revolution 00</b> is your space to connect, grow, and circulate wealth within trusted, private digital ecosystems.</p>
+            
+          <div class="haven" id="haven" style="display: none">
+            <p data-aos="fade-up">We believe in action, not permission. That’s why we’ve created secure tools modeled after some of the most popular online platforms — but reimagined with our communities in mind. For <b>just $9.99 a month</b>, members gain access to livestreaming, webinars, secure messaging, e-commerce, and community-driven tools that support local businesses and mental wellness — all in a gated digital community built for growth, trust, and positivity.</p>
+
+            <h3 class="fw-bold">
+              What sets us apart?
+            </h3>
+            <p> We give back — consistently and intentionally. Every week, we support members with car payments, rent relief, food and gas assistance, HBCU scholarships, youth programs, and free promotion for small businesses. We believe generosity is currency — and that circulating resources within our own communities is how we build long-term strength and security.</p>
+
+  
+            <p>Our tech partner, UMYO Wall Street Of Technology, heard our vision and made it a reality — creating everything we needed within weeks, not months. That means we don’t have to worry about complicated tech or high costs each month. They handle the backend as we build our future. Together, we share profits and power that puts culture first and gives leaders the freedom to lead.</p>
+
+            <p>This isn’t just a platform. It’s a revolution in how we engage, earn, support, and rise. So if you're ready to own your presence, amplify your voice, and be part of a community that stands on business — welcome home. <b>Revolution 00</b> is where culture, commerce, and community meet — and where our future begins.</p>
+
+            <h3 class="fw-bold">
+              Call-to-Action Section:
+            </h3>
+            <p> <b>Become a Member for Just $9.99/Month Businesses starts as low as $19.99</b>
+                Get access to exclusive tools, weekly giveaways, secure communities, and your own marketplace — all designed with you in mind. Business owners can brand at an affordable cost. Needs additional branding? See our branding packages during registration</p>
+                <a class="btn btn-hover-purple mt-4" href="https://drive.google.com/file/d/1Qhm-Aciui6Qr-cxynBjB1GoDi8nrVS7W/view ">Need More</a>
+
+                <strong> No ads. No algorithms. No exploitation. Just growth, ownership, and opportunity.</strong>
+
+                <ul>
+                  <li class="fw-bold">Join the Movement</li>
+                  <li class="fw-bold">Explore the Platform</li>
+                  <li class="fw-bold">Take the IAM Pledge</li>
+                </ul>
+
+            
+            <a href="#tribe" id="less" class="btn btn-hover-purple border-dark gap-2 mt-4" data-aos="fade-up">
+            Read Less
+            </a>
+            </div>
+            <a href="#haven" id="more" class="btn btn-hover-purple border-dark gap-2 mt-4" data-aos="fade-up">
+            Read More
+            </a>
+					</div>
+         </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!---END REVOLUTION SECTION---->
+
+<!----POWER SECTION--->
+<section id="header" class="power">
+       <div class="container-fluid srice py-5">
+            <div class="container py-5">
+        <h1 class="text-white text-center  mb-3" style="font-weight: 600; ">Revolution00 Members </h1>
+        <div class="row">
+            <div class="col-lg-5 mt-5">
+                <!-- <h4 class="mb-4 text-white">Search For NBA Players Connects Here</h4> -->
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                    <input type="name" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                       <select  aria-label="Default select example"  class="form-select">
+                      <option  selected="" value="" disabled="">Business Type</option>
+                      <option  value="Accountant"> Accountant </option>
+                      <option  value="Actor"> Actor </option>
+                      <option  value="Actuary"> Actuary </option>
+                      <option  value="Administrator"> Administrator </option>
+                      <option  value="Agent"> Agent </option>
+                      <option  value="Agricultural Worker"> Agricultural Worker </option>
+                      <option  value="Air Traffic Controller"> Air Traffic Controller </option>
+                      <option  value="Ambulance Officer"> Ambulance Officer </option>
+                      <option  value="Architect"> Architect </option>
+                      <option  value="Art Director"> Art Director </option>
+                      <option  value="Artist"> Artist </option>
+                      <option  value="Athlete"> Athlete </option>
+                      <option  value="Auditor"> Auditor </option>
+                      <option  value="Baker"> Baker </option>
+                      <option  value="Barista"> Barista </option>
+                      <option  value="Bartender"> Bartender </option>
+                      <option  value="Board Member"> Board Member </option>
+                      <option  value="Business Analyst"> Business Analyst </option>
+                      <option  value="Chef"> Chef </option>
+                      <option  value="Childcare Worker"> Childcare Worker </option>
+                      <option  value="Civil Servant"> Civil Servant </option>
+                      <option  value="Cleaner"> Cleaner </option>
+                      <option  value="Company Worker"> Company Worker </option>
+                      <option  value="Computer Scientist"> Computer Scientist </option>
+                      <option  value="Construction Worker"> Construction Worker </option>
+                      <option  value="Cook"> Cook </option><option  value="Copywriter"> Copywriter </option><option  value="Courier"> Courier </option>
+                      <option  value="Craftsperson"> Craftsperson </option>
+                      <option  value="Curator"> Curator </option>
+                      <option  value="Customer Service Representative"> Customer Service Representative </option><option  value="Dentist"> Dentist </option>
+                      <option  value="Designer"> Designer </option>
+                      <option  value="Doctor"> Doctor </option>
+                      <option  value="Driver"> Driver </option>
+                      <option  value="Economist"> Economist </option>
+                      <option  value="Electrician"> Electrician </option>
+                      <option  value="Entrepreneur"> Entrepreneur </option>
+                      <option  value="Equipment Operator"> Equipment Operator </option>
+                      <option  value="Executive Manager"> Executive Manager </option>
+                      <option  value="Farmer"> Farmer </option>
+                      <option  value="Film Maker"> Film Maker </option>
+                      <option  value="Firefighter"> Firefighter </option>
+                      <option  value="Fisherman"> Fisherman </option>
+                      <option  value="Fitness Trainer"> Fitness Trainer </option>
+                      <option  value="Flight Attendant"> Flight Attendant </option>
+                      <option  value="Florist"> Florist </option>
+                      <option  value="Freelancer"> Freelancer </option>
+                      <option  value="Gardener"> Gardener </option>
+                      <option  value="Hair Stylist"> Hair Stylist </option>
+                      <option  value="Home Care Aid"> Home Care Aid </option>
+                      <option  value="Homemaker"> Homemaker </option>
+                      <option  value="Hospitality Worker"> Hospitality Worker </option>
+                      <option  value="Housekeeper"> Housekeeper </option>
+                      <option  value="Information Technology Professional"> Information Technology Professional </option>
+                      <option  value="Investor"> Investor </option>
+                      <option  value="Journalist"> Journalist </option>
+                      <option  value="Laborer"> Laborer </option>
+                      <option  value="Lawyer"> Lawyer </option>
+                      <option  value="Librarian"> Librarian </option>
+                      <option  value="Maintenance Worker"> Maintenance Worker </option>
+                      <option  value="Manager"> Manager </option>
+                      <option  value="Manufacturing Worker"> Manufacturing Worker </option>
+                      <option  value="Marketing Professional"> Marketing Professional </option>
+                      <option  value="Mathematician"> Mathematician </option>
+                      <option  value="Mechanic"> Mechanic </option>
+                      <option  value="Medical Professional"> Medical Professional </option>
+                      <option  value="Merchant"> Merchant </option>
+                      <option  value="Midwife"> Midwife </option>
+                      <option  value="Military Personnel"> Military Personnel </option>
+                      <option  value="Musician"> Musician </option>
+                      <option  value="Nanny"> Nanny </option>
+                      <option  value="Nurse"> Nurse </option>
+                      <option  value="Office Clerk"> Office Clerk </option>
+                      <option  value="Office Worker"> Office Worker </option>
+                      <option  value="Optician"> Optician </option>
+                      <option  value="Performance Artist"> Performance Artist </option>
+                      <option  value="Photographer"> Photographer </option>
+                      <option  value="Pilot"> Pilot </option>
+                      <option  value="Police Officer"> Police Officer </option>
+                      <option  value="Politician"> Politician </option>
+                      <option  value="Professor"> Professor </option>
+                      <option  value="Railroad Engineer"> Railroad Engineer </option>
+                      <option  value="Researcher"> Researcher </option>
+                      <option  value="Retail Employee"> Retail Employee </option>
+                      <option  value="Retiree"> Retiree </option>
+                      <option  value="Rigger"> Rigger </option>
+                      <option  value="Sailor"> Sailor </option>
+                      <option  value="Salesperson"> Salesperson </option>
+                      <option  value="Scientist"> Scientist </option>
+                      <option  value="Sea Captain"> Sea Captain </option>
+                      <option  value="Secretary"> Secretary </option>
+                      <option  value="Self-Employed"> Self-Employed </option>
+                      <option  value="Small Business Owner"> Small Business Owner </option>
+                      <option  value="Social Worker"> Social Worker </option>
+                      <option  value="Software Developer"> Software Developer </option>
+                      <option  value="Spokesperson"> Spokesperson </option>
+                      <option  value="Statistician"> Statistician </option>
+                      <option  value="Stay-At-Home Parent"> Stay-At-Home Parent </option>
+                      <option  value="Student"> Student </option>
+                      <option  value="Surgeon"> Surgeon </option>
+                      <option  value="Surveyor"> Surveyor </option>
+                      <option  value="Tailor"> Tailor </option>
+                      <option  value="Teacher"> Teacher </option>
+                      <option  value="Technician"> Technician </option>
+                      <option  value="Tradesperson"> Tradesperson </option>
+                      <option  value="Trainer"> Trainer </option>
+                      <option  value="Translator"> Translator </option>
+                      <option  value="Truck Driver"> Truck Driver </option>
+                      <option  value="Tutor"> Tutor </option>
+                      <option  value="Unemployed"> Unemployed </option>
+                      <option  value="Veterinarian"> Veterinarian </option>
+                      <option  value="Videographer"> Videographer </option>
+                      <option  value="Waiter"> Waiter </option>
+                      <option  value="Waste Collector"> Waste Collector </option>
+                      <option  value="Writer"> Writer </option>
+                      <option  value="Zoologist"> Zoologist </option>
+                    </select>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected="">Location</option>
+                          <option value="0">Business</option>
+                          <option value="1">CEO</option>
+                          <option value="2">Corporate</option>
+                          <option value="3">Corporation</option>
+                          <option value="3">Exclusive</option>
+                          <option value="3">Founder</option>
+                          <option value="3">CFO</option>
+                          <option value="3">COO</option>
+                          <option value="3">Home Owner</option>
+                          <option value="3">Mall</option>
+                          <option value="3">Mass</option>
+                          <option value="3">Mobile </option>
+                          <option value="3">Non Profit</option>
+                          <option value="3">Office</option>
+                          <option value="3">Online</option>
+                          <option value="3">Partners</option>
+                          <option value="3">Private</option>
+                          <option value="3">Retail and Consultants</option>
+                          <option value="3">Community Pledge</option>
+                          <option value="3">Store Front</option>
+                          <option value="3">Pop Up Shop</option>
+                          <option value="3">Vehicle</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                    <input type="text" class="form-control" placeholder="City">
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                    <select class="form-select" aria-label="Default select example">
+                          <option selected="">State</option>
+                          <option value="1">Alabama</option>
+                          <option value="2">Alaska</option>
+                          <option value="3">Arizona</option>
+                          <option value="4">Arkansas</option>
+                          <option value="5">California</option>
+                          <option value="6">Colorado</option>
+                          <option value="7">Connecticut</option>
+                          <option value="8">Delaware</option>
+                          <option value="9">Florida</option>
+                          <option value="10">Georgia</option>
+                          <option value="10">Hawaii</option>
+                          <option value="11">Idaho</option>
+                          <option value="12">Illinois</option>
+                          <option value="13">Indiana</option>
+                          <option value="14">Iowa</option>
+                          <option value="15">Kansas</option>
+                          <option value="16">Kentucky</option>
+                          <option value="17">Louisiana</option>
+                          <option value="18">Maine</option>
+                          <option value="19">Maryland</option>
+                          <option value="20">Massachusetts</option>
+                          <option value="21">Michigan</option>
+                          <option value="22">Minnesota</option>
+                          <option value="23">Mississippi</option>
+                          <option value="24">Missouri</option>
+                          <option value="25">Montana</option>
+                          <option value="26">Nebraska </option>
+                          <option value="27">Nevada</option>
+                          <option value="28">New Hampshire</option>
+                          <option value="29">New Jersey</option>
+                          <option value="30">New Mexico</option>
+                          <option value="31">New York</option>
+                          <option value="32">North Carolina</option>
+                          <option value="33">North Dakota</option>
+                          <option value="34">Ohio</option>
+                          <option value="35">Oklahoma</option>
+                          <option value="36">Oregon</option>
+                          <option value="37">Pennsylvania</option>
+                          <option value="38">Rhode Island</option>
+                          <option value="39">South Carolina</option>
+                          <option value="40">South Dakota</option>
+                          <option value="41">Tennessee</option>
+                          <option value="42">Texas</option>
+                          <option value="43">Utah</option>
+                          <option value="44">Vermont</option>
+                          <option value="45">Virginia</option>
+                          <option value="46">Washington</option>
+                          <option value="47">West Virginia</option>
+                          <option value="48">Wisconsin</option>
+                          <option value="49">Wyoming</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h4 class="mb-4 text-white text-center">I Pledge To Report Violent Crimes</h4>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected="">Race</option>
+                          <option value="2">Nubians</option>
+                          <option value="1">African</option>
+                          <option value="0">Native American</option>
+                          <option value="3">Afro-Americans</option>
+                          <option value="3">Asian</option>
+                          <option value="3">Hispanic</option>
+                          <option value="3">European</option>
+                          <option value="3">Pacific Isalnder</option>
+                          <option value="3">German</option>
+                          <option value="3">Middle Eastern</option>
+                          <option value="3">Casun</option>
+                          <option value="3">Mixed Ethnicity</option>
+                          <option value="3">Vietnamese</option>
+                          <option value="3">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected="">Gender</option>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                          <option value="3">Other</option>
+                        </select>
+                    </div>
+    
+                    <div class="col-lg-6 mb-4">
+                        <button class="btn  text-white py-2 px-5 w-100" style="background: #CC9B2D;">Search</button>
+                    </div>   
+                </div>
+                <p class="rounded mb-4 text-white py-2 px-3 my-5 " style="background: #CC9B2D;">Cards</p>
+            </div>
+            <div class="col-lg-7 mt-5">
+             <div class="d-flex position-relative justify-content-center">
+              <!-- Nav pills -->
+              <div class="element">
+                <button id="login_btn" class="btn active">Login</button>
+                <button id="register_btn" class="btn">Register</button>
+              </div>
+
+              <!-- Tab panes -->
+              <div class="tab-content rounded p-4 bg-light">
+                
+                <!-- Login Tab -->
+                <div id="login" class="login">
+                  <div class="text-center mb-5">
+                    <h1>Revolution 00</h1>
+                    <p>Register to Connect with Your Community</p>
+                  </div>
+
+                  <h2 class=" mb-3" >Login</h2>
+                  <div class="row">
+                    <div class="col-md-12 mb-4">
+                      <label class="form-label" style="font-size: 18px; font-weight: 600;">Email <sup class="text-danger ">*</sup></label>
+                      <input type="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                      <label class="form-label" style="font-size: 18px; font-weight: 600;">Password <sup class="text-danger">*</sup></label>
+                      <input type="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <a class="text-black" href="https://unpalliance.org/forgot-password">Forgot Password?</a>
+                    <div class="form-check ms-3 my-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label fw-bold" for="flexCheckDefault">
+                        Are you above 13 years old?
+                      </label>
+                    </div>
+                    <div class="text-center">
+                      <button class="btn  text-white py-3 px-5" style="background: #CC9B2D;">Submit</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Register Tab -->
+                <div id="regis" class="register" style="display:none">
+                  <form>
+                    <div class="text-center mb-5">
+                      <h1>Revolution 00</h1>
+                    </div>
+                    <div class="row text-center mb-5">
+                      <div class="col-md-3">
+                        <p>Starting at</p>
+                        <h1>$9.99</h1>
+                        <p>Monthly</p>
+                      </div>
+                      <div class="col-md-1 d-none d-lg-block">
+                        <div style="height: 100%; border-left: 2px solid #ccc;"></div>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="text-start">Includes:</p>
+                        <ul class="text-start">
+                          <li>40% off all Revolution products</li>
+                          <li>3 free property listings per agent</li>
+                          <li>Free standard CRM integrations</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <h2 class=" mb-4">Register</h2>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label" style="font-size: 18px;">First Name <sup class="text-danger">*</sup></label>
+                        <input type="text" class="form-control" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label" style="font-size: 18px;">Last Name <sup class="text-danger">*</sup></label>
+                        <input type="text" class="form-control" required>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <label class="form-label" style="font-size: 18px;">Phone Number <sup class="text-danger">*</sup></label>
+                        <input type="text" class="form-control" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label" style="font-size: 18px;">Email <sup class="text-danger">*</sup></label>
+                        <input type="email" class="form-control" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label" style="font-size: 18px;">Confirm Email <sup class="text-danger">*</sup></label>
+                        <input type="email" class="form-control" required>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <label class="form-label" style="font-size: 18px;">Password <sup class="text-danger">*</sup><span>( Length Should be greater than 6 )</span></label>
+                        <input type="password" class="form-control" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label" style="font-size: 18px;">Gender <sup class="text-danger">*</sup></label>
+                        <select class="form-select" required>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+
+                      <!-- <div class="col-lg-6 mb-4">
+                        <label  style="font-size: 20px; font-weight: 600;">Non Profit Organization Types<sup  style="color: red; font-size: 20px;">*</sup></label>
+                        <select  aria-label="Default select example" class="form-select">
+                          <option  value="" disabled="" selected=""> Please Select </option>
+                          <option  value="Charitable Organizations"> Charitable Organizations </option>
+                          <option  value="Advocacy Organizations"> Advocacy Organizations </option>
+                          <option value="Educational Organizations"> Educational Organizations </option>
+                          <option  value="Religious Organizations"> Religious Organizations </option>
+                          <option  value="Social Service Organizations"> Social Service Organizations </option>
+                          <option  value="Cultural and Arts Organizations"> Cultural and Arts Organizations </option>
+                          <option  value="Health and Medical Research Organizations"> Health and Medical Research Organizations </option>
+                          <option  value="Environmental Organizations"> Environmental Organizations </option>
+                          <option  value="Professional and Trade Associations"> Professional and Trade Associations </option>
+                          <option value="Public Charities"> Public Charities </option>
+                          <option  value="Private Foundations"> Private Foundations </option>
+                          <option  value="Cooperative Nonprofits (Co-ops)"> Cooperative Nonprofits (Co-ops) </option>
+                          <option value="International Nonprofits"> International Nonprofits </option>
+                          <option value="Volunteer Organizations"> Volunteer Organizations </option>
+                          <option  value="Donor-Advised Funds (DAFs)"> Donor-Advised Funds (DAFs) </option>
+                          <option  value="Human Rights Organizations"> Human Rights Organizations </option>
+                          <option  value="Businesses Supporting Non Profits"> Businesses Supporting Non Profits </option>
+                          <option  value="Residents Supporting Non Profits"> Residents Supporting Non Profits </option>
+                        </select>
+                      </div> -->
+
+                      <div class="col-lg-6 mb-4">
+                        <label style="font-size: 20px; font-weight: 600;">Business Type<sup  style="color: red; font-size: 20px;">*</sup></label>
+                       <select  aria-label="Default select example"  class="form-select mt-1">
+                      <option  selected="" value="" disabled="">Business Type</option>
+                      <option  value="Accountant"> Accountant </option>
+                      <option  value="Actor"> Actor </option>
+                      <option  value="Actuary"> Actuary </option>
+                      <option  value="Administrator"> Administrator </option>
+                      <option  value="Agent"> Agent </option>
+                      <option  value="Agricultural Worker"> Agricultural Worker </option>
+                      <option  value="Air Traffic Controller"> Air Traffic Controller </option>
+                      <option  value="Ambulance Officer"> Ambulance Officer </option>
+                      <option  value="Architect"> Architect </option>
+                      <option  value="Art Director"> Art Director </option>
+                      <option  value="Artist"> Artist </option>
+                      <option  value="Athlete"> Athlete </option>
+                      <option  value="Auditor"> Auditor </option>
+                      <option  value="Baker"> Baker </option>
+                      <option  value="Barista"> Barista </option>
+                      <option  value="Bartender"> Bartender </option>
+                      <option  value="Board Member"> Board Member </option>
+                      <option  value="Business Analyst"> Business Analyst </option>
+                      <option  value="Chef"> Chef </option>
+                      <option  value="Childcare Worker"> Childcare Worker </option>
+                      <option  value="Civil Servant"> Civil Servant </option>
+                      <option  value="Cleaner"> Cleaner </option>
+                      <option  value="Company Worker"> Company Worker </option>
+                      <option  value="Computer Scientist"> Computer Scientist </option>
+                      <option  value="Construction Worker"> Construction Worker </option>
+                      <option  value="Cook"> Cook </option><option  value="Copywriter"> Copywriter </option><option  value="Courier"> Courier </option>
+                      <option  value="Craftsperson"> Craftsperson </option>
+                      <option  value="Curator"> Curator </option>
+                      <option  value="Customer Service Representative"> Customer Service Representative </option><option  value="Dentist"> Dentist </option>
+                      <option  value="Designer"> Designer </option>
+                      <option  value="Doctor"> Doctor </option>
+                      <option  value="Driver"> Driver </option>
+                      <option  value="Economist"> Economist </option>
+                      <option  value="Electrician"> Electrician </option>
+                      <option  value="Entrepreneur"> Entrepreneur </option>
+                      <option  value="Equipment Operator"> Equipment Operator </option>
+                      <option  value="Executive Manager"> Executive Manager </option>
+                      <option  value="Farmer"> Farmer </option>
+                      <option  value="Film Maker"> Film Maker </option>
+                      <option  value="Firefighter"> Firefighter </option>
+                      <option  value="Fisherman"> Fisherman </option>
+                      <option  value="Fitness Trainer"> Fitness Trainer </option>
+                      <option  value="Flight Attendant"> Flight Attendant </option>
+                      <option  value="Florist"> Florist </option>
+                      <option  value="Freelancer"> Freelancer </option>
+                      <option  value="Gardener"> Gardener </option>
+                      <option  value="Hair Stylist"> Hair Stylist </option>
+                      <option  value="Home Care Aid"> Home Care Aid </option>
+                      <option  value="Homemaker"> Homemaker </option>
+                      <option  value="Hospitality Worker"> Hospitality Worker </option>
+                      <option  value="Housekeeper"> Housekeeper </option>
+                      <option  value="Information Technology Professional"> Information Technology Professional </option>
+                      <option  value="Investor"> Investor </option>
+                      <option  value="Journalist"> Journalist </option>
+                      <option  value="Laborer"> Laborer </option>
+                      <option  value="Lawyer"> Lawyer </option>
+                      <option  value="Librarian"> Librarian </option>
+                      <option  value="Maintenance Worker"> Maintenance Worker </option>
+                      <option  value="Manager"> Manager </option>
+                      <option  value="Manufacturing Worker"> Manufacturing Worker </option>
+                      <option  value="Marketing Professional"> Marketing Professional </option>
+                      <option  value="Mathematician"> Mathematician </option>
+                      <option  value="Mechanic"> Mechanic </option>
+                      <option  value="Medical Professional"> Medical Professional </option>
+                      <option  value="Merchant"> Merchant </option>
+                      <option  value="Midwife"> Midwife </option>
+                      <option  value="Military Personnel"> Military Personnel </option>
+                      <option  value="Musician"> Musician </option>
+                      <option  value="Nanny"> Nanny </option>
+                      <option  value="Nurse"> Nurse </option>
+                      <option  value="Office Clerk"> Office Clerk </option>
+                      <option  value="Office Worker"> Office Worker </option>
+                      <option  value="Optician"> Optician </option>
+                      <option  value="Performance Artist"> Performance Artist </option>
+                      <option  value="Photographer"> Photographer </option>
+                      <option  value="Pilot"> Pilot </option>
+                      <option  value="Police Officer"> Police Officer </option>
+                      <option  value="Politician"> Politician </option>
+                      <option  value="Professor"> Professor </option>
+                      <option  value="Railroad Engineer"> Railroad Engineer </option>
+                      <option  value="Researcher"> Researcher </option>
+                      <option  value="Retail Employee"> Retail Employee </option>
+                      <option  value="Retiree"> Retiree </option>
+                      <option  value="Rigger"> Rigger </option>
+                      <option  value="Sailor"> Sailor </option>
+                      <option  value="Salesperson"> Salesperson </option>
+                      <option  value="Scientist"> Scientist </option>
+                      <option  value="Sea Captain"> Sea Captain </option>
+                      <option  value="Secretary"> Secretary </option>
+                      <option  value="Self-Employed"> Self-Employed </option>
+                      <option  value="Small Business Owner"> Small Business Owner </option>
+                      <option  value="Social Worker"> Social Worker </option>
+                      <option  value="Software Developer"> Software Developer </option>
+                      <option  value="Spokesperson"> Spokesperson </option>
+                      <option  value="Statistician"> Statistician </option>
+                      <option  value="Stay-At-Home Parent"> Stay-At-Home Parent </option>
+                      <option  value="Student"> Student </option>
+                      <option  value="Surgeon"> Surgeon </option>
+                      <option  value="Surveyor"> Surveyor </option>
+                      <option  value="Tailor"> Tailor </option>
+                      <option  value="Teacher"> Teacher </option>
+                      <option  value="Technician"> Technician </option>
+                      <option  value="Tradesperson"> Tradesperson </option>
+                      <option  value="Trainer"> Trainer </option>
+                      <option  value="Translator"> Translator </option>
+                      <option  value="Truck Driver"> Truck Driver </option>
+                      <option  value="Tutor"> Tutor </option>
+                      <option  value="Unemployed"> Unemployed </option>
+                      <option  value="Veterinarian"> Veterinarian </option>
+                      <option  value="Videographer"> Videographer </option>
+                      <option  value="Waiter"> Waiter </option>
+                      <option  value="Waste Collector"> Waste Collector </option>
+                      <option  value="Writer"> Writer </option>
+                      <option  value="Zoologist"> Zoologist </option>
+                    </select>
+                    </div>
+
+                        <div  class="col-lg-6 mb-4">
+                          <label  style="font-size: 20px; font-weight: 600;">Race<sup  style="color: red; font-size: 20px;">*</sup></label>
+                          <select  aria-label="Default select example" formcontrolname="registerRaceType" class="form-select">
+                            <option  value="" disabled="" selected=""> Please Select </option>
+                            <option  value="Nubians"> Nubians </option><option  value="African"> African </option>
+                            <option  value="Native American"> Native American </option>
+                            <option  value="Afro-Americans"> Afro-Americans </option>
+                            <option  value="Asian"> Asian </option>
+                            <option  value="Hispanic"> Hispanic </option>
+                            <option  value="European"> European </option>
+                            <option  value="Pacific Islander"> Pacific Islander </option>
+                            <option  value="German"> German </option>
+                            <option  value="Middle Eastern"> Middle Eastern </option>
+                            <option  value="Casun"> Casun </option>
+                            <option  value="Mixed Ethnicity"> Mixed Ethnicity </option>
+                            <option  value="Vietnamese"> Vietnamese </option>
+                            <option  value="Other"> Other </option>
+                          </select>
+                        </div>
+
+                        <div  class="col-lg-6 mb-4">
+                          <label  style="font-size: 20px; font-weight: 600;">State<sup  style="color: red; font-size: 20px;">*</sup></label>
+                          <select  aria-label="Default select example" formcontrolname="registerStateType" class="form-select">
+                            <option  value="" disabled="" selected=""> Please Select </option>
+                            <option  value="Alabama"> Alabama </option>
+                            <option  value="Alaska"> Alaska </option>
+                            <option  value="Arizona"> Arizona </option>
+                            <option  value="Arkansas"> Arkansas </option>
+                            <option  value="California"> California </option>
+                            <option  value="Colorado"> Colorado </option>
+                            <option  value="Connecticut"> Connecticut </option>
+                            <option  value="Delaware"> Delaware </option>
+                            <option  value="Florida"> Florida </option>
+                            <option  value="Georgia"> Georgia </option>
+                            <option  value="Hawaii"> Hawaii </option>
+                            <option  value="Idaho"> Idaho </option>
+                            <option  value="Illinois"> Illinois </option>
+                            <option  value="Indiana"> Indiana </option>
+                            <option  value="Iowa"> Iowa </option>
+                            <option  value="Kansas"> Kansas </option>
+                            <option  value="Kentucky"> Kentucky </option>
+                            <option  value="Louisiana"> Louisiana </option>
+                            <option  value="Maine"> Maine </option>
+                            <option  value="Maryland"> Maryland </option>
+                            <option  value="Massachusetts"> Massachusetts </option>
+                            <option  value="Michigan"> Michigan </option>
+                            <option  value="Minnesota"> Minnesota </option>
+                            <option  value="Mississippi"> Mississippi </option>
+                            <option  value="Missouri"> Missouri </option>
+                            <option  value="Montana"> Montana </option>
+                            <option  value="Nebraska"> Nebraska </option>
+                            <option  value="Nevada"> Nevada </option>
+                            <option  value="New Hampshire"> New Hampshire </option>
+                            <option  value="New Jersey"> New Jersey </option>
+                            <option  value="New Mexico"> New Mexico </option>
+                            <option  value="New York"> New York </option>
+                            <option  value="North Carolina"> North Carolina </option>
+                            <option  value="North Dakota"> North Dakota </option>
+                            <option  value="Ohio"> Ohio </option>
+                            <option  value="Oklahoma"> Oklahoma </option>
+                            <option  value="Oregon"> Oregon </option>
+                            <option  value="Pennsylvania"> Pennsylvania </option>
+                            <option  value="Rhode Island"> Rhode Island </option>
+                            <option  value="South Carolina"> South Carolina </option>
+                            <option  value="South Dakota"> South Dakota </option>
+                            <option  value="Tennessee"> Tennessee </option>
+                            <option  value="Texas"> Texas </option>
+                            <option  value="Utah"> Utah </option>
+                            <option  value="Vermont"> Vermont </option><option  value="Virginia"> Virginia </option><option  value="Washington"> Washington </option>
+                            <option  value="West Virginia"> West Virginia </option>
+                            <option  value="Wisconsin"> Wisconsin </option>
+                            <option  value="Wyoming"> Wyoming </option>
+                            <option  value="Other"> Other </option>
+                          </select>
+                        </div>
+
+                        <div  class="col-lg-6 mb-4">
+                          <label  style="font-size: 20px; font-weight: 600;">Location<sup  style="color: red; font-size: 20px;">*</sup></label>
+                          <select  aria-label="Default select example" formcontrolname="registerLocation" class="form-select ">
+                            <option  value="" disabled="" selected=""> Please Select </option>
+                            <option  value="Business"> Business </option>
+                            <option  value="CEO"> CEO </option><option  value="Corporate"> Corporate </option>
+                            <option  value="Corporation"> Corporation </option>
+                            <option  value="Exclusive"> Exclusive </option>
+                            <option  value="Founder"> Founder </option>
+                            <option  value="CFO"> CFO </option>
+                            <option  value="COO"> COO </option>
+                            <option  value="Home Owner"> Home Owner </option>
+                            <option  value="Mall"> Mall </option>
+                            <option  value="Mass"> Mass </option>
+                            <option  value="Mobile"> Mobile </option>
+                            <option  value="Non Profit"> Non Profit </option>
+                            <option  value="Office"> Office </option>
+                            <option  value="Online"> Online </option>
+                            <option  value="Partners"> Partners </option>
+                            <option  value="Private"> Private </option>
+                            <option  value="Retail and Consultants"> Retail and Consultants </option><option  value="Community Pledge"> Community Pledge </option>
+                            <option  value="Store Front"> Store Front </option>
+                            <option  value="Pop Up Shop"> Pop Up Shop </option>
+                            <option  value="Vehicle"> Vehicle </option>
+                          </select>
+                        </div>
+
+                        <div  class="col-lg-6 mb-4">
+                          <label  style="font-size: 20px; font-weight: 600;">City<sup  style="color: red; font-size: 20px;">*</sup></label>
+                          <input  type="text"  required="" class="form-control "></div>
+
+                      <div class="col-md-12 mb-3">
+                        <label class="form-label" style="font-size: 18px;">Enter Referral Code </label>
+                        <input type="text" class="form-control" required>
+                      </div>
+                      <div class="col-md-12 mb-3">
+                        <div class="form-check ms-3 my-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label fw-bold" for="flexCheckDefault">
+                        Are you above 13 years old?
+                      </label>
+                    </div>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button class="btn  text-white py-3 px-5" style="background: #CC9B2D;">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+     </section>
+
+<!---END POWER SECTION---->
+
+
+<!---- CARDS SECTION--->
+<section id="profit">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="revolution_images" data-aos="fade-right">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(16).png" alt="Image">
+          <!-- <h3 class="text-center">Alleviating poverty</h3> -->
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="d-flex align-items-center">
-          <h4 class="text-light"><b>UMYO Community Categories</b></h4>
-          <a class="moreless-button13" href="#text13"
-            ><a class="moreless-button13" href="#text13"
-              ><span class="material-symbols-sharp ms-3">chevron_right</span></a
-            ></a
-          >
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="revolution_images" data-aos="fade-up">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(17).png" alt="Image">
+          <!-- <h3 class="text-center">Advancing education</h3> -->
         </div>
-        <div class="moretext13" style="display: none">
-          <div class="d-flex flex-column text-start footer-item">
-            <a class="btn-link" href="https://umyobizdfw.com" target="_blank"
-              >DFW connects</a
-            >
-            <a class="btn-link" href="https://umyomilitary.site" target="_blank"
-              >Military Connects</a
-            >
-            <a class="btn-link" href="https://umyotruckers.site" target="_blank"
-              >Truckers Connects</a
-            >
-            <a class="btn-link" href="https://umyoauto.site" target="_blank"
-              >Automotive Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyohighschool.site"
-              target="_blank"
-              >Students Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyosportscards.com"
-              target="_blank"
-              >Sports Athletes Connects</a
-            >
-            <a class="btn-link" href="https://umyorealtor.site" target="_blank"
-              >Realtors Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyorestaurant.com"
-              target="_blank"
-              >Restaurants Connects</a
-            >
-            <a class="btn-link" href="https://umyostylist.com" target="_blank"
-              >Hair & Beauty Connects</a
-            >
-            <a class="btn-link" href="https://umyonegocio.site" target="_blank"
-              >Hispanics Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://nubianbizcards.com"
-              target="_blank"
-              >Nubians Connects</a
-            >
-            <a class="btn-link" href="https://umyolawyer.site" target="_blank"
-              >Attorneys Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyoreligions.site"
-              target="_blank"
-              >Religions Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyoentertainment.site"
-              target="_blank"
-              >Entertainers Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyonightlife.site"
-              target="_blank"
-              >Night Life Connects</a
-            >
-          </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="revolution_images" data-aos="fade-left">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(18).png" alt="Image">
+          <!-- <h3 class="text-center">Disaster relief</h3> -->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="revolution_images" data-aos="fade-right">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(13).png" alt="Image">
+          <!-- <h3 class="text-center">Public policy</h3> -->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="revolution_images" data-aos="fade-up">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(11).png" alt="Image">
+          <!-- <h3 class="text-center">Changes in laws</h3> -->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="revolution_images" data-aos="fade-left">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(8).png" alt="Image">
+          <!-- <h3 class="text-center">Societal behavior</h3> -->
         </div>
       </div>
 
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="revolution_images" data-aos="fade-right">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(6).png" alt="Image">
+          <!-- <h3 class="text-center">Public policy</h3> -->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="revolution_images" data-aos="fade-up">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(10).png" alt="Image">
+          <!-- <h3 class="text-center">Changes in laws</h3> -->
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <div class="revolution_images" data-aos="fade-left">
+          <img class="img-fluid lozad" src="assets/img/Website_Images/1(12).png" alt="Image">
+          <!-- <h3 class="text-center">Societal behavior</h3> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="packages">
+  <div class="container">
+    <h3>Revolutuion 00 Connects Packages, Products and Platforms</h3>
+    <div class="row justify-content-center">
       <div class="col-lg-3 col-md-6">
-        <div class="d-flex align-items-center">
-          <h4 class="text-light"><b>UMYO Platforms</b></h4>
-          <a class="moreless-button14" href="#text14"
-            ><span class="material-symbols-sharp ms-3">chevron_right</span></a
-          >
+        <div class="membership-cards h-100" data-aos="zoom-in">
+          <div class="card">
+          <h2>$75.00 weekly</h2>
+          <ul>
+            <li>120 Unique Video Cards</li>
+            <li>Virtual Touch Screen Coupon</li>
+            <li>choose three platform you want free access to - choose three paid platforms you want free access</li>
+          </ul>
         </div>
-        <div class="moretext14" style="display: none">
-          <div class="d-flex flex-column text-start footer-item">
-            <a
-              class="btn-link"
-              href="https://live.umyoconvo.site"
-              target="_blank"
-              >UMYO Conferences</a
-            >
-            <a class="btn-link" href="https://umyomusic.com" target="_blank"
-              >UMYO Music</a
-            >
-            <a class="btn-link" href="https://umyopopup.site" target="_blank"
-              >UMYO Market</a
-            >
-            <a class="btn-link" href="https://umyohost.com" target="_blank"
-              >UMYO Hosting</a
-            >
-            <a class="btn-link" href="https://uchatyes.com" target="_blank"
-              >UMYO Chatgpt</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyotweets.com/guest"
-              target="_blank"
-              >UMYO Tweets</a
-            >
-            <a class="btn-link" href="https://cpswipe.com" target="_blank"
-              >UMYO Date</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO Tik Tok</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyonetwork.com/network"
-              target="_blank"
-              >UMYO Connects</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO Mail</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO WhatsApp</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO Games</a
-            >
-            <a class="btn-link" href="https://umyotube.com" target="_blank"
-              >UMYO Tube</a
-            >
-            <a class="btn-link" href="https://umyosms.com" target="_blank"
-              >UMYO SMS</a
-            >
-            <a class="btn-link" href="https://vibetalktv.com" target="_blank"
-              >UMYO PPV</a
-            >
-            <a class="btn-link" href="https://umyoeducator.com" target="_blank"
-              >UMYO LMS</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO VPN</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyobiz.com/membership-packages/"
-              target="_blank"
-              >UMYO Store</a
-            >
-            <a
-              class="btn-link"
-              href="https://umyobiz.com/network/"
-              target="_blank"
-              >UMYO Profile</a
-            >
-            <a
-              class="btn-link"
-              href="https://lieutenantsacademydfw.org/"
-              target="_blank"
-              >UMYO Ambassadors</a
-            >
-            <a class="btn-link" href="https://umyoauthor.site" target="_blank"
-              >UMYO Authors</a
-            >
-          </div>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6">
-        <div class="footer-item">
-          <h4 class="text-light mb-3">LET'S CONNECT</h4>
-          <p class="mb-4">
-            Subscribe to stay up to date on all the latest UMYO features,
-            products, stories, and more. You can also contact us at
-            contact@umyo.com.
-          </p>
-          <div class="position-relative mx-auto">
-            <input
-              class="form-control border-0 py-2 w-100"
-              type="text"
-              placeholder="Enter Your Email"
-            />
-            <button
-              type="submit"
-              class="btn btn-info border-0 border-secondary position-absolute py-2 text-white"
-              style="top: 0; right: 0"
-            >
-              Sent
-            </button>
+        <div class="membership-cards h-100" data-aos="zoom-in">
+        <div class="card">
+          <h2>$50 weekly</h2>
+          <ul>
+            <li>QR Code for Customer Data Collection</li>
+            <li>90 Cards</li>
+            <li>choose two paid platform you want free access</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="membership-cards h-100" data-aos="zoom-in">
+        <div class="card">
+          <h2>$27.50 weekly</h2>
+          <ul>
+            <li>60 Unique Cards</li>
+            <li>QR Code at Business location</li>
+            <li>choose one paid platform you want free access</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="membership-cards h-100" data-aos="zoom-in">
+        <div class="card">
+          <h2>$12.50 weekly</h2>
+          <ul>
+            <li>20 Unique Cards</li>
+            <li>Branded By Community</li>
+            <li class="fw-bold">(residential & business packages)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-12">
+        <a href="#"  class="btn btn-hover-blue border-dark gap-2 mt-4 mx-auto" data-aos="fade-up">
+           Packages
+            </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!----END CARDS SECTION--->
+
+<section class="contact overflow-hidden">
+  <div class="container">
+        <h1 class="text-center mb-5">Contact Us</h1>
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="get px-3">
+              <h5>Get in Touch</h5>
+            <div class="form">
+              <input type="text" name="" id="" placeholder="Name"><br>
+              <input type="email" name="" id="" placeholder="Email"><br>
+              <textarea name="" id="" cols="30" rows="7" placeholder="Message"></textarea><br>
+             <div class="select d-flex justify-content-between">
+              <input type="file" name="file" id="file" class="inputfile">
+              <label  for="file"><i class="fa-solid fa-paperclip "></i>Attach Files</label>
+                            <small>Attachments(0)</small>
+             </div>
+              <button type="submit">SEND MESSAGE</button><br>
+              <p class="button-para">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy </a>and <a href="#">Terms of Service</a> apply.</p>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+           <div class="better px-3">
+            <h5>Better yet, see us in person!</h5>
+            <p>Get the quickest response by reaching out to us on our social media platforms! You can also contact us directly via phone call or text message. We're excited to engage with you and hear your thoughts!</p>
+            <p>Drop us a message, and we'll make it a priority to get back to you at the earliest convenience.</p>
+          <button class="whatsapp" type="button"><img src="img/new-icon-removebg-preview.png" alt=""><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 256 258"><defs><linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#1faf38"/><stop offset="100%" stop-color="#60d669"/></linearGradient><linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#f9f9f9"/><stop offset="100%" stop-color="#fff"/></linearGradient></defs><path fill="url(#logosWhatsappIcon0)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"/><path fill="url(#logosWhatsappIcon1)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"/><path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64" stroke-width="6.5" stroke="#fff"/></svg> Message us on WhatsApp</button>
+          <h4 class="my-4">Revolution00</h4>
+          <a class="text-decoration-none" href="#">682-231-2366</a>
+          <!-- <a href="#">cmoore@NBA.com</a> -->
+          <h4 class="my-4" class="hrs">Hours</h4>
+          <select name="" class="timing">
+            <option value="">Open 9:00 AM - 9:00 PM</option>
+            <option value="">Open 9:00 AM - 9:00 PM</option>
+            <option value="">Open 9:00 AM - 9:00 PM</option>
+            <option value="">Open 9:00 AM - 9:00 PM</option>
+            <option value="">Open 9:00 AM - 9:00 PM</option>
+            <option value="">Open 9:00 AM - 9:00 PM</option>
+            <option value="">Open 9:00 AM - 9:00 PM</option>
+          </select>
+           </div>
           </div>
         </div>
-        <div class="d-flex pt-3">
-          <a
-            class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a
-            class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            class="btn btn-outline-secondary me-2 btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-youtube"></i
-          ></a>
-          <a
-            class="btn btn-outline-secondary btn-md-square rounded-circle"
-            href=""
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
       </div>
-    </div>
-    <div class="col-md-12 text-center text-md-start my-5 mb-md-0">
-      <p class="text-white text-center">
-        <a href="#" style="text-decoration: none; color: white"
-          ><i class="fas fa-copyright text-light me-2"></i> 2023 UMYO</a
-        >, All right reserved.
-      </p>
-    </div>
-  </div>
-</div>
-<!-- Footer Start -->
+</section>
 
-<div
-  class="modal"
-  tabindex="-1"
-  role="dialog"
-  [ngClass]="{ show: showPolicyModal, 'd-block': showPolicyModal }"
-  style="background-color: rgb(0, 0, 0, 0.8)"
->
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
-        <button type="button" class="close" (click)="closePolicyModal()">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div>
-          <pre
-            style="
-              max-height: 70vh;
-              white-space: pre-wrap;
-              overflow-x: hidden;
-              overflow-y: scroll;
-            "
-          >
-              Privacy Policy
-  
-  Last modified: January 10, 2022
-  
-  Who We Are
-  
-  Welcome! We are UMYO DFW  Inc., a Texas corporation, or as we prefer to be known, "UMYO DFW ,"
-  "we," "our," or "us." Our mission is to revolutionize how the world connects! We provide
-  products,services, and technologies ("Products") allowing users ("Users") to organize,
-  display, and share information with their contacts through our software, mobile
-  application, and website (collectively,"Platform").
-  
-  We are committed to safeguarding our User’s privacy in accordance with this Privacy Policy
-  ("Policy").Please carefully read this Policy to comprehend our policies and practices
-  concerning your information and how we handle it. If you disagree with our policies and
-  practices, please refrain from using our Platform or purchasing our Products.
-  
-  How to Contact Us
-  
-  If you have any questions about our practices or this Policy, please reach out to us via
-  email at data-privacy@UMYO DFW .com or by mail at UMYO DFW  Inc., Attn: Data Privacy
-  Officer, 1709 Martin Luther King Blvd Dallas, Texas, 75215
-  
-  Application of this Policy
-  
-  Upon accessing our Platform or utilizing our Products, you become a User and agree to
-  this Policy, our Data Processing Addendum, and our Terms of Service and Sale
-  (collectively, "Policies").
-  
-  This Policy delineates the types of information we may collect from you or that you may
-  provide to us when interacting with our Platform or Products. It further outlines
-  our practices for collecting,
-  using, maintaining, protecting, and disclosing that information.
-  
-  Categories of Information We Collect or Receive
-  
-  Our Platform and Products empower Users to customize their pages and profiles by
-  uploading and linking content and information, shareable with other Users or third
-  parties. The information provided by a User on the Platform can be extensive. We
-  may receive information directly from you or automatically as you access, use, or
-  interact with our Platform or Products.
-  
-  The categories of information we collect or receive include:
-  
-  - **Identity or Contact Information:** Your first name, last name, or similar
-   identifier title, postal addresses, unique personal identifiers, online
-  identifiers, IP addresses, email addresses, social media accounts or identifiers
-  (e.g., username), age, date of birth, or other similar contact information
-  or forms of identification.
-  
-  - **Transaction Information:** Details about payments to and from you, as well
-   as other details of subscriptions and services you have purchased from us.
-  
-  - **Content Data Information:** Any content you post on the Platform, such as
-    pictures, third-party links, documents, writings, preference settings, messages,
-    comments, and other contributions, along with metadata about them.
-  
-  - **Marketing and Communications Information:** Your preferences for receiving
-    marketing communications from us and your communication preferences.
-    Correspondence content, if any, may be retained.
-  
-  - **Behavioral and Usage Information:** Details of your access, use, or 
-    interaction with our Platform or Products, including traffic data, location
-    data, logs, and other communication data.
-  
-  - **Technical Information:** IP address, browser type and version, time zone
-    setting and location, browser plug-in types and versions, operating system
-    and platform, and other technology on the devices you use to access our Platform.
-  
-  - **Aggregated Data or Information:** We may collect, use, and share aggregated 
-    data or information such as statistical or demographic data derived from your 
-    Personal Information.
-  
-  Because Users can upload various information on our Platform, we may also receive
-  sensitive information, such as your date of birth, racial or ethnic origin, sex,
-  political views, affiliations, veteran or military status, religious or philosophical
-  views, or similar information. We do not mandate the provision of Sensitive Information,
-  but such information may be indirectly collected by us through our hosting of the Platform.
-  
-  Our Platform also allows you to upload and share information that is not Personal Information
-  or Sensitive
-  Information, such as your hobbies, pictures, links, descriptions, messages, and comments
-  ("Other Information"). As our Platform permits you to choose the Information associated
-  with your account, we may link Other Information to Personal or Sensitive Information 
-  aboutyou.
-  
-  For more information on our use of cookies, logs, web beacons, and other tracking
-  technologies,refer to the "Third-Party Sources, Cookies, and Other Tracking
-  Technologies" section below.
-  
-  Third-Party Sources, Cookies, and Other Tracking Technologies
-  
-  We may also collect or receive Personal Information from third-party sources, and the Platform
-  may include links to other sites. Any Information you provide on linked pages is submitted
-  directly to the respective third-party and is subject to their terms and policies. This 
-  Policy does not extend to such linked third-party sites, and we disclaim responsibility 
-  for the content, privacy, security practices, and policies of these external sites or any
-  other sites linked to or from our Platform.
-  
-  Certain Information on the Platform may be served by third parties, including advertisers,
-  ad networks and servers, content providers, and application providers. These third parties
-  may utilize cookies independently or in conjunction with web beacons or other tracking
-  technologies to collect Information about you. The Information they gather may be linked
-  to your Personal Information or Sensitive Information, or they may collect Information,
-  including Personal Information, about your activities across different websites and online
-  services.This Information may be used to provide you with interest-based advertising or other
-  targeted content. We do not oversee third-party tracking technologies or their usage. For 
-  inquiries regarding advertisements or other targeted content, please directly contact the 
-  responsible provider.
-  
-  We may collect Information regarding your Platform usage, encompassing the pages and links
-  viewed, time spent on our Platform, demographic data such as server locations, connection
-  speed, and other non-identifying Information. Like most online services, we employ cookies
-  , log files, clear GIFs, tracking pixels, web beacons, and other technologies that may collect
-  Personal Information.
-  
-  Upon visiting our Platform, one or more "cookies" – small data files – may be sent to your
-  device to uniquely identify your browser, enabling us to enhance your navigation experience.
-  Cookies may convey Information about your Platform or Products usage to provide you with a 
-  more personalized experience. Persistent cookies remain on your device after closing your 
-  browser, allowing your browser to use them in subsequent visits. These can be removed by 
-  following your web browser's instructions. Session cookies are temporary and vanish after 
-  closing your browser.Our Platform may utilize the following types of cookies, logs, web
-  beacons, and other tracking 
-   technology:
-  
-  - **Essential Cookies:** Necessary to provide you with services available on our Platform, 
-  facilitating actions like logging in to secure areas and expediting Content loading.
-  
-  - **Functionality Cookies:** Allow us to remember your choices, such as login information, 
-    providing a more personalized experience.
-  
-  - **Analytics and Performance Cookies:** Collect Information about traffic to our Platform 
-    and Users' interactions to enhance Platform efficiency and gather aggregated, anonymous
-    demographic data.
-    Third-party tools and services may be utilized for this purpose.
-  
-  - **Targeted and Advertising Cookies:** Track browsing habits to show relevant content.
-   Information about browsing history may group Users with similar interests, enabling
-    third-parties to display ads matching those interests.
-  
-  - **Social Media Cookies:** Activate when sharing or engaging with Content on social
-    media platforms,helping track conversions, optimize ads, and build targeted audiences.
-  
-  - **Log Files:** Automatically reported by your browser, recording information such
-   as web requests, IP addresses, browser types, and pages viewed. Servers automatically
-  capture this data whenever you access our Platform.
-  
-  ### How Can I Disable Cookies?
-  
-  You can typically configure your web browser to block all cookies or prompt you when
-  a cookie is being sent.To do this, follow the instructions provided by your browser,
-  usually located within the “settings,” “help,” or “tools” function. Many browsers
-  are set to accept cookies by default until you modify your settings.
-  
-  Should you choose not to accept our cookies, it may result in some inconvenience
-  during your use of our Platform, and certain features may not operate correctly.
-  For instance, we may be unable to recognize your device, necessitating you to log
-  in each time you visit our Platform.
-  
-  For more details on cookies, including viewing and managing cookies on your device, 
-  visit www.allaboutcookies.org or www.whatarecookies.com.
-  
-  As of now, we do not acknowledge web browsers’ “do not track” signals that offer an
-  opt-out method from collecting Information about User activities on the Platform.
-  If we adopt this practice in the future, relevant information will be provided in
-  this Policy.
-  
-  ### How We Use Your Information
-  
-  We utilize the Information collected about you or provided by you, including any
-  Personal Information:
-  
-  - To present our Platform and enhance its contents, providing a personalized
-    and improved experience for Users.
-  - To furnish information, products, or services requested by you, responding
-    to inquiries or facilitating purchases 
-    and deliveries.
-  - To enable your participation in interactive features, allowing the sharing
-    of Personal Information with other Users.
-  - To send notices regarding your accounts, pages, or subscriptions, including
-    expiry and renewal notifications.
-  - To fulfill our contractual obligations and enforce rights, including
-    billing and collection.
-  - To inform you of changes to our Platform, Products, or services.
-  - To uphold the safety, security, and integrity of the Platform, Products,
-    databases, and technological assets.
-  - For testing, research, analysis, and product development, enhancing and
-     evolving our Platform and Products.
-  - To respond to law enforcement requests and comply with applicable law,
-    court orders, or governmental regulations.
-  - In any other manner as described when providing the Information or as
-     outlined in applicable law, including the CCPA and GDPR.
-  - For any other purpose with your consent.
-  
-  ### Disclosure of Your Information
-  
-  We may share your Information, including Personal Information, by disclosing
-  it to third parties for the provision of our Platform, its Content, and security,
-  or for marketing and selling our Platform or Products. 
-  These disclosures occur under written contracts specifying purposes,
-  confidentiality requirements, and prohibiting use for any purpose other than contract
-   performance. We do not sell your Personal Information.
-  
-  For Users with an account linked to a “UMYO DFW  for Teams” subscription, the administrator 
-  associated with your “UMYO DFW  for Teams” account may manage, access, view, or store your
-  Information, including Personal Information. We do not control or limit your account's
-  accessibility, and we are not responsible for the administrator's access, disclosure, or
-  processing of your Information.
-  
-  Within the last twelve (12) months, we have disclosed Information, as described in this Policy:
-  
-  - In connection with your use of our Platform or Products, enabling the sharing of Personal
-    Information with other Users.
-  - To our service providers, affiliates, agents, subprocessors, advertising partners, 
-    internet service providers, data analytics providers, and related third parties, supporting
-    Platform and Product functions.
-  - To our processors and subprocessors, engaging specific service providers to assist in
-     Platform and Product support.
-  
-  **List of Subprocessors:**
-  
-  - **Google LLC:** Cloud Service Provider (United States)
-  - **Stripe:** Payment Processor (United States)
-  - **Hubspot:** Marketing, Sales (CRM), and Support Software Platform (United States)
-  - **Chili Piper:** Scheduling Software (United States)
-  - **Zapier:** Workflow Integration Software (United States)
-  - **Slack:** Messaging and Communication Platform (United States)
-  - **Amplitude:** Product and Data Analytics (United States)
-  - **Shopify:** Ecommerce Platform (Canada and jurisdictions per Shopify’s policies)
-  - **Cloudflare Inc.:** Web Traffic Optimization and Distribution Service (United States)
-  - **Covve Visual Network Limited:** Physical business card scanner API (Cyprus)
-  - **Rollbar:** Error Monitoring (United States)
-  - **Heroku:** Cloud Hosting Provider (United States)
-  - **AWS:** Cloud Hosting Provider (United States)
-  - **Fivetran:** ETL Tooling (United States)
-  - **Looker:** BI (Business Intelligence) tooling (United States)
-  - **Cloudinary:** Image hosting API (United States)
-  - **Newrelic:** APM (Application Performance Monitoring) (United States)
-  - **Passsource:** API (United States)
-  - **Klaviyo:** Marketing automation (United States)
-  
-  **User Data Privacy Policy**
-  
-  **Effective Date: [Date]**
-  
-  Welcome to UMYO DFW ! This User Data Privacy Policy ("Policy") outlines how we collect,
-  use, disclose, and protect your information when you use our platform, products, and
-  services ("Platform" or "Products"). Please read this Policy carefully to understand
-  our practices regarding your information and how we will treat it.
-  
-  ### 1. **How Can I Disable Cookies?**
-  
-  You have the ability to configure your web browser to block cookies or prompt
-  you when a cookie is being sent. Refer to your browser's settings, usually
-  located in the "settings," "help," or "tools" function. Please note that
-  if you choose to disable our cookies, it may impact your experience on the Platform,
-  and certain features may not operate correctly. For more information on cookies,
-  including how tomanage them, visit [www.allaboutcookies.org](www.allaboutcookies.org)
-  or [www.whatarecookies.com](www.whatarecookies.com).
-  
-  As of now, we do not acknowledge "do not track" signals from web browsers. If this
-  changes in the future, we will provide relevant information in this Policy.
-  
-  ### 2. **How We Use Your Information**
-  
-  We use the information collected or provided by you for various purposes, including
-  but not limited to:
-  
-  - Presenting and enhancing the Platform.
-  - Providing information, products, or services as requested.
-  - Enabling participation in interactive features and sharing information with other Users.
-  - Sending notices regarding accounts, pages, or subscriptions.
-  - Fulfilling contractual obligations, including billing and collection.
-  - Informing you of changes to our Platform, Products, or services.
-  - Upholding the safety, security, and integrity of our Platform and Products.
-  - Conducting testing, research, analysis, and product development.
-  - Responding to law enforcement requests and complying with applicable laws.
-  
-  ### 3. **Disclosure of Your Information**
-  
-  We may share your information, including Personal Information, with third parties for various 
-  purposes,such as providing our Platform, securing it, and marketing or selling our Products.
-  These disclosures are governed by written contracts specifying purposes and confidentiality
-  requirements. We do not sell your Personal Information.
-  
-  **List of Subprocessors:**
-  - Google LLC (Cloud Service Provider, United States)
-  - Stripe (Payment Processor, United States)
-  - Hubspot (Marketing, Sales, and Support Software Platform, United States)
-  - Chili Piper (Scheduling Software, United States)
-  - Zapier (Workflow Integration Software, United States)
-  - Slack (Messaging and Communication Platform, United States)
-  - Amplitude (Product and Data Analytics, United States)
-  - Shopify (Ecommerce Platform, Canada and jurisdictions per Shopify’s policies)
-  - Cloudflare Inc. (Web Traffic Optimization and Distribution Service, United States)
-  - Covve Visual Network Limited (Physical business card scanner API, Cyprus)
-  - Rollbar (Error Monitoring, United States)
-  - Heroku (Cloud Hosting Provider, United States)
-  - AWS (Cloud Hosting Provider, United States)
-  - Fivetran (ETL Tooling, United States)
-  - Looker (BI tooling, United States)
-  - Cloudinary (Image hosting API, United States)
-  - Newrelic (APM, United States)
-  - Passsource (API, United States)
-  - Klaviyo (Marketing automation, United States)
-  
-  ### 4. **Where We Store Your Information**
-  
-  We maintain our Platform in the United States, and your information may be stored,
-  processed, and accessed in the U.S. or elsewhere by us, our employees, contractors,
-  and third parties. By using our Platform and providing your information, you consent
-  to the export of Personal Information to the United States, understanding that U.S.
-  laws may differ from those in your country.
-  
-  ### 5. **How Long We Store Your Information**
-  
-  We retain your information for as long as reasonably necessary for the purposes
-  outlined in this Policy, unless a longer retention period is required by law. We
-  may keep your information for business interests, audits, legal compliance, dispute
-  resolution, and agreement enforcement.
-  
-  ### 6. **Your Rights Related to Your Personal Information**
-  
-  You may have rights under laws such as the CCPA and GDPR. These rights may include:
-  
-  - Requesting access to your Personal Information.
-  - Right to Know (CCPA) – Receiving information about the collection and use of your
-     Personal Information.
-  - Requesting correction of your Personal Information.
-  - Requesting erasure of your Personal Information.
-  - Objecting to processing or requesting restriction of processing.
-  - Requesting the transfer of your Personal Information.
-  - Withdrawing consent.
-  
-  ### 7. **How to Exercise Your Rights**
-  
-  To exercise your rights or inquire about your Personal Information, contact us at 
-  [data-privacy@UMYO DFW .com] (mailto:data-privacy@UMYO DFW .com) or by mail at
-  UMYO DFW  Inc., Attn: Data Privacy Officer, [Address].
-  
-  We will confirm receipt of your request within ten (10) business days and aim to
-  respond within one month, unless the request is complex. If applicable, any disclosures
-  will cover the 12-month period preceding the request.
-  
-  ### 8. **Non-Discrimination**
-  
-  We do not discriminate against you for exercising your rights. We will not deny goods or
-  services, charge different prices, or provide different quality levels based on your
-  exercise of privacy rights, unless permitted by law.
-  
-  ### 9. **How We Protect Your Information**
-  
-  We implement measures to secure your information from loss and unauthorized access.
-  All information is stored on secure servers, and payment transactions are encrypted
-  using SSL technology.
-  
-  ### 10. **Children Under the Age of 16**
-  
-  Our Platform is not intended for children under 16. We do not knowingly collect
-  Personal Information from children under 16. If you are under 16, please do not
-  use the Platform or provide any information. If we learn of such information, we
-  will delete it promptly.
-  
-  ### 11. **Opting Out of Sale of Personal Information**
-  
-  We do not sell Personal Information. If you are 16 or older, you can direct us not
-  to sell your information at any time by contacting us at 
-  [data-privacy@UMYO DFW .com](mailto:data-privacy@UMYO DFW .com) or by mail at
-  UMYO DFW  Inc., Attn: Data Privacy Officer, 1709 MLK BLVD Dallas, Texas 75215
-  
-  **Changes to Our Privacy Policy at UMYO DFW **
-  
-  You acknowledge that this Policy is subject to modification by us at any time,
-  without prior written notice,and solely at our discretion. Any revisions to this
-  Policy will take effect on the "Last Updated Date" or "Last Revised Date"
-  indicated on the Platform. Therefore, it is advisable to review our Policies before
-  making any purchases or using our Products, Platform, or associated services. Your
-  ongoing use of the Platform or any Product following the "Last Updated Date" or "Last
-  Revised Date" will signify your acceptance and agreement to these modifications
-  
-            </pre
-          >
-        </div>
-      </div>
-    </div>
+<footer>
+  <div class="container">
+    <h3>Own Your Platform. Build Your Future. Join the Revolution.</h3>
+    <h6>A gated digital community created for us — where culture thrives, wealth circulates, and power is shared.</h6>
   </div>
-</div>
-
-<div
-  class="modal"
-  tabindex="-1"
-  role="dialog"
-  [ngClass]="{ show: showRefundModal, 'd-block': showRefundModal }"
-  style="background-color: rgb(0, 0, 0, 0.8)"
->
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="refundModalLabel">Refund Policy</h5>
-        <button type="button" class="close" (click)="closeRefundModal()">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div>
-          <pre
-            style="
-              max-height: 70vh;
-              white-space: pre-wrap;
-              overflow-y: scroll;
-              overflow-x: hidden;
-            "
-          >
-              **Refund Policy at UMYO DFW **
-  
-  **Returns for Defective Items:**
-  Our steadfast commitment to delivering high-quality custom items remains unwavering. In the
-  event that you receive a defective or damaged item, kindly notify us within 30 days of
-  receipt. We will promptly offer a replacement or a full refund for the returned items.
-  
-  **Return for Customization Issues:**
-  If the item received does not align with the agreed-upon customization specifications,
-  please inform us within 30 days of receipt. We will collaborate with you to replace
-  and reprint it correctly to your satisfaction. In some cases, we may request the return
-  of the item to our office to address any issues that occurred during the printing process.
-  
-  **No Returns for Change of Mind:**
-  Due to the personalized nature of our custom items, returns or exchanges stemming from a
-  change of mind are not feasible. We encourage you to thoroughly review all customization
-  details before confirming your order. This enables us to promptly commence crafting your
-  item, ensuring a smooth and efficient process.
-  
-  **Communication on Specifications:**
-  To expedite the process and ensure your custom item exceeds expectations, we rely on
-  comprehensive and precise specifications during the ordering process. Your timely
-  and detailed communication allows us to swiftly proceed with crafting your custom
-  piece, reflecting our commitment to your satisfaction.
-  
-  If you believe your order requires additional details, please notify us promptly.
-  As the fastest custom NFC option on the market, early communication enhances our
-  ability to address any potential issues.
-  
-  **Cancellation Policy:**
-  You can cancel your order within 1-2 business days of purchase, provided we haven't
-  initiated the creation of your custom item. If cancellation is requested after this
-  timeframe, a 10% cancellation fee will be applied to cover the cost of materials and
-  work invested in your unique item. This fee will be deducted from your refund.
-  
-            </pre
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div
-  class="modal"
-  tabindex="-1"
-  role="dialog"
-  [ngClass]="{ show: showTermsModal, 'd-block': showTermsModal }"
-  style="background-color: rgb(0, 0, 0, 0.8)"
->
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="termsModalLabel">Terms Of Service</h5>
-        <button
-          type="button"
-          class="close"
-          (click)="closeTermsModal()"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div>
-          <pre
-            style="
-              max-height: 70vh;
-              white-space: pre-wrap;
-              overflow-y: scroll;
-              overflow-x: hidden;
-            "
-          >
-              Welcome to UMYO DFW !
-  
-  **Terms of Service and Sale - UMYO DFW **
-  
-  **Last Revised: December 22, 2023**
-  
-  **Terms of Sale and Service**
-  
-  **Introduction**
-  
-  Welcome! We are UMYO DFW , a Delaware corporation, known as "we," "our," or "us." Our mission
-  is to redefine how the world connects. We provide Products, Services, and Technologies
-  ("Products") that enable Users ("Users") to organize, display, and share information
-  with others and third parties ("Services") through our software, mobile application, and
-  website (collectively, "Platform").
-  
-  By submitting an order through the Platform or otherwise ("Order"), you (whether on behalf
-  of yourself or an entity you represent) are entering into these Terms of Sale and Service
-  ("Terms") with us. You agree to be bound by these Terms and other conditions governing the
-  use of our Services, Platform, or the Products offered or sold, such as our Privacy Policy
-  and Data Processing Addendum (collectively, "Policies"). If you are under 16, you may not
-  use our Platform or Services without parental or guardian permission.
-  
-  If you disagree with these Terms or our Policies, do not submit an Order or use our
-  Platform, Services, or Products.
-  
-  By agreeing, you confirm that you have the authority to bind yourself and/or the entity
-  or company you represent. We may periodically modify these Terms or any Policies at our
-  discretion, with the "Last Revised" date indicating such changes.
-  
-  **Purchase of Products**
-  
-  (a) When you place an Order, you make an offer to purchase Products according to the
-  Order terms, these Terms, and our Policies. An Order is effective upon our acceptance
-  or rejection. We may accept or reject Orders at our discretion. Product prices (the
-  "Product Purchase Price") are as stated in the Order or, if not in an Order, as
-  advertised on our Platform when we accept the Order. Prices exclude taxes; you are
-  responsible for such charges.
-  
-  (b) We select shipment methods and carriers unless specified in the Order. Partial
-  shipments are possible at our discretion. You pay for shipped units, including shipping
-  and insurance costs unless otherwise stated in the Order.
-  
-  (c) Products will be delivered to the specified address ("Delivery Point") within a
-  reasonable time. Custom Products may have longer processing times. Delivery times are
-  estimates, and we are not liable for delays. Title and risk pass upon delivery. If you
-  fail to accept delivery, risk passes to you, and we may store the Products at your cost.
-  
-  (d) Inspect Products within ten (10) days of delivery ("Inspection Period"). Accept or reject
-  Nonconforming Products (materially different or defective) during the Inspection Period. If
-  notified of Nonconforming Products, ship them to us, and we may replace them.
-  
-  (e) We warrant Products against significant defects for 1 year ("Warranty Period"). The
-  warranty doesn't apply if Products are misused, altered, or used with unauthorized hardware.
-  Except for this warranty, we provide no other warranties.
-  
-  (f) We are not liable for a breach of the warranty unless you give written notice within
-  10 days of discovering the defect, allow us to examine the Products, and we verify the
-  Nonconforming Products. Remedies for Nonconforming Products are repair, replacement,
-  credit, or refund at our discretion.
-  
-  (g) Your sole remedy for Nonconforming Products is as outlined in Section 2(f).
-  
-  (h) Changes to Terms in Orders are void unless expressly stated.
-  
-  **Services**
-  
-  (a) To use our Services, register and create an account ("Account"). Our Services allow
-  Users to create, design, maintain, and share profiles or pages ("Pages"). Subscription
-  Levels offer different access levels.
-  
-  (b) During the Subscription Term, you are granted licensed seats for Services based on
-  an accepted Order. Users are responsible for complying with these Terms and our Policies.
-  Some Products may require an Account Administrator.
-  
-  (c) We may establish policies and practices for the Platform, including deleting or
-  removing Content, terminating inactive Accounts, or changing Services. Our Services
-  may be changed, suspended, or discontinued at any time.
-  
-  (d) You are responsible for your Account's security. Notify us of any unauthorized
-  use promptly. We are not liable for third-party access resulting from your failure
-  to comply with these Terms.
-  
-  **Subscription; Payment Terms**
-  
-  (a) We offer various Subscription Levels with associated Subscription Fees. Fees
-  are subject to change, impacting renewals but not current Subscription Terms.
-  
-  (b) You agree to pay Subscription Fees associated with your Subscription. Payment
-   terms are as stated on our Platform or Order.
-  
-  (c) We may collect payments through third-party processors. By providing payment
-  information, you authorize us to charge your payment method for Fees. Failure to
-  verify or accept your payment method may result in suspension or cancellation.
-  
-  (d) Subscription Fees may consist of recurring charges. By choosing a recurring
-  payment plan, you acknowledge and accept responsibility for all recurring charges.
-  
-  (e) We may submit periodic charges without further authorization until notice of
-  termination or payment method change is provided. Charges submitted before notice will
-  not be affected.
-  
-  (f) Your subscription will automatically renew unless terminated before the end of
-  the then-current Subscription Term. Termination may occur through Account settings.
-  No refunds are provided for early termination.
-  
-  Certainly! Here's the rewritten version:
-  
-  ---
-  
-  **UMYO DFW  App Terms of Service**
-  
-  **1. Account Information and Updates**
-  
-  (g) You must provide accurate, current, and complete information for your UMYO DFW 
-  account. Ensure timely updates for your billing account, including changes to
-  billing address, credit card number, or expiration date. Promptly notify us or
-  our payment processor about canceled payment methods or potential security breaches.
-  Make changes through your account settings. Failure to provide accurate information
-  authorizes us to continue charging subscription fees.
-  
-  **2. Free Trials and Subscriptions**
-  
-  (h) Free trials for paid subscription levels are offered with specific terms disclosed
-   during the offer. Trials are for users without prior paid subscriptions. Obtaining a
-  free tier allows one account creation. Non-genuine use may result in standard fees or
-   service denial. Acceptance of free trial subscription implies agreement to associated
-    fees upon expiration unless canceled.
-  
-  **3. User-Generated Content**
-  
-  (a) Users can post content ("Content") on UMYO DFW . Posted Content is not confidential,
-   treated as public information. By posting, users represent having the right to do so
-  and grant us a non-exclusive license to use it for platform operation and promotion.
-  
-  (b) Users warrant that Content doesn't infringe third-party rights. We reserve the
-   right to review and may refuse or remove Content violating terms, policies, or
-  laws. Prohibited actions include unlawful, harmful, or objectionable Content;
-  collecting personal information without consent; creating derivative works; and
-  interfering with platform operations.
-  
-  (c) The platform may contain links to third-party services ("Third Party
-  Services"). These services are not covered by our terms, and we are not
-  responsible for them.
-  
-  (d) Platform content is protected by intellectual property laws. All related
-  rights are exclusively ours. Users providing feedback grant us rights to use it freely.
-  
-  **4. Limitation on Liability**
-  
-  (a) We're not liable for user-posted Content, user interactions, losses from platform
-  use, negative comments, or third-party information provided without consent. Users are
-  responsible for interactions with others; we may not intervene in disputes.
-  
-  (b) We're not liable for indirect, incidental, or exemplary damages arising from a
-   breach of terms, regardless of foreseeability. Our aggregate liability is limited
-  to the total amounts paid by you in the previous 12 months.
-  
-  **5. Indemnification**
-  
-  Users indemnify us against any losses arising from claims by third parties related to
-  platform use, purchased products or services, or user negligence or breach of terms.
-  
-  **6. Governing Law**
-  
-  These terms are governed by the laws of the State of Alabama.
-  
-  **7. Binding Arbitration**
-  
-  (a) By accepting these terms, you waive the right to a jury trial and class action
-  participation. Disputes are resolved through binding arbitration. Some claims are
-  exempted, including those regarding intellectual property rights or small claims.
-  
-  (b) Disputes must be addressed informally for at least 30 days before arbitration.
-  If unresolved, either party may elect binding arbitration administered by the
-  American Arbitration Association in Birmingham, Alabama.
-  
-  **8. General**
-  
-  (a) Unenforceability of one provision won't affect others. In case of conflict,
-  we decide which provision prevails. Headings are for convenience. Our
-  non-enforcement doesn't waive future enforcement rights.
-  
-  (b) Products and services may be subject to US export control laws. Users
-   are responsible for compliance. Communication with us is electronic,
-   fulfilling legal requirements.
-  
-  (c) Notices are provided within the platform or through services. Users
-    can notify us via mail.
-  
-  (d) "Include" or "including" is not limiting, and "or" means "and/or."
-  
-  ---
-  
-            </pre
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+</footer>

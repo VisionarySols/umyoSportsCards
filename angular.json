@@ -24,19 +24,23 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "allowedCommonJsDependencies": [
+              "jquery",
+              "jquery-modal"
+            ],
             "styles": [
               "node_modules/@videogular/ngx-videogular/fonts/videogular.css",
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/assets/css/slick.css",
-              "src/assets/css/slick-theme.css",
               "node_modules/slick-carousel/slick/slick.css",
-              "node_modules/slick-carousel/slick/slick-theme.css"
+              "node_modules/slick-carousel/slick/slick-theme.css",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/slick-carousel/slick/slick.min.js",
+              "node_modules/aos/dist/aos.js",
               "src/assets/js/main.js"
             ]
           },

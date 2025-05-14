@@ -117,7 +117,7 @@
   </div>
 
   <ng-container *ngIf="productImages && productImages.length > 0">
-    <ngb-carousel [showNavigationArrows]="true">
+    <ngb-carousel>
       <ng-template ngbSlide *ngFor="let productImage of productImages">
         <img [src]="productImage" alt="productImage" />
       </ng-template>

@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -79,7 +80,8 @@ import { ColorSketchModule } from 'ngx-color/sketch';
 import { PackageComponent } from './package/package.component';
 import { CfComponent } from './cf/cf.component';
 import { AiComponent } from './ai/ai.component';
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 
@@ -153,6 +155,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     PackageComponent,
     CfComponent,
     AiComponent,
+    GalleryComponent,
     
     
     
@@ -162,10 +165,14 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   
   imports: [
+    BrowserModule,
+    CommonModule,
+    NgbModule,
     NgbCarouselModule,
     NgxSimpleTextEditorModule,
     NgxEditorModule,
     BrowserModule,
+    CommonModule,
     NgxStripeModule.forRoot('pk_test_51O5YCYFsXQwPd2tbJm8xT224tG7OoCXWGyigDqVGZ2DeNsiWxhSDfJNiBbfq508cDU15nQOctVTijlbUcJvVqleO00OTWN3YAb'),
     SlickCarouselModule,
     ReactiveFormsModule,
@@ -180,6 +187,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }

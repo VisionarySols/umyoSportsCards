@@ -55,6 +55,8 @@ export class Template15Component implements OnChanges {
    sanitizedUrlsCache: Map<string, SafeResourceUrl> = new Map<string, SafeResourceUrl>();
 
   constructor(private sanitizer: DomSanitizer, private router: Router,config: NgbCarouselConfig) {
+    config.showNavigationArrows = true;
+    config.showNavigationIndicators = true;
     config.interval = 10000;
 		config.wrap = false;
 		config.keyboard = false;

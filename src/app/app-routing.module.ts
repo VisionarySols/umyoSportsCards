@@ -49,22 +49,23 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { TruckersComponent } from './truckers/truckers.component';
 import { CfComponent } from './cf/cf.component';
 import { AiComponent } from './ai/ai.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { PackageComponent } from './package/package.component';
 
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent ,pathMatch: 'full'},
+  { path: 'gallery', component: GalleryComponent },
+  { path: '', component: GalleryComponent ,pathMatch: 'full'},
   { path: 'team', component: TeamComponent },
   { path: 'truckers', component: TruckersComponent ,pathMatch: 'full' },
   { path: 'products', component: ProductsComponent },
   { path: 'pro', component: ProComponent },
-  { path: 'network', component: NetworkComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'cf', component: CfComponent },
-  { path: 'ai', component: AiComponent },
-  { path: 'package', component: PackageComponent },
+  { path: 'about', component: CfComponent },
+  { path: 'network', component: AiComponent },
+  { path: 'digital', component: PackageComponent },
 
   // Protected routes for authenticated users
   { path: 'cards', component: CardsComponent, canActivate: [AuthGuard] },
