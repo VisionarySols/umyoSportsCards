@@ -128,12 +128,9 @@ export class ApiService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer your-auth-token',
     });
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+   
 
-
-    return this.http.post(url, payload, { headers: combinedHeaders });
+    return this.http.post(url, payload);
   }
   myRequests(user_id: any): Observable<any> {
     const url = baseUrl + `myRequests`;
@@ -142,33 +139,19 @@ export class ApiService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer your-auth-token',
     });
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
-
-
-    return this.http.post(url, payload, { headers: combinedHeaders });
+    
+    return this.http.post(url, payload);
   }
   acceptRequest(request_id: any): Observable<any> {
     const url = baseUrl + `acceptRequest`;
     const payload = { request_id: request_id };
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer your-auth-token',
-    });
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
-
-    return this.http.post(url, payload, { headers: combinedHeaders });
+    return this.http.post(url, payload);
   }
 
 
 
-  private customHeaders = new HttpHeaders()
-    .set('Origin', 'https://umyosportscards.com')
-    .set('Referer', 'https://umyosports.site/admin/users/375');
 
   updateUser(user: any): Observable<any> {
     const url = baseUrl + `editUser`;
@@ -178,12 +161,9 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
 
 
-    return this.http.post(url, user, { headers: combinedHeaders });
+    return this.http.post(url, user, );
   }
 
   applyForReferral(user_id: any): Observable<any> {
@@ -194,12 +174,8 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
-
-
-    return this.http.post(url, { "user_id": user_id }, { headers: combinedHeaders });
+   
+    return this.http.post(url, { "user_id": user_id }, );
   }
   savePaymentInfo(user_id: any, payment_id: any, payment_type: any): Observable<any> {
     const url = baseUrl + `savePaymentInfo`;
@@ -209,12 +185,7 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
-
-
-    return this.http.post(url, { "user_id": user_id, "payment_id": payment_id, "payment_type": payment_type }, { headers: combinedHeaders });
+     return this.http.post(url, { "user_id": user_id, "payment_id": payment_id, "payment_type": payment_type });
   }
   changePassword(email: any, old_password: any, new_password: any): Observable<any> {
     const url = baseUrl + `changePassword`;
@@ -224,12 +195,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "email": email, "old_password": old_password, "new_password": new_password }, { headers: combinedHeaders });
+    return this.http.post(url, { "email": email, "old_password": old_password, "new_password": new_password });
   }
 
 
@@ -242,12 +211,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "user_id": user_id, "agreement_id": agreement_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id, "agreement_id": agreement_id });
   }
   getActivity(user_id: any): Observable<any> {
     const url = baseUrl + `getActivity`;
@@ -257,12 +224,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "user_id": user_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id });
   }
   deleteActivity(user_id: any, activity_id): Observable<any> {
     const url = baseUrl + `deleteActivity`;
@@ -272,12 +237,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "user_id": user_id, "activity_id": activity_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id, "activity_id": activity_id });
   }
 
 
@@ -292,12 +255,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "chat_id": chat_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "chat_id": chat_id });
   }
   getMessages(user_id: any, friend_id: any): Observable<any> {
     const url = baseUrl + `getMessages`;
@@ -307,12 +268,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "user_id": user_id, "friend_id": friend_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id, "friend_id": friend_id });
   }
   sendMessage(user_id: any, friend_id: any, chat: any): Observable<any> {
     const url = baseUrl + `sendMessage`;
@@ -322,12 +281,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "user_id": user_id, "friend_id": friend_id, "chat": chat }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id, "friend_id": friend_id, "chat": chat });
   }
 
 
@@ -339,12 +296,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "email": email, "name": name }, { headers: combinedHeaders });
+    return this.http.post(url, { "email": email, "name": name });
   }
   adminText(admin_text: string): Observable<any> {
     const url = baseUrl + `admin_text`;
@@ -354,12 +309,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "admin_text": admin_text }, { headers: combinedHeaders });
+    return this.http.post(url, { "admin_text": admin_text });
   }
   checkEmail(email: string): Observable<any> {
     const url = baseUrl + `checkEmail`;
@@ -369,12 +322,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "email": email }, { headers: combinedHeaders });
+    return this.http.post(url, { "email": email });
   }
 
 
@@ -387,12 +338,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "email": email, "password": password }, { headers: combinedHeaders });
+    return this.http.post(url, { "email": email, "password": password });
   }
 
 
@@ -407,12 +356,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "chat_id": user_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "chat_id": user_id });
   }
 
 
@@ -425,59 +372,41 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { headers: combinedHeaders });
+    return this.http.get(url);
   }
 
   deleteUser(user_id: any): Observable<any> {
     const url = baseUrl + `deleteUser`;
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer your-auth-token',
-    });
+   
+
+    
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
-
-
-    return this.http.post(url, { "user_id": user_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id });
   }
 
   getCustomContact(user_id: any): Observable<any> {
     const url = baseUrl + `getCustomContact`;
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer your-auth-token',
-    });
+   
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "user_id": user_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id });
   }
   getContact(user_id: any): Observable<any> {
     const url = baseUrl + `myContacts`;
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer your-auth-token',
-    });
+    
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "user_id": user_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id });
   }
 
 
@@ -489,12 +418,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "user_id": user_id, "card_id": card_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id, "card_id": card_id });
   }
   searchUser(user_id: any, query: any): Observable<any> {
     const url = baseUrl + `searchUser`;
@@ -504,12 +431,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "user_id": user_id, "query": query }, { headers: combinedHeaders });
+    return this.http.post(url, { "user_id": user_id, "query": query });
   }
 
 
@@ -522,12 +447,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "id": id }, { headers: combinedHeaders });
+    return this.http.post(url, { "id": id });
   }
 
 
@@ -540,12 +463,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "id": agent_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "id": agent_id });
   }
 
   searchCard(payload:any): Observable<any> {
@@ -557,11 +478,9 @@ export class ApiService {
 
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
-    return this.http.post(url, payload, { headers: combinedHeaders });
+    return this.http.post(url, payload);
 
 
   }
@@ -576,11 +495,9 @@ export class ApiService {
 
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
-    return this.http.post(url,  payload , { headers: combinedHeaders });
+    return this.http.post(url,  payload );
 
 
   }
@@ -593,11 +510,9 @@ export class ApiService {
 
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
-    return this.http.post(url, contact, { headers: combinedHeaders });
+    return this.http.post(url, contact);
 
 
   }
@@ -610,11 +525,9 @@ export class ApiService {
 
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
-    return this.http.post(url, contact, { headers: combinedHeaders });
+    return this.http.post(url, contact);
 
 
   }
@@ -631,12 +544,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "chat_id": chat_id, "chat": chat, "message_type": message_type, "respond_by_id": responded_by_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "chat_id": chat_id, "chat": chat, "message_type": message_type, "respond_by_id": responded_by_id });
 
   }
 
@@ -648,12 +559,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "chat_id": chat_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "chat_id": chat_id });
 
   }
   closeChat(chat_id: any): Observable<any> {
@@ -664,12 +573,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "chat_id": chat_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "chat_id": chat_id });
 
   }
 
@@ -683,12 +590,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "email": email, "package_id": package_id, "password": password, }, { headers: combinedHeaders });
+    return this.http.post(url, { "email": email, "package_id": package_id, "password": password, });
 
 
   }
@@ -702,11 +607,9 @@ export class ApiService {
 
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
-    return this.http.post(url, { "category_id": category_id }, { headers: combinedHeaders });
+    return this.http.post(url, { "category_id": category_id });
 
 
   }
@@ -719,11 +622,9 @@ export class ApiService {
 
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
-    return this.http.post(url, {}, { headers: combinedHeaders });
+    return this.http.post(url, {});
 
 
   }
@@ -736,11 +637,9 @@ export class ApiService {
 
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
-    return this.http.post(url, {}, { headers: combinedHeaders });
+    return this.http.post(url, {});
 
 
   }
@@ -753,11 +652,9 @@ export class ApiService {
 
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
-    return this.http.post(url, {}, { headers: combinedHeaders });
+    return this.http.post(url, {});
 
 
   }
@@ -777,12 +674,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "name": name, "email": email, "password": password }, { headers: combinedHeaders });
+    return this.http.post(url, { "name": name, "email": email, "password": password });
 
   }
 
@@ -794,12 +689,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "id": id, "description": description, "expire_in": expire_in, "image": image, "limit": limit, "logo": logo, "net_price": net_price, "price": price, "product_image": product_image, "social_media_listing": social_media_listing, "umyotube": umyoutube, "vimeo": vimeo, "videos": videos, "website": website }, { headers: combinedHeaders });
+    return this.http.post(url, { "id": id, "description": description, "expire_in": expire_in, "image": image, "limit": limit, "logo": logo, "net_price": net_price, "price": price, "product_image": product_image, "social_media_listing": social_media_listing, "umyotube": umyoutube, "vimeo": vimeo, "videos": videos, "website": website });
 
   }
   updateAgent(name: any, email: any, id: any): Observable<any> {
@@ -810,12 +703,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "name": name, "email": email, "id": id }, { headers: combinedHeaders });
+    return this.http.post(url, { "name": name, "email": email, "id": id });
 
   }
   getPackageById(id: any): Observable<any> {
@@ -826,12 +717,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "id": id }, { headers: combinedHeaders });
+    return this.http.post(url, { "id": id });
 
   }
 
@@ -843,12 +732,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, { "id": id, "description": description, "expire_in": expire_in, "image": image, "limit": limit, "logo": logo, "net_price": net_price, "price": price, "product_image": product_image, "social_media_listing": social_media_listing, "umyotube": umyoutube, "vimeo": vimeo, "videos": videos, "website": website }, { headers: combinedHeaders });
+    return this.http.post(url, { "id": id, "description": description, "expire_in": expire_in, "image": image, "limit": limit, "logo": logo, "net_price": net_price, "price": price, "product_image": product_image, "social_media_listing": social_media_listing, "umyotube": umyoutube, "vimeo": vimeo, "videos": videos, "website": website });
 
   }
 
@@ -861,12 +748,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, formData, { headers: combinedHeaders });
+    return this.http.post(url, formData);
   }
   updateCard(formData: any): Observable<any> {
     const url = baseUrl + `updateCard`;
@@ -876,12 +761,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, formData, { headers: combinedHeaders });
+    return this.http.post(url, formData);
   }
 
 
@@ -893,12 +776,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, payload, { headers: combinedHeaders });
+    return this.http.post(url, payload);
   }
   cancelStripeSubscription(payload: any): Observable<any> {
     const url = baseUrl + `cancel-subscription`;
@@ -908,12 +789,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, payload, { headers: combinedHeaders });
+    return this.http.post(url, payload);
   }
   updateSubscriptionId(payload: any): Observable<any> {
     const url = baseUrl + `update-subscription-id`;
@@ -923,12 +802,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, payload, { headers: combinedHeaders });
+    return this.http.post(url, payload);
   }
   updateUserPackage(payload: any): Observable<any> {
     const url = baseUrl + `updateUserPackage`;
@@ -938,12 +815,10 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, payload, { headers: combinedHeaders });
+    return this.http.post(url, payload);
   }
   deleteCard(payload: any): Observable<any> {
     const url = baseUrl + `deleteCard`;
@@ -953,44 +828,28 @@ export class ApiService {
     });
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
+    
 
 
-    return this.http.post(url, payload, { headers: combinedHeaders });
+    return this.http.post(url, payload);
   }
   getSingleCard(payload: any): Observable<any> {
     const url = baseUrl + `getSingleCard`;
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer your-auth-token',
-    });
+    
 
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
-
-
-    return this.http.post(url, payload, { headers: combinedHeaders });
+   
+    return this.http.post(url, payload);
   }
 
 
   getChatUsers(): Observable<any> {
     const url = baseUrl + `getOpenChatAdmin`;
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer your-auth-token',
-    });
+   
 
+    
 
-    const combinedHeaders = headers
-      .append('Origin', this.customHeaders.get('Origin') || '')
-      .append('Referer', this.customHeaders.get('Referer') || '');
-
-
-    return this.http.post(url, { headers: combinedHeaders });
+    return this.http.get(url);
   }
 
 
