@@ -9,6 +9,13 @@ export class AuthGuard implements CanActivate {
   constructor(private router: Router) {}
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
+    const cardId = route.params['id'];
+
+    // ✅ Allow access without auth if id is 264 and route is preview-card
+    if (state.url.startsWith('/cards/preview-card/') && cardId === '264') {
+      return true;
+    }
+
     const isAuthenticated = localStorage.getItem('user_id') !== null;
 
     if (isAuthenticated) {
