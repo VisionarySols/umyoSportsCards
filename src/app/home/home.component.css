@@ -11,6 +11,8 @@
     display: flex
 ;
     justify-content: center;
+    padding: 13px;
+    flex-wrap: wrap;
 }
 
 .register{

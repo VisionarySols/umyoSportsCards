@@ -1604,6 +1604,7 @@ header .top-nav .nav-link:hover {
   width: 100%;
   bottom: 0;
   z-index: 10;
+  height: fit-content;
 }
 .slider-wrapper .slider-item.selected {
   background-color: #0475ef;

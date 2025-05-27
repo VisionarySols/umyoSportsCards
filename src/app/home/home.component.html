@@ -1,24 +1,130 @@
-<div style="position:relative; z-index: 100; width: 100%;  overflow: hidden; padding: 0; margin: 0;">
-	<nav class="navbar navbar-expand-md " style="position: fixed; width: 100%; top:0; overflow: hidden; padding: 0; margin: 0;">
+<div style="position:relative; z-index: 100; width: 100%;  overflow: hidden;  ">
+	<nav class="navbar navbar-expand-md " style="position: fixed; width: 100%; top:0; overflow: hidden;  margin: 0;">
   <div class="container">
-    <a class="navbar-brand " href="#"><img class="img-fluid lozad" src="assets/img/military.png"></a>
+    <a style="width: 210px !important;" class="navbar-brand " [routerLink]="['']"><img class="img-fluid lozad" src="assets/img/military.png"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="../home/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../about/">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="../network/">Network</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href=""> Digital Sports Hub</a>
-        </li>
+    <a class="nav-link" [routerLink]="['']">Home</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link"  href="assets/staticpages/about/index.html"
+      >About Us</a
+    >
+  </li>
+   <li class="nav-item">
+    <a class="nav-link"  href="assets/staticpages/network/index.html"
+      >Network</a
+    >
+  </li>
+   <li class="nav-item"  >
+    <a class="nav-link" href="assets/staticpages/home/index.html"
+      >Hub</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      style="white-space: nowrap"
+      href="https://militarytweets.site/guest"
+      >UMilitary Talk</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      style="white-space: nowrap"
+      href="https://Militarytalks.site"
+      >Military Talks</a
+    >
+  </li>
+   <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="white-space: nowrap"
+                  href="https://militarytweets.site/guest"
+                  >UMilitary Talk</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  style="white-space: nowrap"
+                  href="https://Militarytalks.site"
+                  >Military Talks</a
+                >
+              </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      style="white-space: nowrap"
+      href="https://Live.umyoconvo.site"
+      >Podcast</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      style="white-space: nowrap"
+      href="http://umyoanimate.site/"
+      >ChatGpt</a
+    >
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" style="white-space: nowrap" href="https://Umyoappt.site"
+      >Booking Appt</a
+    >
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="white-space: nowrap" href="https://Umyoevents.site"
+      >Events</a
+    >
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="white-space: nowrap" href="https://UPMRadio.site"
+      >Radio</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      style="white-space: nowrap"
+      [routerLink]="['/cf']"
+      >Card Features</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      style="white-space: nowrap"
+      [routerLink]="['/package']"
+      >View Services</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      style="white-space: nowrap"
+      [routerLink]="['/ai']"
+      >Additional Features</a
+    >
+  </li>
+  
+ <li class="nav-item">
+  <a href="https://Umyofan.site" class=" nav-link"
+    >Umyo Fan</a
+  >
+</li>
+<li class="nav-item">
+  <a href="https://www.htv10.tv/story/52583123/umyo-a-communitydriven-tech-revolution" class=" nav-link"
+    >Press Release</a
+  >
+</li>
       </ul>
     </div>
   </div>
@@ -178,254 +284,130 @@
             <div class="container py-5">
         <h1 class="text-white text-center  mb-3" style="font-weight: 600; ">UMYO Military Members </h1>
         <div class="row">
-            <div class="col-lg-5 mt-5">
+             <div class="col-lg-5 mt-5">
                 <!-- <h4 class="mb-4 text-white">Search For NBA Players Connects Here</h4> -->
-                <div class="row">
-                    <div class="col-lg-6 mb-4">
-                    <input type="name" class="form-control" formcontrolname="selectedName" placeholder="Name">
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                       <select  aria-label="Default select example" formcontrolname="selectedBusiness"  class="form-select">
-                      <option  selected="" value="" disabled="">Business Type</option>
-                      <option  value="Accountant"> Accountant </option>
-                      <option  value="Actor"> Actor </option>
-                      <option  value="Actuary"> Actuary </option>
-                      <option  value="Administrator"> Administrator </option>
-                      <option  value="Agent"> Agent </option>
-                      <option  value="Agricultural Worker"> Agricultural Worker </option>
-                      <option  value="Air Traffic Controller"> Air Traffic Controller </option>
-                      <option  value="Ambulance Officer"> Ambulance Officer </option>
-                      <option  value="Architect"> Architect </option>
-                      <option  value="Art Director"> Art Director </option>
-                      <option  value="Artist"> Artist </option>
-                      <option  value="Athlete"> Athlete </option>
-                      <option  value="Auditor"> Auditor </option>
-                      <option  value="Baker"> Baker </option>
-                      <option  value="Barista"> Barista </option>
-                      <option  value="Bartender"> Bartender </option>
-                      <option  value="Board Member"> Board Member </option>
-                      <option  value="Business Analyst"> Business Analyst </option>
-                      <option  value="Chef"> Chef </option>
-                      <option  value="Childcare Worker"> Childcare Worker </option>
-                      <option  value="Civil Servant"> Civil Servant </option>
-                      <option  value="Cleaner"> Cleaner </option>
-                      <option  value="Company Worker"> Company Worker </option>
-                      <option  value="Computer Scientist"> Computer Scientist </option>
-                      <option  value="Construction Worker"> Construction Worker </option>
-                      <option  value="Cook"> Cook </option><option  value="Copywriter"> Copywriter </option><option  value="Courier"> Courier </option>
-                      <option  value="Craftsperson"> Craftsperson </option>
-                      <option  value="Curator"> Curator </option>
-                      <option  value="Customer Service Representative"> Customer Service Representative </option><option  value="Dentist"> Dentist </option>
-                      <option  value="Designer"> Designer </option>
-                      <option  value="Doctor"> Doctor </option>
-                      <option  value="Driver"> Driver </option>
-                      <option  value="Economist"> Economist </option>
-                      <option  value="Electrician"> Electrician </option>
-                      <option  value="Entrepreneur"> Entrepreneur </option>
-                      <option  value="Equipment Operator"> Equipment Operator </option>
-                      <option  value="Executive Manager"> Executive Manager </option>
-                      <option  value="Farmer"> Farmer </option>
-                      <option  value="Film Maker"> Film Maker </option>
-                      <option  value="Firefighter"> Firefighter </option>
-                      <option  value="Fisherman"> Fisherman </option>
-                      <option  value="Fitness Trainer"> Fitness Trainer </option>
-                      <option  value="Flight Attendant"> Flight Attendant </option>
-                      <option  value="Florist"> Florist </option>
-                      <option  value="Freelancer"> Freelancer </option>
-                      <option  value="Gardener"> Gardener </option>
-                      <option  value="Hair Stylist"> Hair Stylist </option>
-                      <option  value="Home Care Aid"> Home Care Aid </option>
-                      <option  value="Homemaker"> Homemaker </option>
-                      <option  value="Hospitality Worker"> Hospitality Worker </option>
-                      <option  value="Housekeeper"> Housekeeper </option>
-                      <option  value="Information Technology Professional"> Information Technology Professional </option>
-                      <option  value="Investor"> Investor </option>
-                      <option  value="Journalist"> Journalist </option>
-                      <option  value="Laborer"> Laborer </option>
-                      <option  value="Lawyer"> Lawyer </option>
-                      <option  value="Librarian"> Librarian </option>
-                      <option  value="Maintenance Worker"> Maintenance Worker </option>
-                      <option  value="Manager"> Manager </option>
-                      <option  value="Manufacturing Worker"> Manufacturing Worker </option>
-                      <option  value="Marketing Professional"> Marketing Professional </option>
-                      <option  value="Mathematician"> Mathematician </option>
-                      <option  value="Mechanic"> Mechanic </option>
-                      <option  value="Medical Professional"> Medical Professional </option>
-                      <option  value="Merchant"> Merchant </option>
-                      <option  value="Midwife"> Midwife </option>
-                      <option  value="Military Personnel"> Military Personnel </option>
-                      <option  value="Musician"> Musician </option>
-                      <option  value="Nanny"> Nanny </option>
-                      <option  value="Nurse"> Nurse </option>
-                      <option  value="Office Clerk"> Office Clerk </option>
-                      <option  value="Office Worker"> Office Worker </option>
-                      <option  value="Optician"> Optician </option>
-                      <option  value="Performance Artist"> Performance Artist </option>
-                      <option  value="Photographer"> Photographer </option>
-                      <option  value="Pilot"> Pilot </option>
-                      <option  value="Police Officer"> Police Officer </option>
-                      <option  value="Politician"> Politician </option>
-                      <option  value="Professor"> Professor </option>
-                      <option  value="Railroad Engineer"> Railroad Engineer </option>
-                      <option  value="Researcher"> Researcher </option>
-                      <option  value="Retail Employee"> Retail Employee </option>
-                      <option  value="Retiree"> Retiree </option>
-                      <option  value="Rigger"> Rigger </option>
-                      <option  value="Sailor"> Sailor </option>
-                      <option  value="Salesperson"> Salesperson </option>
-                      <option  value="Scientist"> Scientist </option>
-                      <option  value="Sea Captain"> Sea Captain </option>
-                      <option  value="Secretary"> Secretary </option>
-                      <option  value="Self-Employed"> Self-Employed </option>
-                      <option  value="Small Business Owner"> Small Business Owner </option>
-                      <option  value="Social Worker"> Social Worker </option>
-                      <option  value="Software Developer"> Software Developer </option>
-                      <option  value="Spokesperson"> Spokesperson </option>
-                      <option  value="Statistician"> Statistician </option>
-                      <option  value="Stay-At-Home Parent"> Stay-At-Home Parent </option>
-                      <option  value="Student"> Student </option>
-                      <option  value="Surgeon"> Surgeon </option>
-                      <option  value="Surveyor"> Surveyor </option>
-                      <option  value="Tailor"> Tailor </option>
-                      <option  value="Teacher"> Teacher </option>
-                      <option  value="Technician"> Technician </option>
-                      <option  value="Tradesperson"> Tradesperson </option>
-                      <option  value="Trainer"> Trainer </option>
-                      <option  value="Translator"> Translator </option>
-                      <option  value="Truck Driver"> Truck Driver </option>
-                      <option  value="Tutor"> Tutor </option>
-                      <option  value="Unemployed"> Unemployed </option>
-                      <option  value="Veterinarian"> Veterinarian </option>
-                      <option  value="Videographer"> Videographer </option>
-                      <option  value="Waiter"> Waiter </option>
-                      <option  value="Waste Collector"> Waste Collector </option>
-                      <option  value="Writer"> Writer </option>
-                      <option  value="Zoologist"> Zoologist </option>
-                    </select>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <select class="form-select" aria-label="Default select example" formcontrolname="selectedLocation">
-                          <option selected="">Location</option>
-                          <option value="0">Business</option>
-                          <option value="1">CEO</option>
-                          <option value="2">Corporate</option>
-                          <option value="3">Corporation</option>
-                          <option value="3">Exclusive</option>
-                          <option value="3">Founder</option>
-                          <option value="3">CFO</option>
-                          <option value="3">COO</option>
-                          <option value="3">Home Owner</option>
-                          <option value="3">Mall</option>
-                          <option value="3">Mass</option>
-                          <option value="3">Mobile </option>
-                          <option value="3">Non Profit</option>
-                          <option value="3">Office</option>
-                          <option value="3">Online</option>
-                          <option value="3">Partners</option>
-                          <option value="3">Private</option>
-                          <option value="3">Retail and Consultants</option>
-                          <option value="3">Community Pledge</option>
-                          <option value="3">Store Front</option>
-                          <option value="3">Pop Up Shop</option>
-                          <option value="3">Vehicle</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                    <input type="text" class="form-control" placeholder="City" formcontrolname="selectedCity">
-                    </div>
+                
+                          <form [formGroup]="form2" class="text-center">
+
+<div class="row">
+                     <div class="col-lg-6 mb-4">
+                <input
+                  type="name"
+                  formControlName="selectedName"
+                  class="form-control"
+                  placeholder="Name"
+                />
+              </div>
+
+
+                
 
                     <div class="col-lg-6 mb-4">
-                    <select class="form-select" aria-label="Default select example" formcontrolname="selectedStateType">
-                          <option selected="">State</option>
-                          <option value="1">Alabama</option>
-                          <option value="2">Alaska</option>
-                          <option value="3">Arizona</option>
-                          <option value="4">Arkansas</option>
-                          <option value="5">California</option>
-                          <option value="6">Colorado</option>
-                          <option value="7">Connecticut</option>
-                          <option value="8">Delaware</option>
-                          <option value="9">Florida</option>
-                          <option value="10">Georgia</option>
-                          <option value="10">Hawaii</option>
-                          <option value="11">Idaho</option>
-                          <option value="12">Illinois</option>
-                          <option value="13">Indiana</option>
-                          <option value="14">Iowa</option>
-                          <option value="15">Kansas</option>
-                          <option value="16">Kentucky</option>
-                          <option value="17">Louisiana</option>
-                          <option value="18">Maine</option>
-                          <option value="19">Maryland</option>
-                          <option value="20">Massachusetts</option>
-                          <option value="21">Michigan</option>
-                          <option value="22">Minnesota</option>
-                          <option value="23">Mississippi</option>
-                          <option value="24">Missouri</option>
-                          <option value="25">Montana</option>
-                          <option value="26">Nebraska </option>
-                          <option value="27">Nevada</option>
-                          <option value="28">New Hampshire</option>
-                          <option value="29">New Jersey</option>
-                          <option value="30">New Mexico</option>
-                          <option value="31">New York</option>
-                          <option value="32">North Carolina</option>
-                          <option value="33">North Dakota</option>
-                          <option value="34">Ohio</option>
-                          <option value="35">Oklahoma</option>
-                          <option value="36">Oregon</option>
-                          <option value="37">Pennsylvania</option>
-                          <option value="38">Rhode Island</option>
-                          <option value="39">South Carolina</option>
-                          <option value="40">South Dakota</option>
-                          <option value="41">Tennessee</option>
-                          <option value="42">Texas</option>
-                          <option value="43">Utah</option>
-                          <option value="44">Vermont</option>
-                          <option value="45">Virginia</option>
-                          <option value="46">Washington</option>
-                          <option value="47">West Virginia</option>
-                          <option value="48">Wisconsin</option>
-                          <option value="49">Wyoming</option>
-                        </select>
-                    </div>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedBusiness"
+                >
+                  <option selected value="" disabled>Business Type</option>
+                  <option *ngFor="let item of businessType" [value]="item">
+                    {{ item }}
+                  </option>
+                </select>
+              </div>
 
+               <div class="col-lg-6 mb-4">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedLocation"
+                >
+                  <option selected value="" disabled>Location</option>
+                  <option *ngFor="let item of location" [value]="item">
+                    {{ item }}
+                  </option>
+                </select>
+              </div>
+
+<div class="col-lg-6 mb-4">
+                    <input type="text" class="form-control" placeholder="City">
+                    </div>
+               <div class="col-lg-6 mb-4">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedStateType"
+                >
+                  <option selected value="" disabled>State</option>
+                  <option *ngFor="let item of state" [value]="item">
+                    {{ item }}
+                  </option>
+                </select>
+              </div>
+
+
+                    
+                    
+
+                   
                     <div class="col-lg-6">
                         <h4 class="mb-4 text-white text-center">I Pledge To Report Violent Crimes</h4>
                     </div>
+
                     <div class="col-lg-6 mb-4">
-                        <select class="form-select" aria-label="Default select example" formcontrolname="selectedRace">
-                          <option selected="">Race</option>
-                          <option value="2">Nubians</option>
-                          <option value="1">African</option>
-                          <option value="0">Native American</option>
-                          <option value="3">Afro-Americans</option>
-                          <option value="3">Asian</option>
-                          <option value="3">Hispanic</option>
-                          <option value="3">European</option>
-                          <option value="3">Pacific Isalnder</option>
-                          <option value="3">German</option>
-                          <option value="3">Middle Eastern</option>
-                          <option value="3">Casun</option>
-                          <option value="3">Mixed Ethnicity</option>
-                          <option value="3">Vietnamese</option>
-                          <option value="3">Other</option>
-                        </select>
-                    </div>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedRace"
+                >
+                  <option selected value="" disabled>Race</option>
+                  <option *ngFor="let item of race" [value]="item">
+                    {{ item }}
+                  </option>
+                </select>
+              </div>
+
+              
                     <div class="col-lg-6 mb-4">
-                        <select class="form-select" aria-label="Default select example" formcontrolname="selectedGender">
-                          <option selected="">Gender</option>
-                          <option value="1">Male</option>
-                          <option value="2">Female</option>
-                          <option value="3">Other</option>
-                        </select>
-                    </div>
-    
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedGender"
+                >
+                  <option selected value="" disabled>Gender</option>
+                  <option *ngFor="let item of gender" [value]="item">
+                    {{ item }}
+                  </option>
+                </select>
+              </div>
+ <div class="col-lg-6 mb-4">
+                <input
+                  type="name"
+                  formControlName="selectedCity"
+                  class="form-control"
+                  placeholder="City"
+                />
+              </div>
+                    
+                   
                     <div class="col-lg-6 mb-4">
-                        <button class="btn btn-light text-white fw-semibold py-2 px-5 w-100" style="">Search</button>
+                        <button  (click)="searchCards()"
+                  [disabled]="!form2.valid" class="btn  text-white py-2 px-5 w-100" style="background: #CC9B2D;">Search</button>
                     </div>   
                 </div>
-                <p class="rounded mb-4  text-white py-2 px-3 my-5 btn-light">Cards</p>
+
+                  </form>
+
+
+                
+                <p class="rounded mb-4 text-white py-2 px-3 my-5 " style="background: #CC9B2D;">Cards</p>
+                 <p
+              class="text-white mb-4"
+              style="cursor: pointer"
+              [routerLink]="'/cards/share-card/' + card.id"
+              *ngFor="let card of cardsSearched"
+            >
+              {{ card.cardTitle }}
+            </p>
             </div>
             <div class="col-lg-7 mt-5">
              <div class="d-flex position-relative justify-content-center">
@@ -450,15 +432,82 @@
 
                   <h2 class=" mb-3" >Login</h2>
                   <div class="row">
-                    <div class="col-md-12 mb-4">
-                      <label class="form-label" style="font-size: 18px; font-weight: 600;">Email <sup class="text-danger ">*</sup></label>
-                      <input type="email" id="email" class="form-control" placeholder="Enter your email" formcontrolname="email" required>
+                                            <form [formGroup]="form">
+                  <div class="row">
+                   <div class="col-md-12 mb-5">
+                      <div class="form-group">
+                        <label style="font-size: 20px; font-weight: 600"
+                          >Email
+                          <sup style="color: red; font-size: 20px">*</sup>
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control"
+                          formControlName="email"
+                          required
+                        />
+                        <div
+                          *ngIf="
+                            form.get('email')?.hasError('required') &&
+                            form.get('email')?.touched
+                          "
+                          class="text-danger"
+                        >
+                          Email is required.
+                        </div>
+                        <div
+                          *ngIf="
+                            form.get('email')?.hasError('email') &&
+                            form.get('email')?.touched
+                          "
+                          class="text-danger"
+                        >
+                          Invalid email format.
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-12 mb-4">
-                      <label class="form-label" style="font-size: 18px; font-weight: 600;">Password <sup class="text-danger">*</sup></label>
-                      <input type="password" id="password" class="form-control" placeholder="Enter your password" formcontrolname="password" required>
+
+
+                    <div class="col-md-12 mb-5">
+                      <div class="form-group">
+                        <label style="font-size: 20px; font-weight: 600"
+                          >Password<sup style="color: red; font-size: 20px"
+                            >*</sup
+                          >
+                        </label>
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control"
+                          formControlName="password"
+                          required
+                        />
+                        <div
+                          *ngIf="
+                            form.get('password')?.hasError('required') &&
+                            form.get('password')?.touched
+                          "
+                          class="text-danger"
+                        >
+                          Password is required.
+                        </div>
+                      </div>
+                      <div class="form-group" style="padding-top: 10px">
+                        <label
+                          style="
+                            font-size: 16px;
+                            font-weight: 400;
+                            text-decoration: underline;
+                            cursor: pointer;
+                          "
+                          [routerLink]="['/forgot-password']"
+                          >Forgot Password?
+                        </label>
+                      </div>
                     </div>
-                    <a class="text-black" href="https://unpalliance.org/forgot-password">Forgot Password?</a>
+
+
                     <div class="form-check ms-3 my-3">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                       <label class="form-check-label fw-bold" for="flexCheckDefault">
@@ -466,14 +515,20 @@
                       </label>
                     </div>
                     <div class="text-center">
-                      <button class="btn  text-white submit py-3 px-5" disabled>Submit</button>
+                      <button       (click)="openAgeModal('login')"
+                                        [disabled]="!form.valid" class="btn  text-white py-3 px-5" style="background: #CC9B2D;">Submit</button>
                     </div>
+                  </div>
+
+</form>
                   </div>
                 </div>
 
                 <!-- Register Tab -->
   <div                 [class.active]="!showLoginTab" [class.inactive]="showLoginTab"
- id="regis" class="register" >                  <form>
+ id="regis" class="register" >             
+ 
+                <form [formGroup]="form3">
                     <div class="text-center mb-5">
                       <h1>UMYO Military</h1>
                     </div>
@@ -498,295 +553,324 @@
 
                     <h2 class=" mb-4">Register</h2>
                     <div class="row">
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label" style="font-size: 18px;">First Name <sup class="text-danger">*</sup></label>
-                        <input type="text" class="form-control" formcontrolname="registerFirstName" required>
+                       <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label style="font-size: 20px; font-weight: 600"
+                          >First Name
+                          <sup style="color: red; font-size: 20px"
+                            >*</sup
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          formControlName="registerFirstName"
+                          class="form-control"
+                          required
+                          [ngClass]="{
+                            'invalid-input':
+                              !form3.get('registerFirstName')?.touched &&
+                              submitButtonClicked &&
+                              !form3.valid
+                          }"
+                        />
                       </div>
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label" style="font-size: 18px;">Last Name <sup class="text-danger">*</sup></label>
-                        <input type="text" class="form-control" formcontrolname="registerLastName" required>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <label class="form-label" style="font-size: 18px;">Phone Number <sup class="text-danger">*</sup></label>
-                        <input type="text" class="form-control" formcontrolname="registerPhone" required>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label" style="font-size: 18px;">Email <sup class="text-danger">*</sup></label>
-                        <input type="email" class="form-control" formcontrolname="registerEmail" required>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label" style="font-size: 18px;">Confirm Email <sup class="text-danger">*</sup></label>
-                        <input type="email" class="form-control" formcontrolname="registerConfirmEmail" required>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <label class="form-label" style="font-size: 18px;">Password <sup class="text-danger">*</sup><span>( Length Should be greater than 6 )</span></label>
-                        <input type="password" class="form-control" formcontrolname="registerPassword" required>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label class="form-label" style="font-size: 18px;">Gender <sup class="text-danger">*</sup></label>
-                        <select class="form-select" formcontrolname="registerGenderType" aria-label="Default select example" required>
-                          <option value="Male">Male</option>
-                          <option value="Female">Female</option>
-                          <option value="Other">Other</option>
-                        </select>
-                      </div>
-
-                      <!-- <div class="col-lg-6 mb-4">
-                        <label  style="font-size: 20px; font-weight: 600;">Non Profit Organization Types<sup  style="color: red; font-size: 20px;">*</sup></label>
-                        <select  aria-label="Default select example" class="form-select">
-                          <option  value="" disabled="" selected=""> Please Select </option>
-                          <option  value="Charitable Organizations"> Charitable Organizations </option>
-                          <option  value="Advocacy Organizations"> Advocacy Organizations </option>
-                          <option value="Educational Organizations"> Educational Organizations </option>
-                          <option  value="Religious Organizations"> Religious Organizations </option>
-                          <option  value="Social Service Organizations"> Social Service Organizations </option>
-                          <option  value="Cultural and Arts Organizations"> Cultural and Arts Organizations </option>
-                          <option  value="Health and Medical Research Organizations"> Health and Medical Research Organizations </option>
-                          <option  value="Environmental Organizations"> Environmental Organizations </option>
-                          <option  value="Professional and Trade Associations"> Professional and Trade Associations </option>
-                          <option value="Public Charities"> Public Charities </option>
-                          <option  value="Private Foundations"> Private Foundations </option>
-                          <option  value="Cooperative Nonprofits (Co-ops)"> Cooperative Nonprofits (Co-ops) </option>
-                          <option value="International Nonprofits"> International Nonprofits </option>
-                          <option value="Volunteer Organizations"> Volunteer Organizations </option>
-                          <option  value="Donor-Advised Funds (DAFs)"> Donor-Advised Funds (DAFs) </option>
-                          <option  value="Human Rights Organizations"> Human Rights Organizations </option>
-                          <option  value="Businesses Supporting Non Profits"> Businesses Supporting Non Profits </option>
-                          <option  value="Residents Supporting Non Profits"> Residents Supporting Non Profits </option>
-                        </select>
-                      </div> -->
-
-                      <div class="col-lg-6 mb-4">
-                        <label style="font-size: 20px; font-weight: 600;">Business Type<sup  style="color: red; font-size: 20px;">*</sup></label>
-                       <select  aria-label="Default select example" formcontrolname="registerBusiness" class="form-select mt-1">
-                      <option  selected="" value="" disabled="">Business Type</option>
-                      <option  value="Accountant"> Accountant </option>
-                      <option  value="Actor"> Actor </option>
-                      <option  value="Actuary"> Actuary </option>
-                      <option  value="Administrator"> Administrator </option>
-                      <option  value="Agent"> Agent </option>
-                      <option  value="Agricultural Worker"> Agricultural Worker </option>
-                      <option  value="Air Traffic Controller"> Air Traffic Controller </option>
-                      <option  value="Ambulance Officer"> Ambulance Officer </option>
-                      <option  value="Architect"> Architect </option>
-                      <option  value="Art Director"> Art Director </option>
-                      <option  value="Artist"> Artist </option>
-                      <option  value="Athlete"> Athlete </option>
-                      <option  value="Auditor"> Auditor </option>
-                      <option  value="Baker"> Baker </option>
-                      <option  value="Barista"> Barista </option>
-                      <option  value="Bartender"> Bartender </option>
-                      <option  value="Board Member"> Board Member </option>
-                      <option  value="Business Analyst"> Business Analyst </option>
-                      <option  value="Chef"> Chef </option>
-                      <option  value="Childcare Worker"> Childcare Worker </option>
-                      <option  value="Civil Servant"> Civil Servant </option>
-                      <option  value="Cleaner"> Cleaner </option>
-                      <option  value="Company Worker"> Company Worker </option>
-                      <option  value="Computer Scientist"> Computer Scientist </option>
-                      <option  value="Construction Worker"> Construction Worker </option>
-                      <option  value="Cook"> Cook </option><option  value="Copywriter"> Copywriter </option><option  value="Courier"> Courier </option>
-                      <option  value="Craftsperson"> Craftsperson </option>
-                      <option  value="Curator"> Curator </option>
-                      <option  value="Customer Service Representative"> Customer Service Representative </option><option  value="Dentist"> Dentist </option>
-                      <option  value="Designer"> Designer </option>
-                      <option  value="Doctor"> Doctor </option>
-                      <option  value="Driver"> Driver </option>
-                      <option  value="Economist"> Economist </option>
-                      <option  value="Electrician"> Electrician </option>
-                      <option  value="Entrepreneur"> Entrepreneur </option>
-                      <option  value="Equipment Operator"> Equipment Operator </option>
-                      <option  value="Executive Manager"> Executive Manager </option>
-                      <option  value="Farmer"> Farmer </option>
-                      <option  value="Film Maker"> Film Maker </option>
-                      <option  value="Firefighter"> Firefighter </option>
-                      <option  value="Fisherman"> Fisherman </option>
-                      <option  value="Fitness Trainer"> Fitness Trainer </option>
-                      <option  value="Flight Attendant"> Flight Attendant </option>
-                      <option  value="Florist"> Florist </option>
-                      <option  value="Freelancer"> Freelancer </option>
-                      <option  value="Gardener"> Gardener </option>
-                      <option  value="Hair Stylist"> Hair Stylist </option>
-                      <option  value="Home Care Aid"> Home Care Aid </option>
-                      <option  value="Homemaker"> Homemaker </option>
-                      <option  value="Hospitality Worker"> Hospitality Worker </option>
-                      <option  value="Housekeeper"> Housekeeper </option>
-                      <option  value="Information Technology Professional"> Information Technology Professional </option>
-                      <option  value="Investor"> Investor </option>
-                      <option  value="Journalist"> Journalist </option>
-                      <option  value="Laborer"> Laborer </option>
-                      <option  value="Lawyer"> Lawyer </option>
-                      <option  value="Librarian"> Librarian </option>
-                      <option  value="Maintenance Worker"> Maintenance Worker </option>
-                      <option  value="Manager"> Manager </option>
-                      <option  value="Manufacturing Worker"> Manufacturing Worker </option>
-                      <option  value="Marketing Professional"> Marketing Professional </option>
-                      <option  value="Mathematician"> Mathematician </option>
-                      <option  value="Mechanic"> Mechanic </option>
-                      <option  value="Medical Professional"> Medical Professional </option>
-                      <option  value="Merchant"> Merchant </option>
-                      <option  value="Midwife"> Midwife </option>
-                      <option  value="Military Personnel"> Military Personnel </option>
-                      <option  value="Musician"> Musician </option>
-                      <option  value="Nanny"> Nanny </option>
-                      <option  value="Nurse"> Nurse </option>
-                      <option  value="Office Clerk"> Office Clerk </option>
-                      <option  value="Office Worker"> Office Worker </option>
-                      <option  value="Optician"> Optician </option>
-                      <option  value="Performance Artist"> Performance Artist </option>
-                      <option  value="Photographer"> Photographer </option>
-                      <option  value="Pilot"> Pilot </option>
-                      <option  value="Police Officer"> Police Officer </option>
-                      <option  value="Politician"> Politician </option>
-                      <option  value="Professor"> Professor </option>
-                      <option  value="Railroad Engineer"> Railroad Engineer </option>
-                      <option  value="Researcher"> Researcher </option>
-                      <option  value="Retail Employee"> Retail Employee </option>
-                      <option  value="Retiree"> Retiree </option>
-                      <option  value="Rigger"> Rigger </option>
-                      <option  value="Sailor"> Sailor </option>
-                      <option  value="Salesperson"> Salesperson </option>
-                      <option  value="Scientist"> Scientist </option>
-                      <option  value="Sea Captain"> Sea Captain </option>
-                      <option  value="Secretary"> Secretary </option>
-                      <option  value="Self-Employed"> Self-Employed </option>
-                      <option  value="Small Business Owner"> Small Business Owner </option>
-                      <option  value="Social Worker"> Social Worker </option>
-                      <option  value="Software Developer"> Software Developer </option>
-                      <option  value="Spokesperson"> Spokesperson </option>
-                      <option  value="Statistician"> Statistician </option>
-                      <option  value="Stay-At-Home Parent"> Stay-At-Home Parent </option>
-                      <option  value="Student"> Student </option>
-                      <option  value="Surgeon"> Surgeon </option>
-                      <option  value="Surveyor"> Surveyor </option>
-                      <option  value="Tailor"> Tailor </option>
-                      <option  value="Teacher"> Teacher </option>
-                      <option  value="Technician"> Technician </option>
-                      <option  value="Tradesperson"> Tradesperson </option>
-                      <option  value="Trainer"> Trainer </option>
-                      <option  value="Translator"> Translator </option>
-                      <option  value="Truck Driver"> Truck Driver </option>
-                      <option  value="Tutor"> Tutor </option>
-                      <option  value="Unemployed"> Unemployed </option>
-                      <option  value="Veterinarian"> Veterinarian </option>
-                      <option  value="Videographer"> Videographer </option>
-                      <option  value="Waiter"> Waiter </option>
-                      <option  value="Waste Collector"> Waste Collector </option>
-                      <option  value="Writer"> Writer </option>
-                      <option  value="Zoologist"> Zoologist </option>
-                    </select>
                     </div>
 
-                        <div  class="col-lg-6 mb-4">
-                          <label  style="font-size: 20px; font-weight: 600;">Race<sup  style="color: red; font-size: 20px;">*</sup></label>
-                          <select  aria-label="Default select example" formcontrolname="registerRaceType" class="form-select">
-                            <option  value="" disabled="" selected=""> Please Select </option>
-                            <option  value="Nubians"> Nubians </option><option  value="African"> African </option>
-                            <option  value="Native American"> Native American </option>
-                            <option  value="Afro-Americans"> Afro-Americans </option>
-                            <option  value="Asian"> Asian </option>
-                            <option  value="Hispanic"> Hispanic </option>
-                            <option  value="European"> European </option>
-                            <option  value="Pacific Islander"> Pacific Islander </option>
-                            <option  value="German"> German </option>
-                            <option  value="Middle Eastern"> Middle Eastern </option>
-                            <option  value="Casun"> Casun </option>
-                            <option  value="Mixed Ethnicity"> Mixed Ethnicity </option>
-                            <option  value="Vietnamese"> Vietnamese </option>
-                            <option  value="Other"> Other </option>
-                          </select>
-                        </div>
+                       <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label style="font-size: 20px; font-weight: 600"
+                          >Last Name
+                          <sup style="color: red; font-size: 20px">*</sup>
+                        </label>
+                        <input
+                          type="text"
+                          formControlName="registerLastName"
+                          class="form-control"
+                          required
+                          [ngClass]="{
+                            'invalid-input':
+                              !form3.get('registerLastName')?.touched &&
+                              submitButtonClicked &&
+                              !form3.valid
+                          }"
+                        />
+                      </div>
+                    </div>
 
-                        <div  class="col-lg-6 mb-4">
-                          <label  style="font-size: 20px; font-weight: 600;">State<sup  style="color: red; font-size: 20px;">*</sup></label>
-                          <select  aria-label="Default select example" formcontrolname="registerStateType" class="form-select">
-                            <option  value="" disabled="" selected=""> Please Select </option>
-                            <option  value="Alabama"> Alabama </option>
-                            <option  value="Alaska"> Alaska </option>
-                            <option  value="Arizona"> Arizona </option>
-                            <option  value="Arkansas"> Arkansas </option>
-                            <option  value="California"> California </option>
-                            <option  value="Colorado"> Colorado </option>
-                            <option  value="Connecticut"> Connecticut </option>
-                            <option  value="Delaware"> Delaware </option>
-                            <option  value="Florida"> Florida </option>
-                            <option  value="Georgia"> Georgia </option>
-                            <option  value="Hawaii"> Hawaii </option>
-                            <option  value="Idaho"> Idaho </option>
-                            <option  value="Illinois"> Illinois </option>
-                            <option  value="Indiana"> Indiana </option>
-                            <option  value="Iowa"> Iowa </option>
-                            <option  value="Kansas"> Kansas </option>
-                            <option  value="Kentucky"> Kentucky </option>
-                            <option  value="Louisiana"> Louisiana </option>
-                            <option  value="Maine"> Maine </option>
-                            <option  value="Maryland"> Maryland </option>
-                            <option  value="Massachusetts"> Massachusetts </option>
-                            <option  value="Michigan"> Michigan </option>
-                            <option  value="Minnesota"> Minnesota </option>
-                            <option  value="Mississippi"> Mississippi </option>
-                            <option  value="Missouri"> Missouri </option>
-                            <option  value="Montana"> Montana </option>
-                            <option  value="Nebraska"> Nebraska </option>
-                            <option  value="Nevada"> Nevada </option>
-                            <option  value="New Hampshire"> New Hampshire </option>
-                            <option  value="New Jersey"> New Jersey </option>
-                            <option  value="New Mexico"> New Mexico </option>
-                            <option  value="New York"> New York </option>
-                            <option  value="North Carolina"> North Carolina </option>
-                            <option  value="North Dakota"> North Dakota </option>
-                            <option  value="Ohio"> Ohio </option>
-                            <option  value="Oklahoma"> Oklahoma </option>
-                            <option  value="Oregon"> Oregon </option>
-                            <option  value="Pennsylvania"> Pennsylvania </option>
-                            <option  value="Rhode Island"> Rhode Island </option>
-                            <option  value="South Carolina"> South Carolina </option>
-                            <option  value="South Dakota"> South Dakota </option>
-                            <option  value="Tennessee"> Tennessee </option>
-                            <option  value="Texas"> Texas </option>
-                            <option  value="Utah"> Utah </option>
-                            <option  value="Vermont"> Vermont </option><option  value="Virginia"> Virginia </option><option  value="Washington"> Washington </option>
-                            <option  value="West Virginia"> West Virginia </option>
-                            <option  value="Wisconsin"> Wisconsin </option>
-                            <option  value="Wyoming"> Wyoming </option>
-                            <option  value="Other"> Other </option>
-                          </select>
-                        </div>
+                       <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <label style="font-size: 20px; font-weight: 600"
+                          >Phone Number
+                          <sup style="color: red; font-size: 20px"
+                            >*</sup
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          formControlName="registerPhone"
+                          class="form-control"
+                          required
+                          [ngClass]="{
+                            'invalid-input':
+                              !form3.get('registerPhone')?.touched &&
+                              submitButtonClicked &&
+                              !form3.valid
+                          }"
+                        />
+                      </div>
+                    </div>
 
-                        <div  class="col-lg-6 mb-4">
-                          <label  style="font-size: 20px; font-weight: 600;">Location<sup  style="color: red; font-size: 20px;">*</sup></label>
-                          <select  aria-label="Default select example" formcontrolname="registerLocation" class="form-select ">
-                            <option  value="" disabled="" selected=""> Please Select </option>
-                            <option  value="Business"> Business </option>
-                            <option  value="CEO"> CEO </option><option  value="Corporate"> Corporate </option>
-                            <option  value="Corporation"> Corporation </option>
-                            <option  value="Exclusive"> Exclusive </option>
-                            <option  value="Founder"> Founder </option>
-                            <option  value="CFO"> CFO </option>
-                            <option  value="COO"> COO </option>
-                            <option  value="Home Owner"> Home Owner </option>
-                            <option  value="Mall"> Mall </option>
-                            <option  value="Mass"> Mass </option>
-                            <option  value="Mobile"> Mobile </option>
-                            <option  value="Non Profit"> Non Profit </option>
-                            <option  value="Office"> Office </option>
-                            <option  value="Online"> Online </option>
-                            <option  value="Partners"> Partners </option>
-                            <option  value="Private"> Private </option>
-                            <option  value="Retail and Consultants"> Retail and Consultants </option><option  value="Community Pledge"> Community Pledge </option>
-                            <option  value="Store Front"> Store Front </option>
-                            <option  value="Pop Up Shop"> Pop Up Shop </option>
-                            <option  value="Vehicle"> Vehicle </option>
-                          </select>
-                        </div>
 
-                        <div  class="col-lg-6 mb-4">
-                          <label  style="font-size: 20px; font-weight: 600;">City<sup  style="color: red; font-size: 20px;">*</sup></label>
-                          <input  type="text"  required="" class="form-control" formcontrolname="registerCityType"></div>
+                      <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label style="font-size: 20px; font-weight: 600"
+                          >Email
+                          <sup style="color: red; font-size: 20px"
+                            >*</sup
+                          ></label
+                        >
+                        <input
+                          type="email"
+                          formControlName="registerEmail"
+                          class="form-control"
+                          required
+                          [ngClass]="{
+                            'invalid-input':
+                              (!form3.get('registerEmail')?.touched ||
+                                !form3.get('registerEmail')?.valid) &&
+                              submitButtonClicked &&
+                              (!form3.valid || form3.hasError('emailMismatch'))
+                          }"
+                        />
+                      </div>
+                    </div>
+
+
+                       <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label style="font-size: 20px; font-weight: 600"
+                          >Confirm Email
+                          <sup style="color: red; font-size: 20px"
+                            >*</sup
+                          ></label
+                        >
+                        <input
+                          type="email"
+                          formControlName="registerConfirmEmail"
+                          class="form-control"
+                          required
+                          [ngClass]="{
+                            'invalid-input':
+                              (!form3.get('registerConfirmEmail')?.touched ||
+                                !form3.get('registerConfirmEmail')?.valid) &&
+                              submitButtonClicked &&
+                              (!form3.valid || form3.hasError('emailMismatch'))
+                          }"
+                        />
+                      </div>
+                    </div>
+
+
+                       <div class="col-md-12 mb-3">
+                      <div class="form-group">
+                        <label style="font-size: 20px; font-weight: 600"
+                          >Password<sup style="color: red; font-size: 20px"
+                            >* </sup
+                          ><sup style="color: red; font-size: 14px"
+                            >( Length Should be greater than 6 )</sup
+                          >
+                        </label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          required
+                          formControlName="registerPassword"
+                          [ngClass]="{
+                            'invalid-input':
+                              (!form3.get('registerPassword')?.touched ||
+                                !form3.get('registerPassword')?.valid) &&
+                              submitButtonClicked &&
+                              !form3.valid
+                          }"
+                        />
+                      </div>
+                    </div>
+
+
+
+                     <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >Gender<sup style="color: red; font-size: 20px">*</sup>
+                      </label>
+                      <select
+                        formControlName="registerGenderType"
+                        class="form-select"
+                        aria-label="Default select example"
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerGenderType')?.touched ||
+                              !form3.get('registerGenderType')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
+                        <option *ngFor="let item of gender" [value]="item">
+                          {{ item }}
+                        </option>
+                      </select>
+                    </div>
+
+
+                    <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >Race<sup style="color: red; font-size: 20px">*</sup>
+                      </label>
+                      <select
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerRaceType')?.touched ||
+                              !form3.get('registerRaceType')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                        class="form-select"
+                        aria-label="Default select example"
+                        formControlName="registerRaceType"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
+                        <option *ngFor="let item of race" [value]="item">
+                          {{ item }}
+                        </option>
+                      </select>
+                    </div>
+
+                       <div class="col-md-6 mb-3">
+                      <div class="form-group">
+                        <label style="font-size: 20px; font-weight: 600"
+                          >City
+                          <sup style="color: red; font-size: 20px">*</sup>
+                        </label>
+                        <input
+                          type="text"
+                          formControlName="registerCityType"
+                          class="form-control"
+                          required
+                          [ngClass]="{
+                            'invalid-input':
+                              !form3.get('registerCityType')?.touched &&
+                              submitButtonClicked &&
+                              !form3.valid
+                          }"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >Location<sup style="color: red; font-size: 20px"
+                          >*</sup
+                        >
+                      </label>
+                      <select
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerLocation')?.touched ||
+                              !form3.get('registerLocation')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                        required
+                        formControlName="registerLocation"
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
+                        <option *ngFor="let item of location" [value]="item">
+                          {{ item }}
+                        </option>
+                      </select>
+                    </div>
+
+                    
+                     <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >Business Type<sup style="color: red; font-size: 20px"
+                          >*</sup
+                        >
+                      </label>
+                      <select
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerBusiness')?.touched ||
+                              !form3.get('registerBusiness')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                        required
+                        formControlName="registerBusiness"
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
+                        <option
+                          *ngFor="let item of businessType"
+                          [value]="item"
+                        >
+                          {{ item }}
+                        </option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >State<sup style="color: red; font-size: 20px"
+                          >*</sup
+                        >
+                      </label>
+                      <select
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerStateType')?.touched ||
+                              !form3.get('registerStateType')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                        required
+                        formControlName="registerStateType"
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
+                        <option
+                          *ngFor="let item of state"
+                          [value]="item"
+                        >
+                          {{ item }}
+                        </option>
+                      </select>
+                    </div>
+
+                       
+
+
+                       
+
 
                       <div class="col-md-12 mb-3">
                         <label class="form-label" style="font-size: 18px;">Enter Referral Code </label>
-                        <input type="text" class="form-control" formcontrolname="registerReferralCode" required>
+                        <input                           formControlName="registerReferralCode"
+ type="text" class="form-control" >
                       </div>
                       <div class="col-md-12 mb-3">
                         <div class="form-check ms-3 my-3">
@@ -797,8 +881,10 @@
                     </div>
                       </div>
                     </div>
-                    <div class="text-center">
-                      <button class="btn  text-white py-3 px-5 submit" disabled>Submit</button>
+                    <div (click)="submitForm()" class="text-center">
+                      <button      (click)="openAgeModal('signup')"
+                      [disabled]="!form3.valid"
+                                         type="submit" class="btn  text-white py-3 px-5" style="background: #CC9B2D;">Submit</button>
                     </div>
                   </form>
                 </div>
@@ -865,3 +951,310 @@
     <h6>A gated digital community created for us — where culture thrives, wealth circulates, and power is shared.</h6>
   </div>
 </footer>
+
+
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngClass]="{ show: showPackageModal, 'd-block': showPackageModal }"
+  style="background-color: rgb(0, 0, 0, 0.8)"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          Select One Package
+        </h5>
+        <button type="button" class="close"  style="padding-left:10px;padding-right:10px"(click)="closePackageModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="max-height: 70vh; overflow-y: scroll">
+        <div class="row">
+          <div class="col-md-6" *ngFor="let package of packages; let i = index">
+            <div class="outerCard" style="min-height: 30vh; cursor: pointer">
+              <div
+                class="card"
+                [ngClass]="{ cardSelect: selectedPackage === package }"
+                (click)="selectPackage(package)"
+              >
+                <div class="card-body">
+                  <h5 class="card-title" style="color: rgb(35, 149, 243)">
+                    $
+                    {{ package.net_price ? package.net_price : package.price }}
+                    <sup
+                      style="
+                        text-decoration: line-through;
+                        font-size: 20px;
+                        color: gray;
+                        padding-left: 15px;
+                      "
+                      *ngIf="package.net_price"
+                      >{{ package.price }}</sup
+                    >
+                  </h5>
+                  <p class="card-text">Cards Limit: {{ package.limit }}</p>
+                  <p class="card-duration">Duration: {{ package.expire_in }}</p>
+
+                  <div
+                    class="description-container"
+                    style="max-height: 100px; overflow-y: auto"
+                  >
+                    <p class="card-description">{{ package.description }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-100" *ngIf="(i + 1) % 2 === 0"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button
+          (click)="closePackageModal()"
+          type="button"
+          class="btn btn-secondary"
+        >
+          Close
+        </button>
+
+        <div
+          *ngIf="selectedPackage?.price != '0'"
+          [ngClass]="{
+            hidden: selectedPackage == null || selectedPackage?.price == '0',
+            paymentButtons: selectedPackage != null
+          }"
+        >
+          <!-- <div id="paypal-button-container"></div> -->
+          <!-- hide stripe  -->
+          <!-- <button
+            type="button"
+            style="background-color: rgb(35, 149, 243); color: white"
+            class="btn btn-info"
+            (click)="openStripeModal()"
+          >
+            Stripe
+          </button> -->
+          <button
+            type="button"
+            style="background-color: rgb(35, 149, 243); color: white"
+            class="btn btn-info"
+            (click)="paypalClick()"
+          >
+            paypal
+          </button>
+        </div>
+        <div *ngIf="selectedPackage?.price == '0'">
+          <button
+            type="button"
+            style="background-color: rgb(35, 149, 243); color: white"
+            class="btn btn-info"
+            (click)="continuePaymentButton()"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngClass]="{ show: showLoadingModal, 'd-block': showLoadingModal }"
+  style="background-color: rgb(0, 0, 0, 0.8)"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container">
+          <h3>{{ paypalTitleMessage }}</h3>
+          <p style="padding-top: 15px">{{ paypalMessage }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- stripe modal  -->
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngClass]="{ show: showStripeModal, 'd-block': showStripeModal }"
+  style="background-color: rgb(0, 0, 0, 0.8)"
+>
+  <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          Pay Through Stripe
+        </h5>
+        <button type="button" class="close"  style="padding-left:10px;padding-right:10px"(click)="closeStripeModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form class="checkout-form" [formGroup]="paymentForm">
+            <h3>
+              Amount
+              {{
+                selectedPackage?.net_price
+                  ? selectedPackage?.net_price
+                  : selectedPackage?.price
+              }}
+            </h3>
+            <div class="row">
+              <div class="col-md-12" style="padding-top: 17px">
+                <div class="form-group">
+                  <label
+                    for="card-number"
+                    style="
+                      font-size: 17px;
+                      font-weight: 600;
+                      padding-bottom: 8px;
+                    "
+                    >Card Number 16 Digit (Without Dashes)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="card-number"
+                    data-stripe-element="cardNumber"
+                    formControlName="cardNumber"
+                    placeholder="XXXXXXXXXXXXXXXX"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12" style="padding-top: 17px">
+                <div class="form-group">
+                  <label
+                    for="card-expiry"
+                    style="
+                      font-size: 17px;
+                      font-weight: 600;
+                      padding-bottom: 8px;
+                    "
+                    >Expiration Date in (MM/YY) Format including /
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="card-expiry"
+                    data-stripe-element="expiryDate"
+                    formControlName="expiryDate"
+                    placeholder="MM/YY"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12" style="padding-top: 17px">
+                <div class="form-group">
+                  <label
+                    for="card-cvc"
+                    style="
+                      font-size: 17px;
+                      font-weight: 600;
+                      padding-bottom: 8px;
+                    "
+                    >CVC 3 Digit</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="card-cvc"
+                    data-stripe-element="cvc"
+                    formControlName="cvc"
+                    placeholder="XXX"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div
+                class="col-md-12"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding-top: 10px;
+                "
+              >
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  id="pay-button"
+                  (click)="pay()"
+                >
+                  Pay Now
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          (click)="closeStripeModal()"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngClass]="{ show: showAgeModal, 'd-block': showAgeModal }"
+  style="background-color: rgb(0, 0, 0, 0.8)"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container">
+          <h3>Are You 18+ of your age?</h3>
+        </div>
+        <p style="padding: 8px">
+          You must be at least 13 years old to use the Service. However,
+          children of all ages may use the Service and PLTalk Kids (where
+          available) if enabled by a parent or legal guardian. Permission by
+          Parent or Guardian If you are under 18, you represent that you have
+          your parent or guardian’s permission to use the Service. Please have
+          them read this Agreement with you. If you are a parent or legal
+          guardian of a user under the age of 18, by allowing your child to use
+          the Service, you are subject to the terms of this Agreement and
+          responsible for your child’s activity on the Service. You can find
+          tools and resources to help you manage your family’s experience on
+          PLTalk in our Help Center
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="confirmAge()">
+          Yes
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          (click)="closeAgeModal()"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

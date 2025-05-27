@@ -31,7 +31,7 @@ body,html{
 
 .navbar .nav-link {
     font-size: 18px;
-    padding: 20px 0;
+    padding: 12px 0;
     color: var(--light-color);
     font-weight: 600;
 }
@@ -414,7 +414,7 @@ body,html{
   text-decoration: underline;
 }
 #profit{
-  margin-top: 150px;
+  margin-top: 200px;
 }
 .Sports_images img,.non-profit img{
   height: 235px;
@@ -718,7 +718,13 @@ footer{
   color: var(--light-color);
 }
 
-
+.select-btn {
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  height: fit-content !important;
+}
 @media screen and (max-width:992px) {
  .digital .card h5 {
     font-size: 15px;

@@ -63,9 +63,9 @@ const routes: Routes = [
   // { path: 'pro', component: ProComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'about', component: CfComponent },
-  { path: 'network', component: AiComponent },
-  { path: 'digital', component: PackageComponent },
+  { path: 'cf', component: CfComponent },
+  { path: 'ai', component: AiComponent },
+  { path: 'package', component: PackageComponent },
 
   // Protected routes for authenticated users
   { path: 'cards', component: CardsComponent, canActivate: [AuthGuard] },
