@@ -1,34 +1,4 @@
-.nav-item{
-    align-items: center;
-    display: flex
-;
-    justify-content: center;
-}
-
-
-.navbar-nav{
-    align-items: center;
-    display: flex
-;
-    justify-content: center;
-    padding: 13px;
-    flex-wrap: wrap;
-}
-
-.register{
-    display: none;
-}
-/* .login{
-    display: none;
-} */
-
-.active{
-  display: block !important;
-}
-
-.inactive{
-    display: none !important;
-}
+pkg css
 
 .box1 {
     background: lightblue;
@@ -495,13 +465,62 @@ font-weight: 400;
     font-size: 17px;
  }
 } 
-
-.navbar .navbar-nav .nav-link {
-    padding: 10px 15px 0 0;
-    font-size: 19px;
-    transition: .5s;
-    color: white;
-    margin-left: 4px;
+.nav-link{
+    white-space: nowrap;
   }
   
- 
+
+.nav-item{
+    align-items: center;
+    display: flex
+;
+    justify-content: center;
+}
+
+
+.navbar-nav{
+    align-items: center;
+    display: flex
+;
+    justify-content: center;
+    padding: 13px;
+    flex-wrap: wrap;
+}
+
+.register{
+    display: none;
+}
+/* .login{
+    display: none;
+} */
+
+.active{
+  display: block !important;
+}
+
+.inactive{
+    display: none !important;
+}
+
+  
+  
+  .footer_widget img{
+    width: auto!important;
+    height: 230px;
+  }
+  .footer {
+    --bs-bg-opacity: 1;
+    /* background-color: #2F3D7E!important; */
+    /* height: 20vh; */
+  }
+  .footer .form-control {
+     background: white!important;
+  }
+  .footer p{
+    color: white;
+  }
+  .footer a{
+    text-decoration: none;
+    /* padding: 5px; */
+    color: white!important;
+  }

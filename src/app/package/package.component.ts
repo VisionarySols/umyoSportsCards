@@ -1,3 +1,4 @@
+pkg ts
 
 
 import { Component ,AfterViewInit} from '@angular/core';
