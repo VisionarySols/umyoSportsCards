@@ -83,6 +83,7 @@ import { AiComponent } from './ai/ai.component';
 import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { PwaInstallBannerComponent } from './components/pwa-install-banner/pwa-install-banner.component';
 
 
 
@@ -157,6 +158,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     CfComponent,
     AiComponent,
     GalleryComponent,
+    PwaInstallBannerComponent,
     
     
     
