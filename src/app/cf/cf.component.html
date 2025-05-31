@@ -1,15 +1,15 @@
 
-<div style="position:relative; z-index: 100; width: 100%;  overflow: hidden;  ">
-	<nav class="navbar navbar-expand-md " style="position: fixed; width: 100%; top:0; overflow: hidden;  margin: 0;">
+<div style="position:relative; z-index: 100; width: 100%;    ">
+	<nav class="navbar navbar-expand-md " style="position: fixed; width: 100%; top:0;   margin: 0;">
   <div class="container">
     <a style="width: 210px !important;" class="navbar-brand " [routerLink]="['']">
       <img class="img-fluid " src="assets/img/logo.png">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
+<div class="collapse navbar-collapse" [class.show]="isNavbarOpen"
+     style="max-height: 350px; overflow-y: auto;">      <ul class="navbar-nav mx-auto">
       <li class="nav-item">
     <a class="nav-link" [routerLink]="['']">Home</a>
   </li>

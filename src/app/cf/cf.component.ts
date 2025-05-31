@@ -10,7 +10,12 @@ export class CfComponent {
   showPolicyModal:boolean=false
   showRefundModal:boolean=false
   showTermsModal:boolean=false
+isNavbarOpen = false;
 
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+  }
+      
   openTermsModal(){
     this.showTermsModal = true;
   }
