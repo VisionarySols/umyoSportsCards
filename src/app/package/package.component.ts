@@ -1,5 +1,3 @@
-pkg ts
-
 
 import { Component ,AfterViewInit} from '@angular/core';
 declare var $: any; 

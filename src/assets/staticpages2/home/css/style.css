@@ -24,6 +24,42 @@ body,html{
 
 }
 
+.nav-item{
+    align-items: center;
+    display: flex
+;
+    justify-content: center;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+    padding: 12px 0;
+    color: var(--light-color);
+    font-weight: 600;
+}
+.navbar-nav{
+    align-items: center !important;
+    display: flex !important
+;
+    justify-content: center !important;
+    /* padding: 13px; */
+    flex-wrap: wrap !important;
+}
+
+.register{
+    display: none;
+}
+/* .login{
+    display: none;
+} */
+
+.active{
+  display: block !important;
+}
+
+.inactive{
+    display: none !important;
+}
 
 .navbar .nav-link {
     font-size: 18px;
