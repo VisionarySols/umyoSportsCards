@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({ providedIn: 'root' })
 export class InstallPwaService {
   deferredPrompt: any = null;
+  isBannerDismissed = false;
 
   constructor() {
     window.addEventListener('beforeinstallprompt', (e: Event) => {
@@ -16,12 +17,25 @@ export class InstallPwaService {
     return /iphone|ipad|ipod/.test(ua);
   }
 
+  isAndroid(): boolean {
+    const ua = window.navigator.userAgent.toLowerCase();
+    return /android/.test(ua);
+  }
+
   isInStandaloneMode(): boolean {
     return ('standalone' in window.navigator) && !!(window.navigator['standalone'] as boolean);
   }
 
   shouldShowIosInstallBanner(): boolean {
-    return this.isIos() && !this.isInStandaloneMode();
+    return this.isIos() && !this.isInStandaloneMode() && !this.isBannerDismissed;
+  }
+
+  shouldShowAndroidInstallBanner(): boolean {
+    return this.isAndroid() && !!this.deferredPrompt && !this.isBannerDismissed;
+  }
+
+  dismissBanner() {
+    this.isBannerDismissed = true;
   }
 
   canPromptInstall(): boolean {
