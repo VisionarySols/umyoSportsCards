@@ -1,0 +1,24 @@
+.install-banner {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: #1976d2;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: center;
+  font-size: 16px;
+}
+
+button {
+  margin: 8px;
+  padding: 8px 16px;
+  background: white;
+  color: #1976d2;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}

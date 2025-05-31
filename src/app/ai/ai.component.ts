@@ -9,7 +9,11 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
 })
 export class AiComponent {
   
+ isNavbarOpen = false;
 
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+  }
   showPolicyModal:boolean=false
   showRefundModal:boolean=false
   showTermsModal:boolean=false

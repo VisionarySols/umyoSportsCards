@@ -1,0 +1,31 @@
+import { Component, OnInit } from '@angular/core';
+import { InstallPwaService } from 'src/app/services/install-pwa.service';
+
+@Component({
+  selector: 'app-pwa-install-banner',
+  templateUrl: './pwa-install-banner.component.html',
+  styleUrls: ['./pwa-install-banner.component.css']
+})
+export class PwaInstallBannerComponent implements OnInit {
+  showIosBanner = false;
+  showAndroidBanner = false;
+
+  constructor(public installPwa: InstallPwaService) {}
+
+  ngOnInit(): void {
+    this.showIosBanner = this.installPwa.shouldShowIosInstallBanner();
+    this.showAndroidBanner = this.installPwa.shouldShowAndroidInstallBanner();
+  }
+
+  installApp() {
+    this.installPwa.promptInstall().then(() => {
+      this.showAndroidBanner = false;
+    });
+  }
+
+  dismiss() {
+    this.installPwa.dismissBanner();
+    this.showIosBanner = false;
+    this.showAndroidBanner = false;
+  }
+}

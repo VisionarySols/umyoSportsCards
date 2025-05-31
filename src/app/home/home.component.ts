@@ -456,7 +456,11 @@ export class HomeComponent implements AfterViewInit{
     }
     
     
-      
+       isNavbarOpen = false;
+
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+  }
       openPackageModal() {
         this.apiService.checkEmail(this.form3.get('registerEmail')?.value).subscribe(
           (response)=>{

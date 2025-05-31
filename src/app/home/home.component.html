@@ -1,9 +1,12 @@
-<div style="position:relative; z-index: 100; width: 100%;  overflow: hidden;  ">
-	<nav class="navbar navbar-expand-md " style="position: fixed; width: 100%; top:0; overflow: hidden;  margin: 0;">
+
+<div style="position:relative; z-index: 100; width: 100%;    ">
+	<nav class="navbar navbar-expand-md " style="position: fixed; width: 100%; top:0;   margin: 0;">
   <div class="container">
-    <a style="width: 210px !important;" class="navbar-brand " [routerLink]="['']"><img class="img-fluid lozad" src="assets/img/military.png"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+    <a style="width: 210px !important;" class="navbar-brand " [routerLink]="['']">
+      <img class="img-fluid " src="assets/img/military.png">
+    </a>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+<span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
@@ -26,70 +29,7 @@
       >Hub</a
     >
   </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      href="https://militarytweets.site/guest"
-      >UMilitary Talk</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      href="https://Militarytalks.site"
-      >Military Talks</a
-    >
-  </li>
-   <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="white-space: nowrap"
-                  href="https://militarytweets.site/guest"
-                  >UMilitary Talk</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="white-space: nowrap"
-                  href="https://Militarytalks.site"
-                  >Military Talks</a
-                >
-              </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      href="https://Live.umyoconvo.site"
-      >Podcast</a
-    >
-  </li>
-  <li class="nav-item">
-    <a
-      class="nav-link"
-      style="white-space: nowrap"
-      href="http://umyoanimate.site/"
-      >ChatGpt</a
-    >
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" style="white-space: nowrap" href="https://Umyoappt.site"
-      >Booking Appt</a
-    >
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" style="white-space: nowrap" href="https://Umyoevents.site"
-      >Events</a
-    >
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" style="white-space: nowrap" href="https://UPMRadio.site"
-      >Radio</a
-    >
-  </li>
+  
   <li class="nav-item">
     <a
       class="nav-link"
@@ -115,16 +55,7 @@
     >
   </li>
   
- <li class="nav-item">
-  <a href="https://Umyofan.site" class=" nav-link"
-    >Umyo Fan</a
-  >
-</li>
-<li class="nav-item">
-  <a href="https://www.htv10.tv/story/52583123/umyo-a-communitydriven-tech-revolution" class=" nav-link"
-    >Press Release</a
-  >
-</li>
+ 
       </ul>
     </div>
   </div>
@@ -328,9 +259,7 @@
                 </select>
               </div>
 
-<div class="col-lg-6 mb-4">
-                    <input type="text" class="form-control" placeholder="City">
-                    </div>
+
                <div class="col-lg-6 mb-4">
                 <select
                   class="form-select"

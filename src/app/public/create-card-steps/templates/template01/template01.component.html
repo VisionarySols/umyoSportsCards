@@ -289,12 +289,12 @@
         </div>
       </div>
 
-      <footer>
+      <div class="cardFooter">
         <img *ngIf="qrCodeImage" [src]="qrCodeImage" alt="QR Code" />
         <!-- replace with auto generated in production -->
         <div class="clearfix"><br /></div>
-      </footer>
-      <footer>
+      </div>
+      <div class="cardFooter">
         <p>This card ispowered by <span>UMYO Cards</span></p>
         <form action="" class="referal-form" *ngIf="inviteCode">
           <label for="referal">Referral ID: </label
@@ -311,7 +311,7 @@
           <span class="left">Click<br />Here</span>
           <span class="right">Design your card now!</span>
         </a>
-      </footer>
+      </div>
     </div>
   </div>
 </div>

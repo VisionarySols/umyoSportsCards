@@ -1,0 +1,14 @@
+<!-- Android Custom Banner -->
+<div *ngIf="showAndroidBanner" class="install-banner">
+  <p>Install this app on your device for better experience!</p>
+  <button (click)="installApp()">Install App</button>
+  <button (click)="dismiss()">Dismiss</button>
+</div>
+
+<!-- iOS Custom Banner -->
+<div *ngIf="showIosBanner" class="install-banner">
+  <p>
+    Install this app: Tap <strong>Share</strong> → <strong>Add to Home Screen</strong>
+  </p>
+  <button (click)="dismiss()">Dismiss</button>
+</div>

@@ -10,7 +10,11 @@ declare var $: any;
 export class PackageComponent implements AfterViewInit{
 
 
+ isNavbarOpen = false;
 
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+  }
   showPolicyModal:boolean=false
   showRefundModal:boolean=false
   showTermsModal:boolean=false

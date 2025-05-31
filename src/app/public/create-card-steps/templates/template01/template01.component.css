@@ -182,24 +182,24 @@ img {
 .btn-wrapper{
     padding-inline: 10px;
 }
-footer{
+.cardFooter{
     text-align: center;
     padding-top: 20px;
     margin-bottom: 20px;
 }
-footer p{
+.cardFooter p{
     margin-bottom: 10px;
 }
-footer p span{
+.cardFooter p span{
     font-style: italic;
     color: gray;
 }
 
-footer input{
+.cardFooter input{
     padding: 5px;
     line-height: 1.4;
 }
-footer .call-to-action {
+.cardFooter .call-to-action {
     margin-top: 2rem;
     border: 0px;
     background-color: #4a4a4a;
@@ -210,10 +210,10 @@ footer .call-to-action {
     color: #ffffff;
 
 }
-footer .call-to-action span.right{
+.cardFooter .call-to-action span.right{
     font-size: 17px;
 }
-footer .call-to-action span.left{
+.cardFooter .call-to-action span.left{
     background-color: #3aa480;
     color: #ffffff;
     font-size: 18px;
@@ -221,8 +221,8 @@ footer .call-to-action span.left{
     position: relative;
     padding: 10px 40px;
 }
-footer .call-to-action span.left:after,
-footer .call-to-action span.left:before {
+.cardFooter .call-to-action span.left:after,
+.cardFooter .call-to-action span.left:before {
     left: 100%;
     top: 50%;
     border: solid transparent;
@@ -233,13 +233,13 @@ footer .call-to-action span.left:before {
     pointer-events: none;
 }
 
-footer .call-to-action span.left:after {
+.cardFooter .call-to-action span.left:after {
     border-color: rgba(136, 183, 213, 0);
     border-left-color: #3aa480;
     border-width: 10px;
     margin-top: -10px;
 }
-footer .call-to-action span.left:before {
+.cardFooter .call-to-action span.left:before {
     border-color: rgba(194, 225, 245, 0);
     border-left-color: #3aa480;
     border-width: 16px;

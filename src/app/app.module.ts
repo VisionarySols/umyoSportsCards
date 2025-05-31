@@ -1,4 +1,4 @@
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA, isDevMode } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -82,6 +82,8 @@ import { CfComponent } from './cf/cf.component';
 import { AiComponent } from './ai/ai.component';
 import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { PwaInstallBannerComponent } from './components/pwa-install-banner/pwa-install-banner.component';
 
 
 
@@ -156,6 +158,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     CfComponent,
     AiComponent,
     GalleryComponent,
+    PwaInstallBannerComponent,
     
     
     
@@ -184,6 +187,12 @@ import { GalleryComponent } from './gallery/gallery.component';
       positionClass: 'custom-toast-position',
     }),
     BrowserAnimationsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   
   providers: [],
