@@ -8,9 +8,10 @@
     <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
 <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" [class.show]="isNavbarOpen">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
+
     <a class="nav-link" [routerLink]="['']">Home</a>
   </li>
 
