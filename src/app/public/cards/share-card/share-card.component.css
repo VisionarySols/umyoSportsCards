@@ -43,11 +43,38 @@
     margin: 20px;
     }
 
-    @media all and (min-width: 480px) {
+    @media all and (min-width: 250px) {
     .temp-wrapper {
-    width: 50%;
+    width: 100%;
     margin: 0px auto;
     }
+
+        @media all and (min-width: 480px) {
+    .temp-wrapper {
+    width: 80%;
+    margin: 0px auto;
+    }
+  }
+
+    @media all and (min-width: 590px) {
+    .temp-wrapper {
+    width: 70%;
+    margin: 0px auto;
+    }
+  }
+  @media all and (min-width: 690px) {
+    .temp-wrapper {
+    width: 60%;
+    margin: 0px auto;
+    }
+  }
+
+  @media all and (min-width: 790px) {
+    .temp-wrapper {
+    width: 60%;
+    margin: 0px auto;
+    }
+  }
 
     .temp-wrapper--wide {
     width: 100%;
@@ -60,7 +87,7 @@
 
     @media all and (min-width: 768px) {
     .temp-wrapper {
-    width: 33.33337%;
+    width: 50%;
     }
 
     .temp-wrapper--wide {
