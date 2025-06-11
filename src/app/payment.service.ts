@@ -99,6 +99,9 @@ if (expireInValue.includes("year")) {
               balance_transaction: null,
               balance_transaction_type: 'stripe',
               business_type: form3.get('registerBusiness')?.value,
+
+              speciality: form3.get('registerSpeciality')?.value,
+              talent: form3.get('registerTalent')?.value,
               sport_type: form3.get('registerSportType')?.value,
               age_type: form3.get('registerAgeType')?.value,
               position: form3.get('registerPositionType')?.value,
@@ -188,6 +191,8 @@ if (expireInValue.includes("year")) {
 
       
       business_type: form3.get('registerBusiness')?.value,
+      speciality: form3.get('registerSpeciality')?.value,
+              talent: form3.get('registerTalent')?.value,
       sport_type: form3.get('registerSportType')?.value,
       age_type: form3.get('registerAgeType')?.value,
       position: form3.get('registerPositionType')?.value,
@@ -309,7 +314,8 @@ if (expireInValue.includes("year")) {
       business_type: form3.get('registerBusiness')?.value,
       position: form3.get('registerPositionType')?.value,
       
-      
+      speciality: form3.get('registerSpeciality')?.value,
+              talent: form3.get('registerTalent')?.value,
       
       
       

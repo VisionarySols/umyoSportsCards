@@ -239,10 +239,23 @@
                 <select
                   class="form-select"
                   aria-label="Default select example"
-                  formControlName="selectedBusiness"
+                  formControlName="selectedTalent"
                 >
-                  <option selected value="" disabled>Business Type</option>
-                  <option *ngFor="let item of businessType" [value]="item">
+                  <option selected value="" disabled>Talent Type</option>
+                  <option *ngFor="let item of talentType" [value]="item">
+                    {{ item }}
+                  </option>
+                </select>
+              </div>
+
+               <div class="col-lg-6 mb-4">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedSpeciality"
+                >
+                  <option selected value="" disabled>Speciality</option>
+                  <option *ngFor="let item of specialityType" [value]="item">
                     {{ item }}
                   </option>
                 </select>
@@ -261,7 +274,24 @@
                 </select>
               </div>
 
-               <div class="col-lg-6 mb-4">
+
+                    
+                    
+
+                   
+                    <div class="col-lg-6">
+                        <h4 class="mb-4 text-white text-center">I Pledge To Report Violent Crimes</h4>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                <input
+                  type="name"
+                  formControlName="selectedCity"
+                  class="form-control"
+                  placeholder="City"
+                />
+              </div>
+<div class="col-lg-6 mb-4">
                 <select
                   class="form-select"
                   aria-label="Default select example"
@@ -273,16 +303,6 @@
                   </option>
                 </select>
               </div>
-
-
-                    
-                    
-
-                   
-                    <div class="col-lg-6">
-                        <h4 class="mb-4 text-white text-center">I Pledge To Report Violent Crimes</h4>
-                    </div>
-
                     <div class="col-lg-6 mb-4">
                 <select
                   class="form-select"
@@ -309,14 +329,7 @@
                   </option>
                 </select>
               </div>
- <div class="col-lg-6 mb-4">
-                <input
-                  type="name"
-                  formControlName="selectedCity"
-                  class="form-control"
-                  placeholder="City"
-                />
-              </div>
+ 
                     
                    
                     <div class="col-lg-6 mb-4">
@@ -731,20 +744,20 @@
                     
                      <div class="col-lg-6 mb-4">
                       <label style="font-size: 20px; font-weight: 600"
-                        >Business Type<sup style="color: red; font-size: 20px"
+                        >Talent Type<sup style="color: red; font-size: 20px"
                           >*</sup
                         >
                       </label>
                       <select
                         [ngClass]="{
                           'invalid-input':
-                            (!form3.get('registerBusiness')?.touched ||
-                              !form3.get('registerBusiness')?.valid) &&
+                            (!form3.get('registerTalent')?.touched ||
+                              !form3.get('registerTalent')?.valid) &&
                             submitButtonClicked &&
                             !form3.valid
                         }"
                         required
-                        formControlName="registerBusiness"
+                        formControlName="registerTalent"
                         class="form-select"
                         aria-label="Default select example"
                       >
@@ -752,13 +765,46 @@
                           Please Select
                         </option>
                         <option
-                          *ngFor="let item of businessType"
+                          *ngFor="let item of talentType"
                           [value]="item"
                         >
                           {{ item }}
                         </option>
                       </select>
                     </div>
+
+
+                      <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >Speciality<sup style="color: red; font-size: 20px"
+                          >*</sup
+                        >
+                      </label>
+                      <select
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerSpeciality')?.touched ||
+                              !form3.get('registerSpeciality')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                        required
+                        formControlName="registerSpeciality"
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
+                        <option
+                          *ngFor="let item of specialityType"
+                          [value]="item"
+                        >
+                          {{ item }}
+                        </option>
+                      </select>
+                    </div>
+
 
                     <div class="col-lg-6 mb-4">
                       <label style="font-size: 20px; font-weight: 600"

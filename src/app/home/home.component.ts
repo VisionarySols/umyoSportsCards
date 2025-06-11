@@ -107,6 +107,8 @@ export class HomeComponent implements AfterViewInit{
     paypalTitleMessage:any;
     paypalMessage:any;
     state:any
+    talentType:any
+    specialityType:any
     ngOnInit(): void {
       setTimeout(() => {
     AOS.init({
@@ -123,7 +125,9 @@ export class HomeComponent implements AfterViewInit{
     }, 500);
   }, 100);
       this.dropdownService.getDropdownOptions().subscribe(data => {
-        this.businessType = data.businessType;
+        this.talentType = data.talentType;
+                this.specialityType = data.SpecialtyType;
+
         this.location = data.location;
         this.city=data.city
         this.gender = data.gender;
@@ -511,7 +515,9 @@ export class HomeComponent implements AfterViewInit{
           state : this.form2.get('selectedStateType').value,
          city : this.form2.get('selectedCity').value,
          location : this.form2.get('selectedLocation').value,
-         business_type : this.form2.get('selectedBusiness').value,
+         speciality : this.form2.get('selectedSpeciality').value,
+                  talent : this.form2.get('selectedTalent').value,
+
         
          name : this.form2.get('selectedName').value,
          gender : this.form2.get('selectedGender').value,
@@ -743,7 +749,9 @@ export class HomeComponent implements AfterViewInit{
       
           
           selectedName: [''],
-          selectedBusiness: [''],
+          selectedTalent: [''],
+                    selectedSpeciality: [''],
+
           selectedLocation: [''],
           selectedCity: [''],
           selectedStateType: [''],
@@ -766,7 +774,9 @@ export class HomeComponent implements AfterViewInit{
           registerCityType: ['', Validators.required],
           registerRaceType: ['', Validators.required],
           registerGenderType: ['', Validators.required],
-          registerBusiness: ['', Validators.required],
+          registerTalent: ['', Validators.required],
+                    registerSpeciality: ['', Validators.required],
+
           registerStateType: ['', Validators.required],
 
           
