@@ -1,3 +1,5 @@
+
+
 import { Injectable ,EventEmitter } from '@angular/core';
 import { ApiService } from './api.service'; 
 import { Router } from '@angular/router';
@@ -84,7 +86,6 @@ if (expireInValue.includes("year")) {
             // proceed to email verification screen
             this.setUserData({
 
-            
               firstname: form3.get('registerFirstName').value,
               lastname: form3.get('registerLastName').value,
               phone: form3.get('registerPhone').value,
@@ -117,7 +118,7 @@ if (expireInValue.includes("year")) {
         
         
               reffered_from: form3.get('registerReferralCode').value,
-
+              
 
               
               
@@ -175,6 +176,7 @@ if (expireInValue.includes("year")) {
   testing(form3:any, selectedPackage: Package){
 
     this.setUserData({
+       
       friend_id: null,
       package_id: selectedPackage.id,
       balance_transaction: null,
@@ -204,6 +206,9 @@ if (expireInValue.includes("year")) {
               
 
       reffered_from: form3.get('registerReferralCode').value,
+
+
+
 
 
       
@@ -270,9 +275,6 @@ if (expireInValue.includes("year")) {
     this.apiService.createBillingPlan(payload)
     .subscribe(
       (response) => {
-
-
-        
         planID = response.plan_id;
         console.log("Test: Created billing plan with ID " + planID);
         const approvalLink = response.approval_url
@@ -318,7 +320,6 @@ if (expireInValue.includes("year")) {
       base: form3.get('registerBase')?.value,
       type: form3.get('registerType')?.value,
       rank: form3.get('registerRank')?.value,
-
 
       
 

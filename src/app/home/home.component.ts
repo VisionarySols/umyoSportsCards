@@ -107,6 +107,10 @@ export class HomeComponent implements AfterViewInit{
     paypalTitleMessage:any;
     paypalMessage:any;
     state:any
+    type:any
+    base:any
+    ranking:any
+    branch:any
     ngOnInit(): void {
       setTimeout(() => {
     AOS.init({
@@ -122,15 +126,18 @@ export class HomeComponent implements AfterViewInit{
       AOS.refresh();
     }, 500);
   }, 100);
-      this.dropdownService.getDropdownOptions().subscribe(data => {
-        this.businessType = data.businessType;
-        this.location = data.location;
-        this.city=data.city
-        this.gender = data.gender;
-        this.race = data.race;
-                this.state = data.state;
+     this.dropdownService.getDropdownOptions().subscribe(data => {
+      this.businessType = data.businessType;
+      this.location = data.location;
+      this.state = data.state;
+      this.gender = data.gender;
+      this.race = data.race;
+      this.type=data.type
+      this.base=data.base
+      this.ranking=data.ranking
+      this.branch=data.branch
+    });
 
-      });
   
       this.route.queryParams.subscribe(params => {
         const referralId = params['referralId'] || "";
@@ -501,32 +508,31 @@ export class HomeComponent implements AfterViewInit{
     
     
     
-      searchCards(){
-        
-
-          
-  
-
-        const payload={
-          state : this.form2.get('selectedStateType').value,
-         city : this.form2.get('selectedCity').value,
-         location : this.form2.get('selectedLocation').value,
-         business_type : this.form2.get('selectedBusiness').value,
-        
-         name : this.form2.get('selectedName').value,
-         gender : this.form2.get('selectedGender').value,
-         race : this.form2.get('selectedRace').value,
-         
-         }  
+ searchCards(){
+      
+      const payload={
+        state : this.form2.get('selectedStateType').value,
+       city : this.form2.get('selectedCity').value,
+       base : this.form2.get('selectedBase').value,
+       branch : this.form2.get('selectedBranch').value,
+       type : this.form2.get('selectedType').value,
+       location : this.form2.get('selectedLocation').value,
+       rank : this.form2.get('selectedRank').value,
+       business_type : this.form2.get('selectedBusiness').value,
+      
+       name : this.form2.get('selectedName').value,
+       gender : this.form2.get('selectedGender').value,
+       race : this.form2.get('selectedRace').value,
        
-       this.apiService.searchCard(payload).subscribe(
-         (response)=>{
-           this.cardsSearched=response.Cards
-           console.log(response);
-         }
-       )
-     }
-  
+       }
+     
+     this.apiService.searchCard(payload).subscribe(
+       (response)=>{
+         this.cardsSearched=response.Cards
+         console.log(response);
+       }
+     )
+   }
   
   
       getPositionType(sport: any) {
@@ -738,44 +744,50 @@ export class HomeComponent implements AfterViewInit{
           password: ['', [Validators.required]],
         });
     
-        this.form2 = this.fb.group({
-          
-      
-          
-          selectedName: [''],
-          selectedBusiness: [''],
-          selectedLocation: [''],
-          selectedCity: [''],
-          selectedStateType: [''],
-          selectedRace: [''],
-          selectedGender: [''],
-  
-       
-       
-          
-          
-  
-        });
-        this.form3 = this.fb.group({
-          registerFirstName: ['', Validators.required],
-          registerLastName: ['', Validators.required],
-          registerEmail: ['', [Validators.required, Validators.email]],
-          registerConfirmEmail: ['', [Validators.required, Validators.email]],
-          registerPassword: ['', [Validators.required, Validators.minLength(6)]],
-          registerPhone: ['', Validators.required],
-          registerCityType: ['', Validators.required],
-          registerRaceType: ['', Validators.required],
-          registerGenderType: ['', Validators.required],
-          registerBusiness: ['', Validators.required],
-          registerStateType: ['', Validators.required],
+           this.form2 = this.fb.group({
+        
+    
+        selectedBusiness: [''],
+        selectedStateType: [''],
+        selectedName: [''],
+        selectedRace: [''],
+        selectedLocation: [''],
+        selectedGender: [''],
+        selectedCity: [''],
 
-          
-          registerLocation: ['', Validators.required],
-          
-          
-          
-          registerReferralCode: [''], // Not required
-        }, { validators: this.emailMatchValidator })
+        selectedBase: [''],
+        selectedBranch: [''],
+        selectedRank: [''],
+        selectedType: [''],
+     
+     
+        
+        
+
+      });
+      this.form3 = this.fb.group({
+        registerFirstName: ['', Validators.required],
+        registerLastName: ['', Validators.required],
+        registerEmail: ['', [Validators.required, Validators.email]],
+        registerConfirmEmail: ['', [Validators.required, Validators.email]],
+        registerPassword: ['', [Validators.required, Validators.minLength(6)]],
+        registerPhone: ['', Validators.required],
+        registerCityType: ['', Validators.required],
+        registerRaceType: ['', Validators.required],
+        registerGenderType: ['', Validators.required],
+
+        registerBusiness: ['', Validators.required],
+        registerBranch: ['', Validators.required],
+        registerBase: ['', Validators.required],
+        registerLocation: ['', Validators.required],
+        registerType: ['', Validators.required],
+        registerRank: ['', Validators.required],
+        
+        registerStateType: ['', Validators.required],
+        registerReferralCode: [''], // Not required
+      }, { validators: this.emailMatchValidator })
+
+
   
   
         // fetch packages
