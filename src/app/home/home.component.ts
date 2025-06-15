@@ -504,35 +504,29 @@ export class HomeComponent implements AfterViewInit{
       }
     
     
-    
-      searchCards(){
-        
+     searchCards(){
+      
+      const payload={
+       state : this.form2.get('selectedStateType').value,
+      city : this.form2.get('selectedCity').value,
+      name : this.form2.get('selectedName').value,
+      position : this.form2.get('selectedPositionType').value,
+      business_type: this.form2.get('selectedBusinessType')?.value,
+      sport_type: this.form2.get('selectedSportType')?.value,
+      age_type: this.form2.get('selectedAgeType')?.value,
+      
+      
+ 
+      }
+     
+     this.apiService.searchCard(payload).subscribe(
+       (response)=>{
+         this.cardsSearched=response.Cards
+         console.log(response);
+       }
+     )
+   }
 
-          
-  
-
-        const payload={
-          state : this.form2.get('selectedStateType').value,
-         city : this.form2.get('selectedCity').value,
-         location : this.form2.get('selectedLocation').value,
-         speciality : this.form2.get('selectedSpeciality').value,
-                  talent : this.form2.get('selectedTalent').value,
-
-        
-         name : this.form2.get('selectedName').value,
-         gender : this.form2.get('selectedGender').value,
-         race : this.form2.get('selectedRace').value,
-         
-         }  
-       
-       this.apiService.searchCard(payload).subscribe(
-         (response)=>{
-           this.cardsSearched=response.Cards
-           console.log(response);
-         }
-       )
-     }
-  
   
   
       getPositionType(sport: any) {
@@ -563,6 +557,8 @@ export class HomeComponent implements AfterViewInit{
           this.getPositionType(selectedSport);
         }
       }
+
+      
       
       selectPackage(selectedPackage: Package) {
         this.selectedPackage = selectedPackage;
@@ -743,49 +739,49 @@ export class HomeComponent implements AfterViewInit{
           email: ['', [Validators.required, Validators.email]],
           password: ['', [Validators.required]],
         });
+       this.form2 = this.fb.group({
+        
     
-        this.form2 = this.fb.group({
-          
+        
+               
+      selectedBusinessType: [''],
+      selectedAgeType: [''],
+      selectedSportType: [''],
+      selectedPositionType: [''],
+      selectedStateType: [''],
+      selectedName: [''],
       
-          
-          selectedName: [''],
-          selectedTalent: [''],
-                    selectedSpeciality: [''],
+      
+      
+      selectedCity: [''],
 
-          selectedLocation: [''],
-          selectedCity: [''],
-          selectedStateType: [''],
-          selectedRace: [''],
-          selectedGender: [''],
-  
-       
-       
-          
-          
-  
-        });
-        this.form3 = this.fb.group({
-          registerFirstName: ['', Validators.required],
-          registerLastName: ['', Validators.required],
-          registerEmail: ['', [Validators.required, Validators.email]],
-          registerConfirmEmail: ['', [Validators.required, Validators.email]],
-          registerPassword: ['', [Validators.required, Validators.minLength(6)]],
-          registerPhone: ['', Validators.required],
-          registerCityType: ['', Validators.required],
-          registerRaceType: ['', Validators.required],
-          registerGenderType: ['', Validators.required],
-          registerTalent: ['', Validators.required],
-                    registerSpeciality: ['', Validators.required],
 
-          registerStateType: ['', Validators.required],
+     
+     
+        
+        
 
-          
-          registerLocation: ['', Validators.required],
-          
-          
-          
-          registerReferralCode: [''], // Not required
-        }, { validators: this.emailMatchValidator })
+      });
+      this.form3 = this.fb.group({
+        registerFirstName: ['', Validators.required],
+        registerLastName: ['', Validators.required],
+        registerEmail: ['', [Validators.required, Validators.email]],
+        registerConfirmEmail: ['', [Validators.required, Validators.email]],
+        registerPassword: ['', [Validators.required, Validators.minLength(6)]],
+        registerPhone: ['', Validators.required],
+        registerCityType: ['', Validators.required],
+      registerBusinessType: ['', Validators.required],
+      registerAgeType: ['', Validators.required],
+      registerSportType: ['', Validators.required],
+      registerPositionType: ['', Validators.required],
+      registerStateType: ['', Validators.required],
+      registerReferralCode: [''], // Not required
+      }, { validators: this.emailMatchValidator })
+
+      this.getBusniessType()
+
+      this.getAgeType()
+      this.getSportType()
   
   
         // fetch packages

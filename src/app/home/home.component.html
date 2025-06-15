@@ -217,10 +217,9 @@
              <div class="col-lg-5 mt-5">
                 <!-- <h4 class="mb-4 text-white">Search For NBA Players Connects Here</h4> -->
                 
-                          <form [formGroup]="form2" class="text-center">
-
-<div class="row">
-                     <div class="col-lg-6 mb-4">
+                  <form [formGroup]="form2" class="text-center">
+            <div class="row">
+              <div class="col-lg-6 mb-4">
                 <input
                   type="name"
                   formControlName="selectedName"
@@ -228,114 +227,144 @@
                   placeholder="Name"
                 />
               </div>
-
-
-                
-
-                    <div class="col-lg-6 mb-4">
+              <div class="col-lg-6 mb-4">
                 <select
                   class="form-select"
                   aria-label="Default select example"
-                  formControlName="selectedTalent"
+                  formControlName="selectedBusinessType"
                 >
-                  <option selected value="" disabled>Talent Type</option>
-                  <option *ngFor="let item of talentType" [value]="item">
-                    {{ item }}
+                  <option selected value="" disabled>
+                    Select Business Type
+                  </option>
+                  <option
+                    [value]="type.business_type"
+                    *ngFor="let type of businessType"
+                  >
+                    {{ type.business_type }}
+                  </option>
+                </select>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedAgeType"
+                >
+                  <option selected value="" disabled>Select Age Type</option>
+                  <option [value]="type.name" *ngFor="let type of ageType">
+                    {{ type.name }}
+                  </option>
+                </select>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedSportType"
+                  (change)="onSportTypeChange()"
+                >
+                  <option selected value="" disabled>Select Sport Type</option>
+                  <option [value]="type.name" *ngFor="let type of sportType">
+                    {{ type.name }}
+                  </option>
+                </select>
+              </div>
+              <div class="col-lg-6 mb-4">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  formControlName="selectedPositionType"
+                >
+                  <option selected value="" disabled>
+                    Select Position Type
+                  </option>
+                  <option [value]="type.name" *ngFor="let type of positionType">
+                    {{ type.name }}
                   </option>
                 </select>
               </div>
 
-               <div class="col-lg-6 mb-4">
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  formControlName="selectedSpeciality"
-                >
-                  <option selected value="" disabled>Speciality</option>
-                  <option *ngFor="let item of specialityType" [value]="item">
-                    {{ item }}
-                  </option>
-                </select>
-              </div>
-
-               <div class="col-lg-6 mb-4">
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  formControlName="selectedLocation"
-                >
-                  <option selected value="" disabled>Location</option>
-                  <option *ngFor="let item of location" [value]="item">
-                    {{ item }}
-                  </option>
-                </select>
-              </div>
-
-
-                    
-                    
-
-                   
-                    <div class="col-lg-6">
-                        <h4 class="mb-4 text-white text-center">I Pledge To Report Violent Crimes</h4>
-                    </div>
-
-                    <div class="col-lg-6 mb-4">
+              <div class="col-lg-6 mb-4">
                 <input
-                  type="name"
+                  type="text"
                   formControlName="selectedCity"
                   class="form-control"
                   placeholder="City"
                 />
               </div>
-<div class="col-lg-6 mb-4">
+              <div class="col-lg-6 mb-4">
                 <select
                   class="form-select"
                   aria-label="Default select example"
                   formControlName="selectedStateType"
                 >
                   <option selected value="" disabled>State</option>
-                  <option *ngFor="let item of state" [value]="item">
-                    {{ item }}
-                  </option>
-                </select>
-              </div>
-                    <div class="col-lg-6 mb-4">
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  formControlName="selectedRace"
-                >
-                  <option selected value="" disabled>Race</option>
-                  <option *ngFor="let item of race" [value]="item">
-                    {{ item }}
-                  </option>
+                  <option value="Alabama">Alabama</option>
+                  <option value="Alaska">Alaska</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Arkansas">Arkansas</option>
+                  <option value="California">California</option>
+                  <option value="Colorado">Colorado</option>
+                  <option value="Connecticut">Connecticut</option>
+                  <option value="Delaware">Delaware</option>
+                  <option value="Florida">Florida</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Hawaii">Hawaii</option>
+                  <option value="Idaho">Idaho</option>
+                  <option value="Illinois">Illinois</option>
+                  <option value="Indiana">Indiana</option>
+                  <option value="Iowa">Iowa</option>
+                  <option value="Kansas">Kansas</option>
+                  <option value="Kentucky">Kentucky</option>
+                  <option value="Louisiana">Louisiana</option>
+                  <option value="Maine">Maine</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Massachusetts">Massachusetts</option>
+                  <option value="Michigan">Michigan</option>
+                  <option value="Minnesota">Minnesota</option>
+                  <option value="Mississippi">Mississippi</option>
+                  <option value="Missouri">Missouri</option>
+                  <option value="Montana">Montana</option>
+                  <option value="Nebraska">Nebraska</option>
+                  <option value="Nevada">Nevada</option>
+                  <option value="New Hampshire">New Hampshire</option>
+                  <option value="New Jersey">New Jersey</option>
+                  <option value="New Mexico">New Mexico</option>
+                  <option value="New York">New York</option>
+                  <option value="North Carolina">North Carolina</option>
+                  <option value="North Dakota">North Dakota</option>
+                  <option value="Ohio">Ohio</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                  <option value="Oregon">Oregon</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="Rhode Island">Rhode Island</option>
+                  <option value="South Carolina">South Carolina</option>
+                  <option value="South Dakota">South Dakota</option>
+                  <option value="Tennessee">Tennessee</option>
+                  <option value="Texas">Texas</option>
+                  <option value="Utah">Utah</option>
+                  <option value="Vermont">Vermont</option>
+                  <option value="Virginia">Virginia</option>
+                  <option value="Washington">Washington</option>
+                  <option value="West Virginia">West Virginia</option>
+                  <option value="Wisconsin">Wisconsin</option>
+                  <option value="Wyoming">Wyoming</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
 
-              
-                    <div class="col-lg-6 mb-4">
-                <select
-                  class="form-select"
-                  aria-label="Default select example"
-                  formControlName="selectedGender"
+              <div class="col-lg-6 mb-4">
+                <button
+                  type="submit"
+                  class="btn btn-info text-white py-2 px-5 w-100"
+                  (click)="searchCards()"
+                  [disabled]="!form2.valid"
                 >
-                  <option selected value="" disabled>Gender</option>
-                  <option *ngFor="let item of gender" [value]="item">
-                    {{ item }}
-                  </option>
-                </select>
+                  Search
+                </button>
               </div>
- 
-                    
-                   
-                    <div class="col-lg-6 mb-4">
-                        <button  (click)="searchCards()"
-                  [disabled]="!form2.valid" class="btn btn-light text-white fw-semibold py-2 px-5 w-100" >Search</button>
-                    </div>   
-                </div>
-
-                  </form>
+            </div>
+          </form>
 
 
                 
@@ -639,62 +668,13 @@
 
 
                      <div class="col-lg-6 mb-4">
-                      <label style="font-size: 20px; font-weight: 600"
-                        >Gender<sup style="color: red; font-size: 20px">*</sup>
-                      </label>
-                      <select
-                        formControlName="registerGenderType"
-                        class="form-select"
-                        aria-label="Default select example"
-                        [ngClass]="{
-                          'invalid-input':
-                            (!form3.get('registerGenderType')?.touched ||
-                              !form3.get('registerGenderType')?.valid) &&
-                            submitButtonClicked &&
-                            !form3.valid
-                        }"
-                      >
-                        <option value="" disabled selected>
-                          Please Select
-                        </option>
-                        <option *ngFor="let item of gender" [value]="item">
-                          {{ item }}
-                        </option>
-                      </select>
-                    </div>
-
-
-                    <div class="col-lg-6 mb-4">
-                      <label style="font-size: 20px; font-weight: 600"
-                        >Race<sup style="color: red; font-size: 20px">*</sup>
-                      </label>
-                      <select
-                        [ngClass]="{
-                          'invalid-input':
-                            (!form3.get('registerRaceType')?.touched ||
-                              !form3.get('registerRaceType')?.valid) &&
-                            submitButtonClicked &&
-                            !form3.valid
-                        }"
-                        class="form-select"
-                        aria-label="Default select example"
-                        formControlName="registerRaceType"
-                      >
-                        <option value="" disabled selected>
-                          Please Select
-                        </option>
-                        <option *ngFor="let item of race" [value]="item">
-                          {{ item }}
-                        </option>
-                      </select>
-                    </div>
-
-                       <div class="col-md-6 mb-3">
                       <div class="form-group">
                         <label style="font-size: 20px; font-weight: 600"
                           >City
-                          <sup style="color: red; font-size: 20px">*</sup>
-                        </label>
+                          <sup style="color: red; font-size: 20px"
+                            >*</sup
+                          ></label
+                        >
                         <input
                           type="text"
                           formControlName="registerCityType"
@@ -712,104 +692,14 @@
 
                     <div class="col-lg-6 mb-4">
                       <label style="font-size: 20px; font-weight: 600"
-                        >Location<sup style="color: red; font-size: 20px"
+                        >Select State<sup style="color: red; font-size: 20px"
                           >*</sup
                         >
                       </label>
                       <select
-                        [ngClass]="{
-                          'invalid-input':
-                            (!form3.get('registerLocation')?.touched ||
-                              !form3.get('registerLocation')?.valid) &&
-                            submitButtonClicked &&
-                            !form3.valid
-                        }"
-                        required
-                        formControlName="registerLocation"
                         class="form-select"
                         aria-label="Default select example"
-                      >
-                        <option value="" disabled selected>
-                          Please Select
-                        </option>
-                        <option *ngFor="let item of location" [value]="item">
-                          {{ item }}
-                        </option>
-                      </select>
-                    </div>
-
-                    
-                     <div class="col-lg-6 mb-4">
-                      <label style="font-size: 20px; font-weight: 600"
-                        >Talent Type<sup style="color: red; font-size: 20px"
-                          >*</sup
-                        >
-                      </label>
-                      <select
-                        [ngClass]="{
-                          'invalid-input':
-                            (!form3.get('registerTalent')?.touched ||
-                              !form3.get('registerTalent')?.valid) &&
-                            submitButtonClicked &&
-                            !form3.valid
-                        }"
-                        required
-                        formControlName="registerTalent"
-                        class="form-select"
-                        aria-label="Default select example"
-                      >
-                        <option value="" disabled selected>
-                          Please Select
-                        </option>
-                        <option
-                          *ngFor="let item of talentType"
-                          [value]="item"
-                        >
-                          {{ item }}
-                        </option>
-                      </select>
-                    </div>
-
-
-                      <div class="col-lg-6 mb-4">
-                      <label style="font-size: 20px; font-weight: 600"
-                        >Speciality<sup style="color: red; font-size: 20px"
-                          >*</sup
-                        >
-                      </label>
-                      <select
-                        [ngClass]="{
-                          'invalid-input':
-                            (!form3.get('registerSpeciality')?.touched ||
-                              !form3.get('registerSpeciality')?.valid) &&
-                            submitButtonClicked &&
-                            !form3.valid
-                        }"
-                        required
-                        formControlName="registerSpeciality"
-                        class="form-select"
-                        aria-label="Default select example"
-                      >
-                        <option value="" disabled selected>
-                          Please Select
-                        </option>
-                        <option
-                          *ngFor="let item of specialityType"
-                          [value]="item"
-                        >
-                          {{ item }}
-                        </option>
-                      </select>
-                    </div>
-
-
-                    <div class="col-lg-6 mb-4">
-                      <label style="font-size: 20px; font-weight: 600"
-                        >State<sup style="color: red; font-size: 20px"
-                          >*</sup
-                        >
-                      </label>
-                      <select
+                        formControlName="registerStateType"
                         [ngClass]="{
                           'invalid-input':
                             (!form3.get('registerStateType')?.touched ||
@@ -817,24 +707,184 @@
                             submitButtonClicked &&
                             !form3.valid
                         }"
-                        required
-                        formControlName="registerStateType"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                        <option value="Colorado">Colorado</option>
+                        <option value="Connecticut">Connecticut</option>
+                        <option value="Delaware">Delaware</option>
+                        <option value="Florida">Florida</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Idaho">Idaho</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Indiana">Indiana</option>
+                        <option value="Iowa">Iowa</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Louisiana">Louisiana</option>
+                        <option value="Maine">Maine</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Minnesota">Minnesota</option>
+                        <option value="Mississippi">Mississippi</option>
+                        <option value="Missouri">Missouri</option>
+                        <option value="Montana">Montana</option>
+                        <option value="Nebraska">Nebraska</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Hampshire">New Hampshire</option>
+                        <option value="New Jersey">New Jersey</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="New York">New York</option>
+                        <option value="North Carolina">North Carolina</option>
+                        <option value="North Dakota">North Dakota</option>
+                        <option value="Ohio">Ohio</option>
+                        <option value="Oklahoma">Oklahoma</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Pennsylvania">Pennsylvania</option>
+                        <option value="Rhode Island">Rhode Island</option>
+                        <option value="South Carolina">South Carolina</option>
+                        <option value="South Dakota">South Dakota</option>
+                        <option value="Tennessee">Tennessee</option>
+                        <option value="Texas">Texas</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Vermont">Vermont</option>
+                        <option value="Virginia">Virginia</option>
+                        <option value="Washington">Washington</option>
+                        <option value="West Virginia">West Virginia</option>
+                        <option value="Wisconsin">Wisconsin</option>
+                        <option value="Wyoming">Wyoming</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >Business Type<sup style="color: red; font-size: 20px"
+                          >*</sup
+                        >
+                      </label>
+                      <select
+                        formControlName="registerBusinessType"
+                        class="form-select"
+                        aria-label="Default select example"
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerBusinessType')?.touched ||
+                              !form3.get('registerBusinessType')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
+                        <option
+                          [value]="type.business_type"
+                          *ngFor="let type of businessType"
+                        >
+                          {{ type.business_type }}
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >Age Type<sup style="color: red; font-size: 20px"
+                          >*</sup
+                        >
+                      </label>
+                      <select
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerAgeType')?.touched ||
+                              !form3.get('registerAgeType')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                        class="form-select"
+                        aria-label="Default select example"
+                        formControlName="registerAgeType"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
+                        <option
+                          [value]="type.name"
+                          *ngFor="let type of ageType"
+                        >
+                          {{ type.name }}
+                        </option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >Sports Type<sup style="color: red; font-size: 20px"
+                          >*</sup
+                        >
+                      </label>
+                      <select
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerSportType')?.touched ||
+                              !form3.get('registerSportType')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                        (change)="onRegisterSportTypeChange()"
+                        formControlName="registerSportType"
                         class="form-select"
                         aria-label="Default select example"
                       >
                         <option value="" disabled selected>
                           Please Select
                         </option>
+
                         <option
-                          *ngFor="let item of state"
-                          [value]="item"
+                          [value]="type.name"
+                          *ngFor="let type of sportType"
                         >
-                          {{ item }}
+                          {{ type.name }}
                         </option>
                       </select>
                     </div>
+                    <div class="col-lg-6 mb-4">
+                      <label style="font-size: 20px; font-weight: 600"
+                        >Position Type<sup style="color: red; font-size: 20px"
+                          >*</sup
+                        >
+                      </label>
+                      <select
+                        [ngClass]="{
+                          'invalid-input':
+                            (!form3.get('registerPositionType')?.touched ||
+                              !form3.get('registerPositionType')?.valid) &&
+                            submitButtonClicked &&
+                            !form3.valid
+                        }"
+                        required
+                        formControlName="registerPositionType"
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option value="" disabled selected>
+                          Please Select
+                        </option>
 
-                       
+                        <option
+                          [value]="type.name"
+                          *ngFor="let type of positionType"
+                        >
+                          {{ type.name }}
+                        </option>
+                      </select>
+                    </div>
+  
 
 
                        
