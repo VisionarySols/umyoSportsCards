@@ -565,7 +565,14 @@ export class HomeComponent implements AfterViewInit{
         console.log(this.selectedPackage);
       }
     
+      getBusniessType() {
+      this.apiService.getBusinessType().subscribe(
+        (response) =>
+          this.businessType = response.Categories
+      )
+    }
     
+  
     
       
       
@@ -717,7 +724,7 @@ export class HomeComponent implements AfterViewInit{
                 console.error("Failed to execute billing agreement", error);
                 this.showLoadingModal=false
                   alert("We're sorry, it seems that your payment through PayPal was not completed successfully. if you continue to experience difficulties, please contact us!")
-                  window.location.href='https://umyoentertainment.site/'
+                  window.location.href='https://umyosports.site/'
               }
             );
           }
