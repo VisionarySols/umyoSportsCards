@@ -1,24 +1,20 @@
 
 <div style="position:relative; z-index: 100; width: 100%;    ">
-	<nav class="navbar navbar-expand-md " style="position: fixed; width: 100%; top:0;   margin: 0;">
+<nav class="navbar navbar-expand-md fixed-top py-0">
   <div class="container">
-    <a  class="navbar-brand " [routerLink]="['']">
-      <img class="img-fluid " src="assets/img/dark1.png">
-    </a>
-    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <a class="navbar-brand " href="#"><img class="img-fluid lozad" src="assets/img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-<div class="collapse navbar-collapse" [class.show]="isNavbarOpen"
-     style="max-height: 350px; overflow-y: auto;">      <ul class="navbar-nav mx-auto">
-      <li class="nav-item">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+      
+
+         <li class="nav-item">
     <a class="nav-link" [routerLink]="['']">Home</a>
   </li>
 
-  <li class="nav-item">
-    <a class="nav-link"  href="assets/staticpages/about/index.html"
-      >About Us</a
-    >
-  </li>
+ 
    <li class="nav-item">
     <a class="nav-link"  href="assets/staticpages/network/index.html"
       >Network</a
@@ -29,9 +25,8 @@
       >Hub</a
     >
   </li>
-  
-              
-              <li class="nav-item">
+
+         <li class="nav-item">
                 <a
                   class="nav-link"
                   style="white-space: nowrap"
@@ -55,12 +50,12 @@
                   >Additional Features</a
                 >
               </li>
-            
       </ul>
     </div>
   </div>
 </nav>
 </div>
+
 <!------- tab section end ---------->
 
 <section id="acc" style="margin-top: 200px;">
@@ -109,7 +104,7 @@
 
 <footer>
   <div class="container">
-    <h3>Own Your Platform. Build Your Future. Join the UMYO Sports.</h3>
-    <h6>A gated digital community created for us — where culture thrives, wealth circulates, and power is shared.</h6>
+    <h3>Join UMYO Faith Hub. Share your mission. Uplift your audience. Grow with purpose.</h3>
+    <h6>This is more than a platform — it’s a movement for Kingdom ownership, empowerment, and community-building.</h6>
   </div>
 </footer>

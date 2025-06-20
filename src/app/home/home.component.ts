@@ -527,7 +527,7 @@ college:any
        race : this.form2.get('selectedRace').value,
       
        speciality : this.form2.get('selectedSpecialityType').value,
-       religion : this.form2.get('selectedRelgionType').value,
+       business_type : this.form2.get('selectedBusinessType').value,
        year : this.form2.get('selectedYear').value,
        study : this.form2.get('selectedStudy').value,
        college : this.form2.get('selectedCollege').value,
@@ -586,12 +586,7 @@ college:any
         console.log(this.selectedPackage);
       }
     
-      getBusniessType() {
-      this.apiService.getBusinessType().subscribe(
-        (response) =>
-          this.businessType = response.Categories
-      )
-    }
+     
     
   
     
@@ -745,7 +740,7 @@ college:any
                 console.error("Failed to execute billing agreement", error);
                 this.showLoadingModal=false
                   alert("We're sorry, it seems that your payment through PayPal was not completed successfully. if you continue to experience difficulties, please contact us!")
-                  window.location.href='https://umyosports.site/'
+                  window.location.href='https://faithhub.site'
               }
             );
           }
@@ -775,12 +770,12 @@ college:any
         selectedName: [''],
         selectedRace: [''],
         selectedCity: [''],
-        // selectedBusinessType: [''],
+        selectedBusinessType: [''],
         selectedSpecialityType: [''],
         selectedLocation:[''],
         selectedGender:[''],
        
-        selectedRelgionType:[''],
+        // selectedRelgionType:[''],
         selectedYear:[''],
         selectedStudy:[''],
         selectedCollege:['']
@@ -798,7 +793,7 @@ college:any
         registerRaceType: ['', Validators.required],
         registerLocation: ['', Validators.required],
         registerGenderType: ['', Validators.required],
-        registerRelgionType: ['', Validators.required],
+        registerBusinessType: ['', Validators.required],
 
         
         registerSpecialityType: ['', Validators.required],
@@ -815,7 +810,6 @@ college:any
       }, { validators: this.emailMatchValidator })
 
 
-      this.getBusniessType()
 
       this.getAgeType()
       this.getSportType()

@@ -84,7 +84,6 @@ if (expireInValue.includes("year")) {
             // proceed to email verification screen
             this.setUserData({
 
-            
               firstname: form3.get('registerFirstName').value,
               lastname: form3.get('registerLastName').value,
               phone: form3.get('registerPhone').value,
@@ -98,32 +97,38 @@ if (expireInValue.includes("year")) {
               package_id: selectedPackage.id,
               balance_transaction: null,
               balance_transaction_type: 'stripe',
-              business_type: form3.get('registerBusiness')?.value,
-
-              speciality: form3.get('registerSpeciality')?.value,
-              talent: form3.get('registerTalent')?.value,
+              business_type: form3.get('registerBusinessType')?.value,
+              medical: form3.get('registerMedical')?.value,
               sport_type: form3.get('registerSportType')?.value,
               age_type: form3.get('registerAgeType')?.value,
-              position: form3.get('registerPositionType')?.value,
+              
               state: form3.get('registerStateType')?.value,
               city: form3.get('registerCityType')?.value,
               location: form3.get('registerLocation')?.value,
               race: form3.get('registerRaceType')?.value,
               gender: form3.get('registerGenderType')?.value,
-              branch: form3.get('registerBranch')?.value,
+              truckType: form3.get('registerTypeOfTrucks')?.value,
+              truckLoad: form3.get('registerTruckLoads')?.value,
+              commonCarrier: form3.get('registerCommonCarrier')?.value,
+              truckService: form3.get('registerTruckService')?.value,
+              college: form3.get('registerCollege')?.value,
 
-              base: form3.get('registerBase')?.value,
-              type: form3.get('registerType')?.value,
-              rank: form3.get('registerRank')?.value,
-              
+              // year: form3.get('registerTruckService')?.value,
+              study: form3.get('registerStudy')?.value,
+
+              division: form3.get('registerDivision')?.value,
+      position: form3.get('registerPosition')?.value,
+      team: form3.get('registerTeam')?.value,
+      year: form3.get('registerYear')?.value,
+      trophy: form3.get('registerTrophy')?.value,
+      honor: form3.get('registerHonor')?.value,
+        
+                            
         
         
-        
+      speciality:form3.get('registerSpecialityType')?.value,
+      
               reffered_from: form3.get('registerReferralCode').value,
-
-
-              
-              
 
               
             });
@@ -178,6 +183,7 @@ if (expireInValue.includes("year")) {
   testing(form3:any, selectedPackage: Package){
 
     this.setUserData({
+       
       friend_id: null,
       package_id: selectedPackage.id,
       balance_transaction: null,
@@ -190,25 +196,42 @@ if (expireInValue.includes("year")) {
       password: form3.get('registerPassword').value,
 
       
-      business_type: form3.get('registerBusiness')?.value,
-      speciality: form3.get('registerSpeciality')?.value,
-              talent: form3.get('registerTalent')?.value,
+      business_type: form3.get('registerBusinessType')?.value,
+      medical: form3.get('registerMedical')?.value,
       sport_type: form3.get('registerSportType')?.value,
       age_type: form3.get('registerAgeType')?.value,
-      position: form3.get('registerPositionType')?.value,
+      
       state: form3.get('registerStateType')?.value,
       city: form3.get('registerCityType')?.value,
       location: form3.get('registerLocation')?.value,
       race: form3.get('registerRaceType')?.value,
       gender: form3.get('registerGenderType')?.value,
-      branch: form3.get('registerBranch')?.value,
+      truckType: form3.get('registerTypeOfTrucks')?.value,
+      truckLoad: form3.get('registerTruckLoads')?.value,
+      commonCarrier: form3.get('registerCommonCarrier')?.value,
+      truckService: form3.get('registerTruckService')?.value,
 
-              base: form3.get('registerBase')?.value,
-              type: form3.get('registerType')?.value,
-              rank: form3.get('registerRank')?.value,
+      division: form3.get('registerDivision')?.value,
+      position: form3.get('registerPosition')?.value,
+      team: form3.get('registerTeam')?.value,
+      year: form3.get('registerYear')?.value,
+      trophy: form3.get('registerTrophy')?.value,
+      honor: form3.get('registerHonor')?.value,
+      study: form3.get('registerStudy')?.value,
+
+
+      speciality:form3.get('registerSpecialityType')?.value,
+      
+
+      college: form3.get('registerCollege')?.value,
+
+      
               
 
       reffered_from: form3.get('registerReferralCode').value,
+
+
+
 
 
       
@@ -275,9 +298,6 @@ if (expireInValue.includes("year")) {
     this.apiService.createBillingPlan(payload)
     .subscribe(
       (response) => {
-
-
-        
         planID = response.plan_id;
         console.log("Test: Created billing plan with ID " + planID);
         const approvalLink = response.approval_url
@@ -308,24 +328,31 @@ if (expireInValue.includes("year")) {
           gender: form3.get('registerGenderType')?.value,
           plan_id:response.plan_id,
 
-          
+          business_type: form3.get('registerBusinessType')?.value,
+          medical: form3.get('registerMedical')?.value,
       sport_type: form3.get('registerSportType')?.value,
       age_type: form3.get('registerAgeType')?.value,
-      business_type: form3.get('registerBusiness')?.value,
-      position: form3.get('registerPositionType')?.value,
-      
-      speciality: form3.get('registerSpeciality')?.value,
-              talent: form3.get('registerTalent')?.value,
       
       
       
-      branch: form3.get('registerBranch')?.value,
+      study: form3.get('registerStudy')?.value,
+      college: form3.get('registerCollege')?.value,
 
-      base: form3.get('registerBase')?.value,
-      type: form3.get('registerType')?.value,
-      rank: form3.get('registerRank')?.value,
+      
+      
+      truckType: form3.get('registerTypeOfTrucks')?.value,
+      truckLoad: form3.get('registerTruckLoads')?.value,
+      commonCarrier: form3.get('registerCommonCarrier')?.value,
 
+      truckService: form3.get('registerTruckService')?.value,
+      division: form3.get('registerDivision')?.value,
+      position: form3.get('registerPosition')?.value,
+      team: form3.get('registerTeam')?.value,
+      year: form3.get('registerYear')?.value,
+      trophy: form3.get('registerTrophy')?.value,
+      honor: form3.get('registerHonor')?.value,
 
+          speciality:form3.get('registerSpecialityType')?.value,
       
 
 });
@@ -457,3 +484,6 @@ update_paypal_keys(subscription_id:any,user_id:any){
 
 }
 }
+
+
+
