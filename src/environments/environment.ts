@@ -8,7 +8,7 @@
 // };
 export const environment = {
   production: false,
-  apiUrl: "https://faithhub.siteapi_umyocards/public/api/"
+  apiUrl: "https://faithhub.site/api_umyocards/public/api/"
 };
 
 

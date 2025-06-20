@@ -87,7 +87,7 @@ export class CardsComponent implements AfterViewInit{
   const errorCorrectionLevel = 'L'; 
 
   const qrCode = QRCode(typeNumber, errorCorrectionLevel);
-  qrCode.addData('https://faithhub.sitecards/share-card/' + id);
+  qrCode.addData('https://faithhub.site/cards/share-card/' + id);
   qrCode.make();
   
   // Create a data URI for the QR code image
@@ -223,7 +223,7 @@ this.paymentForm = this.fb.group({
     
   }
   openShareDialog() {
-    const shareUrl = `https://faithhub.sitecards/share-card/${this.shareCardId}`;
+    const shareUrl = `https://faithhub.site/cards/share-card/${this.shareCardId}`;
     const shareText = 'Check out my sports card!';
     this.incrementCardSend(this.shareCardId)
 
