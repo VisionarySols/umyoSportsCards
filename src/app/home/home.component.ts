@@ -67,6 +67,12 @@ export class HomeComponent implements AfterViewInit{
     showStripeModal:boolean = false;
     showPackageModal:boolean = false;
  
+
+    
+
+year:any
+study:any
+college:any
     showLoadingModal:boolean=false
     packages: any[] = [];
     slides1: any[] = [];
@@ -124,17 +130,20 @@ export class HomeComponent implements AfterViewInit{
       AOS.refresh();
     }, 500);
   }, 100);
-      this.dropdownService.getDropdownOptions().subscribe(data => {
-        this.talentType = data.talentType;
-                this.specialityType = data.SpecialtyType;
+     
 
-        this.location = data.location;
-        this.city=data.city
-        this.gender = data.gender;
-        this.race = data.race;
-                this.state = data.state;
+    this.dropdownService.getDropdownOptions().subscribe(data => {
+      this.businessType = data.businessType;
+      this.specialityType = data.specialityType;
+      this.location = data.location;
+      this.state = data.state;
+      this.gender = data.gender;
+      this.race = data.race;
+      this.year= data.year;
+      this.study = data.study;
+      this.college = data.college;
+    });
 
-      });
   
       this.route.queryParams.subscribe(params => {
         const referralId = params['referralId'] || "";
@@ -507,17 +516,26 @@ export class HomeComponent implements AfterViewInit{
      searchCards(){
       
       const payload={
-       state : this.form2.get('selectedStateType').value,
-      city : this.form2.get('selectedCity').value,
-      name : this.form2.get('selectedName').value,
-      position : this.form2.get('selectedPositionType').value,
-      business_type: this.form2.get('selectedBusinessType')?.value,
-      sport_type: this.form2.get('selectedSportType')?.value,
-      age_type: this.form2.get('selectedAgeType')?.value,
+        state : this.form2.get('selectedStateType').value,
+       city : this.form2.get('selectedCity').value,
+       gender : this.form2.get('selectedGender').value,
+       location : this.form2.get('selectedLocation').value,
+       
       
+       name : this.form2.get('selectedName').value,
+       
+       race : this.form2.get('selectedRace').value,
       
- 
-      }
+       speciality : this.form2.get('selectedSpecialityType').value,
+       religion : this.form2.get('selectedRelgionType').value,
+       year : this.form2.get('selectedYear').value,
+       study : this.form2.get('selectedStudy').value,
+       college : this.form2.get('selectedCollege').value,
+
+
+     
+       
+       }
      
      this.apiService.searchCard(payload).subscribe(
        (response)=>{
@@ -526,6 +544,9 @@ export class HomeComponent implements AfterViewInit{
        }
      )
    }
+
+
+
 
   
   
@@ -750,40 +771,49 @@ export class HomeComponent implements AfterViewInit{
         
     
         
-               
-      selectedBusinessType: [''],
-      selectedAgeType: [''],
-      selectedSportType: [''],
-      selectedPositionType: [''],
-      selectedStateType: [''],
-      selectedName: [''],
-      
-      
-      
-      selectedCity: [''],
-
-
-     
-     
-        
+        selectedStateType: [''],
+        selectedName: [''],
+        selectedRace: [''],
+        selectedCity: [''],
+        // selectedBusinessType: [''],
+        selectedSpecialityType: [''],
+        selectedLocation:[''],
+        selectedGender:[''],
+       
+        selectedRelgionType:[''],
+        selectedYear:[''],
+        selectedStudy:[''],
+        selectedCollege:['']
         
 
       });
       this.form3 = this.fb.group({
-        registerFirstName: ['', Validators.required],
+          registerFirstName: ['', Validators.required],
         registerLastName: ['', Validators.required],
         registerEmail: ['', [Validators.required, Validators.email]],
         registerConfirmEmail: ['', [Validators.required, Validators.email]],
         registerPassword: ['', [Validators.required, Validators.minLength(6)]],
         registerPhone: ['', Validators.required],
         registerCityType: ['', Validators.required],
-      registerBusinessType: ['', Validators.required],
-      registerAgeType: ['', Validators.required],
-      registerSportType: ['', Validators.required],
-      registerPositionType: ['', Validators.required],
-      registerStateType: ['', Validators.required],
-      registerReferralCode: [''], // Not required
+        registerRaceType: ['', Validators.required],
+        registerLocation: ['', Validators.required],
+        registerGenderType: ['', Validators.required],
+        registerRelgionType: ['', Validators.required],
+
+        
+        registerSpecialityType: ['', Validators.required],
+
+        registerYear: ['', Validators.required],
+        registerStudy: ['', Validators.required],
+        registerCollege: ['', Validators.required],
+        
+        
+
+
+        registerStateType: ['', Validators.required],
+        registerReferralCode: [''], // Not required
       }, { validators: this.emailMatchValidator })
+
 
       this.getBusniessType()
 

@@ -851,3 +851,18 @@ height: 70%;
   width: 30%;
 }
 }
+
+
+.bbody {
+    height: 100vh !important;
+    display: flex !important
+;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.cardSelect{
+   background-color: #e0f0ff !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 255, 0.3) !important;
+}
