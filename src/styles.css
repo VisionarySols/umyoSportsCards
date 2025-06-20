@@ -9,27 +9,28 @@ body,html{
 
 :root{
 	--background-dark: #2C003E;
-	--background-light: #4B006E;
+	--background-light: #313f5a;
 /*	--background-light: #2B2B2B;*/
 
 	--text-grey: #1C1C1C ;
 	--text-charcole: #1C1C1C ;
   --paragraph-color: #EDEDED ;
   --heading : #FF8C00;
-  --subheading : #4B006E;
+  --subheading : #1e293b;
   --box-shadow : 0 2px 8px rgba(44, 0, 62, 0.7);
-  --background-gredient: linear-gradient(135deg, #4B006E 0%, #1F0034 50%, #000013 100%);
-  ---dark-color : #290442;
-  --light-color : #E3FF57;
+  --background-gredient: linear-gradient(135deg, #0ea5e9, #6366f1, #7c3aed);
+  --dark-color : #0f172a;
+  --light-color : #f8fafc;
+  --btn-color-yellow: #0f172a;
+  --btn-color-green: #ffffff;
 
 }
 
 .navbar {
-    background: linear-gradient(90deg, #2C003E 0%, #4B006E 100%);
-    box-shadow: 0 2px 8px rgba(44, 0, 62, 0.7);
-    border-bottom: 1px solid #7B2CBF;
+  background: linear-gradient(to right, #6d28d9, #4f46e5, #0ea5e9); /* Purple to indigo to sky blue */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
 
 .nav-item{
     align-items: center;
