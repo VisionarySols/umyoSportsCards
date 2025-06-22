@@ -866,3 +866,7 @@ height: 70%;
    background-color: #e0f0ff !important;
     box-shadow: 0 4px 10px rgba(0, 0, 255, 0.3) !important;
 }
+
+.select-btn{
+  height: fit-content !important;
+}

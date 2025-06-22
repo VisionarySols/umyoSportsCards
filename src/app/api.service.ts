@@ -377,11 +377,16 @@ export class ApiService {
 
     
 
+  const options = {
+    headers: headers,
+  };
 
     return this.http.post(url, { "email": email, "password": password });
   }
 
 
+
+  
 
 
 
@@ -787,19 +792,21 @@ export class ApiService {
   }
 
 
-  saveCard(formData: any): Observable<any> {
-    const url = baseUrl + `saveCard`;
-    const headers = new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer your-auth-token',
-    });
+ saveCard(formData: any): Observable<any> {
+  const url = baseUrl + `saveCard`;
+  const headers = new HttpHeaders({
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer your-auth-token',
+  });
+
+  const options = {
+    headers: headers,
+  };
+
+  return this.http.post(url, formData, options);
+}
 
 
-    
-
-
-    return this.http.post(url, formData);
-  }
   updateCard(formData: any): Observable<any> {
     const url = baseUrl + `updateCard`;
     const headers = new HttpHeaders({
