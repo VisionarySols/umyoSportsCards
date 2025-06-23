@@ -141,9 +141,12 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
     
+ const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, payload);
+    return this.http.post(url, payload,options);
   }
   acceptRequest(request_id: any): Observable<any> {
     const url = baseUrl + `acceptRequest`;
@@ -168,11 +171,14 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
+ const options = {
+    headers: headers,
+  };
 
     
 
 
-    return this.http.post(url, user);
+    return this.http.post(url, user,options);
   }
 
   applyForReferral(user_id: any): Observable<any> {
@@ -181,12 +187,15 @@ export class ApiService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer your-auth-token',
     });
+ const options = {
+    headers: headers,
+  };
 
 
     
 
 
-    return this.http.post(url, { "user_id": user_id });
+    return this.http.post(url, { "user_id": user_id },options);
   }
   savePaymentInfo(user_id: any, payment_id: any, payment_type: any): Observable<any> {
     const url = baseUrl + `savePaymentInfo`;
@@ -195,11 +204,14 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
+ const options = {
+    headers: headers,
+  };
 
     
 
 
-    return this.http.post(url, { "user_id": user_id, "payment_id": payment_id, "payment_type": payment_type });
+    return this.http.post(url, { "user_id": user_id, "payment_id": payment_id, "payment_type": payment_type }, options);
   }
   changePassword(email: any, old_password: any, new_password: any): Observable<any> {
     const url = baseUrl + `changePassword`;
@@ -209,10 +221,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "email": email, "old_password": old_password, "new_password": new_password });
+
+    return this.http.post(url, { "email": email, "old_password": old_password, "new_password": new_password },options);
   }
 
 
@@ -226,9 +241,12 @@ export class ApiService {
 
 
     
+ const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "user_id": user_id, "agreement_id": agreement_id });
+    return this.http.post(url, { "user_id": user_id, "agreement_id": agreement_id }, options);
   }
 
   
@@ -261,10 +279,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "user_id": user_id });
+
+    return this.http.post(url, { "user_id": user_id },options);
   }
   deleteActivity(user_id: any, activity_id): Observable<any> {
     const url = baseUrl + `deleteActivity`;
@@ -274,10 +295,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "user_id": user_id, "activity_id": activity_id });
+
+    return this.http.post(url, { "user_id": user_id, "activity_id": activity_id },options);
   }
 
 
@@ -292,10 +316,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "chat_id": chat_id });
+
+    return this.http.post(url, { "chat_id": chat_id },options);
   }
   getMessages(user_id: any, friend_id: any): Observable<any> {
     const url = baseUrl + `getMessages`;
@@ -304,11 +331,14 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
+ const options = {
+    headers: headers,
+  };
 
     
 
 
-    return this.http.post(url, { "user_id": user_id, "friend_id": friend_id });
+    return this.http.post(url, { "user_id": user_id, "friend_id": friend_id },options);
   }
   sendMessage(user_id: any, friend_id: any, chat: any): Observable<any> {
     const url = baseUrl + `sendMessage`;
@@ -318,10 +348,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "user_id": user_id, "friend_id": friend_id, "chat": chat });
+
+    return this.http.post(url, { "user_id": user_id, "friend_id": friend_id, "chat": chat },options);
   }
 
 
@@ -332,11 +365,14 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
+ const options = {
+    headers: headers,
+  };
 
     
 
 
-    return this.http.post(url, { "email": email, "name": name });
+    return this.http.post(url, { "email": email, "name": name },options);
   }
   adminText(admin_text: string): Observable<any> {
     const url = baseUrl + `admin_text`;
@@ -346,10 +382,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "admin_text": admin_text });
+
+    return this.http.post(url, { "admin_text": admin_text },options);
   }
   checkEmail(email: string): Observable<any> {
     const url = baseUrl + `checkEmail`;
@@ -358,11 +397,14 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
+ const options = {
+    headers: headers,
+  };
 
     
 
 
-    return this.http.post(url, { "email": email });
+    return this.http.post(url, { "email": email },options);
   }
 
 
@@ -375,10 +417,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "email": email, "password": password });
+
+    return this.http.post(url, { "email": email, "password": password },options);
   }
 
 
@@ -392,11 +437,14 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
+ const options = {
+    headers: headers,
+  };
 
     
 
 
-    return this.http.post(url, { "chat_id": user_id });
+    return this.http.post(url, { "chat_id": user_id },options);
   }
 
 
@@ -410,9 +458,12 @@ export class ApiService {
 
 
     
+ const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url,{});
+    return this.http.post(url,{},options);
   }
 
   deleteUser(user_id: any): Observable<any> {
@@ -421,12 +472,15 @@ export class ApiService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer your-auth-token',
     });
+ const options = {
+    headers: headers,
+  };
 
 
     
 
 
-    return this.http.post(url, { "user_id": user_id });
+    return this.http.post(url, { "user_id": user_id },options);
   }
 
   getCustomContact(user_id: any): Observable<any> {
@@ -438,9 +492,12 @@ export class ApiService {
 
 
     
+ const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "user_id": user_id });
+    return this.http.post(url, { "user_id": user_id },options);
   }
   getContact(user_id: any): Observable<any> {
     const url = baseUrl + `myContacts`;
@@ -449,11 +506,14 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
+ const options = {
+    headers: headers,
+  };
 
     
 
 
-    return this.http.post(url, { "user_id": user_id });
+    return this.http.post(url, { "user_id": user_id },options);
   }
 
 
@@ -465,10 +525,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "user_id": user_id, "card_id": card_id });
+
+    return this.http.post(url, { "user_id": user_id, "card_id": card_id },options);
   }
   searchUser(user_id: any, query: any): Observable<any> {
     const url = baseUrl + `searchUser`;
@@ -479,9 +542,12 @@ export class ApiService {
 
 
     
+ const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "user_id": user_id, "query": query });
+    return this.http.post(url, { "user_id": user_id, "query": query }, options);
   }
 
 
@@ -494,10 +560,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "id": id });
+
+    return this.http.post(url, { "id": id },options);
   }
 
 
@@ -510,10 +579,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "id": agent_id });
+
+    return this.http.post(url, { "id": agent_id },options);
   }
 
   searchCard(payload:any): Observable<any> {
@@ -524,10 +596,13 @@ export class ApiService {
     });
 
 
+ const options = {
+    headers: headers,
+  };
 
     
 
-    return this.http.post(url, payload);
+    return this.http.post(url, payload,options);
 
 
   }
@@ -540,11 +615,14 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
+ const options = {
+    headers: headers,
+  };
 
 
     
 
-    return this.http.post(url,  payload );
+    return this.http.post(url,  payload,options );
 
 
   }
@@ -556,10 +634,13 @@ export class ApiService {
     });
 
 
+ const options = {
+    headers: headers,
+  };
 
     
 
-    return this.http.post(url, contact);
+    return this.http.post(url, contact,options);
 
 
   }
@@ -571,10 +652,13 @@ export class ApiService {
     });
 
 
+ const options = {
+    headers: headers,
+  };
 
     
 
-    return this.http.post(url, contact);
+    return this.http.post(url, contact,options);
 
 
   }
@@ -589,12 +673,15 @@ export class ApiService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer your-auth-token',
     });
+ const options = {
+    headers: headers,
+  };
 
 
     
 
 
-    return this.http.post(url, { "chat_id": chat_id, "chat": chat, "message_type": message_type, "respond_by_id": responded_by_id });
+    return this.http.post(url, { "chat_id": chat_id, "chat": chat, "message_type": message_type, "respond_by_id": responded_by_id },options);
 
   }
 
@@ -606,10 +693,12 @@ export class ApiService {
     });
 
 
-    
+    const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "chat_id": chat_id });
+    return this.http.post(url, { "chat_id": chat_id },options);
 
   }
   closeChat(chat_id: any): Observable<any> {
@@ -621,9 +710,11 @@ export class ApiService {
 
 
     
+const options = {
+    headers: headers,
+  };
 
-
-    return this.http.post(url, { "chat_id": chat_id });
+    return this.http.post(url, { "chat_id": chat_id },options);
 
   }
 
@@ -637,10 +728,12 @@ export class ApiService {
     });
 
 
-    
+    const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "email": email, "package_id": package_id, "password": password, });
+    return this.http.post(url, { "email": email, "package_id": package_id, "password": password, },options);
 
 
   }
@@ -652,11 +745,13 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
-
+const options = {
+    headers: headers,
+  };
 
     
 
-    return this.http.post(url, { "category_id": category_id });
+    return this.http.post(url, { "category_id": category_id },options);
 
 
   }
@@ -669,9 +764,11 @@ export class ApiService {
 
 
 
-    
+    const options = {
+    headers: headers,
+  };
 
-    return this.http.post(url, {});
+    return this.http.post(url, {},options);
 
 
   }
@@ -684,9 +781,11 @@ export class ApiService {
 
 
 
-    
+    const options = {
+    headers: headers,
+  };
 
-    return this.http.post(url, {});
+    return this.http.post(url, {},options);
 
 
   }
@@ -697,11 +796,13 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
-
+const options = {
+    headers: headers,
+  };
 
     
 
-    return this.http.post(url, {});
+    return this.http.post(url, {},options);
 
 
   }
@@ -720,11 +821,13 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
-
+const options = {
+    headers: headers,
+  };
     
 
 
-    return this.http.post(url, { "name": name, "email": email, "password": password });
+    return this.http.post(url, { "name": name, "email": email, "password": password },options);
 
   }
 
@@ -735,11 +838,13 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
-
+const options = {
+    headers: headers,
+  };
     
 
 
-    return this.http.post(url, { "id": id, "description": description, "expire_in": expire_in, "image": image, "limit": limit, "logo": logo, "net_price": net_price, "price": price, "product_image": product_image, "social_media_listing": social_media_listing, "umyotube": umyoutube, "vimeo": vimeo, "videos": videos, "website": website });
+    return this.http.post(url, { "id": id, "description": description, "expire_in": expire_in, "image": image, "limit": limit, "logo": logo, "net_price": net_price, "price": price, "product_image": product_image, "social_media_listing": social_media_listing, "umyotube": umyoutube, "vimeo": vimeo, "videos": videos, "website": website },options);
 
   }
   updateAgent(name: any, email: any, id: any): Observable<any> {
@@ -749,11 +854,13 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
-
+const options = {
+    headers: headers,
+  };
     
 
 
-    return this.http.post(url, { "name": name, "email": email, "id": id });
+    return this.http.post(url, { "name": name, "email": email, "id": id },options);
 
   }
   getPackageById(id: any): Observable<any> {
@@ -764,10 +871,12 @@ export class ApiService {
     });
 
 
-    
+    const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, { "id": id });
+    return this.http.post(url, { "id": id },options);
 
   }
 
@@ -780,9 +889,11 @@ export class ApiService {
 
 
     
+const options = {
+    headers: headers,
+  };
 
-
-    return this.http.post(url, { "id": id, "description": description, "expire_in": expire_in, "image": image, "limit": limit, "logo": logo, "net_price": net_price, "price": price, "product_image": product_image, "social_media_listing": social_media_listing, "umyotube": umyoutube, "vimeo": vimeo, "videos": videos, "website": website });
+    return this.http.post(url, { "id": id, "description": description, "expire_in": expire_in, "image": image, "limit": limit, "logo": logo, "net_price": net_price, "price": price, "product_image": product_image, "social_media_listing": social_media_listing, "umyotube": umyoutube, "vimeo": vimeo, "videos": videos, "website": website },options);
 
   }
 
@@ -810,12 +921,14 @@ export class ApiService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer your-auth-token',
     });
-
+const options = {
+    headers: headers,
+  };
 
     
 
 
-    return this.http.post(url, formData);
+    return this.http.post(url, formData,options);
   }
 
 
@@ -825,12 +938,14 @@ export class ApiService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer your-auth-token',
     });
-
+const options = {
+    headers: headers,
+  };
 
     
 
 
-    return this.http.post(url, payload);
+    return this.http.post(url, payload,options);
   }
   cancelStripeSubscription(payload: any): Observable<any> {
     const url = baseUrl + `cancel-subscription`;
@@ -841,9 +956,11 @@ export class ApiService {
 
 
     
+const options = {
+    headers: headers,
+  };
 
-
-    return this.http.post(url, payload);
+    return this.http.post(url, payload,options);
   }
   updateSubscriptionId(payload: any): Observable<any> {
     const url = baseUrl + `update-subscription-id`;
@@ -852,11 +969,13 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
-
+const options = {
+    headers: headers,
+  };
     
 
 
-    return this.http.post(url, payload);
+    return this.http.post(url, payload,options);
   }
   updateUserPackage(payload: any): Observable<any> {
     const url = baseUrl + `updateUserPackage`;
@@ -865,11 +984,13 @@ export class ApiService {
       'Authorization': 'Bearer your-auth-token',
     });
 
-
+const options = {
+    headers: headers,
+  };
     
 
 
-    return this.http.post(url, payload);
+    return this.http.post(url, payload,options);
   }
   deleteCard(payload: any): Observable<any> {
     const url = baseUrl + `deleteCard`;
@@ -879,10 +1000,12 @@ export class ApiService {
     });
 
 
-    
+    const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url, payload);
+    return this.http.post(url, payload,options);
   }
   getSingleCard(payload: any): Observable<any> {
     const url = baseUrl + `getSingleCard`;
@@ -890,12 +1013,15 @@ export class ApiService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer your-auth-token',
     });
+ const options = {
+    headers: headers,
+  };
 
 
     
 
 
-    return this.http.post(url, payload);
+    return this.http.post(url, payload,options);
   }
 
 
@@ -907,10 +1033,13 @@ export class ApiService {
     });
 
 
-    
+     const options = {
+    headers: headers,
+  };
 
 
-    return this.http.post(url,{});
+
+    return this.http.post(url,options);
   }
 
 
