@@ -131,17 +131,12 @@ college:any
     }, 500);
   }, 100);
      
-
-    this.dropdownService.getDropdownOptions().subscribe(data => {
+  this.dropdownService.getDropdownOptions().subscribe(data => {
       this.businessType = data.businessType;
-      this.specialityType = data.specialityType;
       this.location = data.location;
-      this.state = data.state;
+      
       this.gender = data.gender;
       this.race = data.race;
-      this.year= data.year;
-      this.study = data.study;
-      this.college = data.college;
     });
 
   
@@ -516,24 +511,23 @@ college:any
      searchCards(){
       
       const payload={
-        state : this.form2.get('selectedStateType').value,
-       city : this.form2.get('selectedCity').value,
-       gender : this.form2.get('selectedGender').value,
-       location : this.form2.get('selectedLocation').value,
+        
+
+
        
+     
+
+       gender : this.form2.get('selectedGender').value,
+       city : this.form2.get('selectedCity').value,
       
        name : this.form2.get('selectedName').value,
        
        race : this.form2.get('selectedRace').value,
-      
-       speciality : this.form2.get('selectedSpecialityType').value,
-       business_type : this.form2.get('selectedBusinessType').value,
-       year : this.form2.get('selectedYear').value,
-       study : this.form2.get('selectedStudy').value,
-       college : this.form2.get('selectedCollege').value,
+       location : this.form2.get('selectedLocation').value,
+       
+       business_type : this.form2.get('selectedBusiness').value,
 
-
-     
+       
        
        }
      
@@ -544,6 +538,7 @@ college:any
        }
      )
    }
+
 
 
 
@@ -762,23 +757,19 @@ college:any
           email: ['', [Validators.required, Validators.email]],
           password: ['', [Validators.required]],
         });
-       this.form2 = this.fb.group({
+        this.form2 = this.fb.group({
         
     
         
-        selectedStateType: [''],
+        
         selectedName: [''],
         selectedRace: [''],
         selectedCity: [''],
-        selectedBusinessType: [''],
-        selectedSpecialityType: [''],
+        selectedBusiness: [''],
         selectedLocation:[''],
-        selectedGender:[''],
-       
-        // selectedRelgionType:[''],
-        selectedYear:[''],
-        selectedStudy:[''],
-        selectedCollege:['']
+        selectedGender:['']
+     
+        
         
 
       });
@@ -793,21 +784,16 @@ college:any
         registerRaceType: ['', Validators.required],
         registerLocation: ['', Validators.required],
         registerGenderType: ['', Validators.required],
-        registerBusinessType: ['', Validators.required],
 
         
-        registerSpecialityType: ['', Validators.required],
-
-        registerYear: ['', Validators.required],
-        registerStudy: ['', Validators.required],
-        registerCollege: ['', Validators.required],
-        
+        registerBusiness: ['', Validators.required],
         
 
 
-        registerStateType: ['', Validators.required],
+        
         registerReferralCode: [''], // Not required
       }, { validators: this.emailMatchValidator })
+
 
 
 

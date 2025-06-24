@@ -9,7 +9,7 @@ body,html{
 
 :root{
 	--background-dark: #2C003E;
-	--background-light: #313f5a;
+	--background-light: #4B006E;
 /*	--background-light: #2B2B2B;*/
 
 	--text-grey: #1C1C1C ;
@@ -18,10 +18,10 @@ body,html{
   --heading : #FF8C00;
   --subheading : #1e293b;
   --box-shadow : 0 2px 8px rgba(44, 0, 62, 0.7);
-  --background-gredient: linear-gradient(135deg, #0ea5e9, #6366f1, #7c3aed);
-  --dark-color : #0f172a;
-  --light-color : #f8fafc;
-  --btn-color-yellow: #0f172a;
+  --background-gredient: linear-gradient(135deg, #3a3a52, #b04dff);
+  ---dark-color : #0f172a;
+  --light-color : #e0e7ff;
+  --btn-color-yellow: #1e1e2f;
   --btn-color-green: #ffffff;
 
 }
@@ -33,10 +33,10 @@ body,html{
     font-weight: 600;
 }
 .nav-link:hover{
-  color: #c1c1c1;
+  color: #b794f4;
 }
 .navbar-brand {
-    width: 85px;
+    width: 100px;
     /* height: 100px; */
 }
 
@@ -45,14 +45,13 @@ body,html{
   height: 100%;
 }
 .navbar {
-  background: linear-gradient(to right, #6d28d9, #4f46e5, #0ea5e9); /* Purple to indigo to sky blue */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #1e1e2f, #3a3a52); /* Dark navy purple */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0ea5e9, #6366f1, #7c3aed); /* Sky blue to indigo to violet */
+  background: linear-gradient(135deg, #3a3a52, #b04dff); /* Deep purple to violet */
   color: #f9fafb;
   padding: 120px 20px 80px;
   display: flex;
@@ -60,8 +59,9 @@ body,html{
   align-items: center;
   margin-top: 80px;
   position: relative;
-  overflow: hidden;
 }
+
+
 
 
 .hero p{
@@ -74,7 +74,6 @@ body,html{
     /* color: #FFFFFF !important; */
     color: #f9fafb;
 }
-
 .hero-icon svg {
   position: absolute;
   top: 60%;
@@ -91,7 +90,7 @@ body,html{
 .business h2{
     font-size: 2.2rem;
     margin-bottom: 20px;
-    color: var(--dark-color);
+    color: var(---dark-color);
 }
 .business .card{
 	padding: 20px;
@@ -124,13 +123,13 @@ body,html{
   padding: 70px 0;
 }
 .pricing h2{
-  color: var(--dark-color);
+  color: var(---dark-color);
 }
 .note {
     max-width: 750px;
     margin: 40px auto;
     font-style: italic;
-    color: var(--dark-color);
+    color: var(---dark-color);
     text-align: center;
     font-size: 18px;
 }
@@ -141,13 +140,13 @@ body,html{
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .membership-cards .card .card-title {
-    color: var(--dark-color);
+    color: var(---dark-color);
 }
 .membership-cards .card h3,.membership-cards .card h2 {
-    color: var(--dark-color);
+    color: var(---dark-color);
 }
 .membership-cards .card b {
-    color: var(--dark-color);
+    color: var(---dark-color);
 }
 .membership-cards .card ul li {
     padding: 5px 0;
@@ -174,10 +173,10 @@ body,html{
 
 }
 #faq h2{
-  color: var(--dark-color);
+  color: var(---dark-color);
 }
 #faq h4{
-  color: var(--dark-color);
+  color: var(---dark-color);
 }
 
 .accordion-item {
@@ -187,7 +186,7 @@ body,html{
 
 .accordion-button {
 /*  background: transparent !important;*/
-  color: var(--dark-color);
+  color: var(---dark-color);
   border: 1px solid var(--background-dark);
   font-size: 20px;
   font-weight: 600;
@@ -207,7 +206,7 @@ body,html{
     border: 1px solid #872341;
     font-size: 16px;
     font-weight: 500;
-    color: var(--dark-color);
+    color: var(---dark-color);
 }
 .accordion-button::after {
 
@@ -255,7 +254,7 @@ body,html{
 }
 .slick-slide img {
     display: block;
-    /*border: 1px solid #7B2CBF;*/
+    border: 1px solid #7B2CBF;
 }
 
 #gallery1 .slick-list {
@@ -273,7 +272,7 @@ body,html{
   padding: 80px 0;
 }
 .packages .text{
-  color: var(--dark-color);
+  color: var(---dark-color);
   font-size: 18px;
   margin-bottom: 50px;
 }
@@ -288,13 +287,13 @@ body,html{
   font-size: 18px;
 }
 .ambasdor{
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--background-light);
   padding: 40px;
 }
-/*.ambasdor img{
+.ambasdor img{
   width: 300px;
   height: 470px;
-}*/
+}
 .ambasdor h1{
   color: var(--paragraph-color);
 }
@@ -321,11 +320,11 @@ body,html{
   text-align: center;
 }
 .powered h3,.powered h1{
-  color: var(--dark-color);
+  color: var(---dark-color);
 }
 .powered p{
   font-size: 18px;
-  color: var(--dark-color) !important;
+  color: var(---dark-color) !important;
 }
 .powered .btn-hover-blue{
   background-color: var(--background-charcole);
@@ -376,7 +375,7 @@ body,html{
   padding: 15px 0 15px 30px;
   margin-bottom: 15px;
   border-radius: 4px;
-  border-left: 5px solid var(--dark-color);
+  border-left: 5px solid var(---dark-color);
   font-size: 18px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -386,7 +385,7 @@ body,html{
   color: var(--light-color);
 }
 .platform{
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
   border-radius: 20px;
 }
 .platform img{
@@ -407,10 +406,10 @@ body,html{
 /*  color: #9B5DE5;*/
 }
 .intro p{
-  color: var(--dark-color);
+  color: var(---dark-color);
 }
 .intro h2{
-    color: var(--dark-color);
+    color: var(---dark-color);
 }
 .end  a {
  color: var(--btn-color-yellow);
@@ -431,7 +430,7 @@ body,html{
   margin-bottom: 15px;
 }
 .Sports_images,.non-profit{
- background: #6d28d9;
+ background: linear-gradient(135deg, #3a3a52, #b04dff);
   color: #FFFFFF;
  padding: 20px;
  border-radius: 20px;
@@ -507,7 +506,7 @@ footer{
   text-align: center;
 }
 .tribe p{
-  color: var(--dark-color);
+  color: var(---dark-color);
   font-size: 18px;
 }
 .power .btn-light,.power .submit{
@@ -541,7 +540,7 @@ footer{
 
 .light {
   background-color: #ffffff;
-  color: var(--dark-color);
+  color: var(---dark-color);
 }
 
 .dark {
@@ -549,7 +548,7 @@ footer{
   color: var(--light-color);
 }
 .section.dark .cards{
-   max-width: 1200px;
+   width: 80%;
    margin: auto;
 }
 .section.dark .cards .card{
@@ -558,12 +557,12 @@ footer{
    border-radius: 15px;
    color: white;
    gap: 12px;
-   /*width: 23%;*/
-   /*height: 170px;*/
+   width: 23%;
+   height: 170px;
 }
 .section.dark .cards .card svg{
   fill: rgba(255, 255, 255, 0.9);
-  width: 20%;
+  width: 30%;
   margin: 0 auto;
 }
  .section .content {
@@ -591,7 +590,7 @@ footer{
 .light  .content p {
   font-size: 18px;
   margin-bottom: 16px;
-  color: var(--dark-color);
+  color: var(---dark-color);
 }
 
 .section .content strong {
@@ -610,7 +609,7 @@ footer{
   list-style: none;
   margin-bottom: 15px;
   border-radius: 4px;
-  border-left: 5px solid var(--dark-color);
+  border-left: 5px solid var(---dark-color);
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 
 }
@@ -623,14 +622,14 @@ footer{
 .owner .tribe h1 {
   font-size: 2.2rem;
   margin-bottom: 20px;
-  color: var(--dark-color);
+  color: var(---dark-color);
 
 }
 
 .resident  .tribe p {
   font-size: 18px;
   margin-bottom: 16px;
-  color: var(--dark-color);
+  color: var(---dark-color);
 }
 
 .owner .tribe strong {
@@ -701,7 +700,7 @@ footer{
 }
 .works {
     padding: 80px 0;
-    color: var(--dark-color);
+    color: var(---dark-color);
 }
 .works .comp {
     background-color: white;
@@ -809,15 +808,12 @@ height: 70%;
    flex-wrap: wrap;
 }
 .section.dark .cards .card{
-   /*width: 46%;
-   height: auto;*/
+   width: 46%;
+   height: auto;
    margin-bottom: 15px;
 }
 .section.dark .cards .card svg{
   width: 20%;
-}
-.hero {
-    min-height: 60vh;
 }
 }
 @media screen and (max-width:500px) {
@@ -825,15 +821,12 @@ height: 70%;
   width: 80%;
   height: 70%;
   }
-/*  .section.dark .cards .card{
+  .section.dark .cards .card{
    width: 48%;
    height: 170px;
-}*/
+}
 .section.dark .cards .card svg{
   width: 30%;
-}
-.light .content h2 {
-    font-size: 2rem;
 }
 }
 @media screen and (max-width:400px) {
@@ -851,7 +844,6 @@ height: 70%;
   width: 30%;
 }
 }
-
 
 .bbody {
     height: 100vh !important;
