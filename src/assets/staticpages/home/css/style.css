@@ -69,8 +69,8 @@ body,html{
   color: #d1d5db;
 }
 .hero h1 {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    font-size: 3.5rem;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 4rem;
     /* color: #FFFFFF !important; */
     color: #f9fafb;
 }
@@ -334,8 +334,11 @@ body,html{
 }
 .btn-hover-purple{
   width: fit-content;
-  height: 40px; 
+  /*height: 40px; */
   color: #fff;
+  padding: 10px 24px !important;
+  font-size: 18px;
+  border-radius: 34px;
   background: var(--btn-color-yellow);
   /*border: 1px solid #003f5c;*/
   position: relative;
@@ -385,9 +388,10 @@ body,html{
   padding: 80px 0;
   color: var(--light-color);
 }
-.platform{
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+.platform {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 .platform img{
   border-radius: 20px;
@@ -500,7 +504,7 @@ body,html{
 .form-label span {
   color: #E87C86;
 }
-footer{
+.footer{
   background: var(--background-gredient);
   color: var(--light-color);
   padding: 30px 0;
@@ -593,6 +597,10 @@ footer{
   margin-bottom: 16px;
   color: var(--dark-color);
 }
+.social-links a{
+  font-size: 18px;
+  color: white;
+}
 
 .section .content strong {
   font-weight: 600;
@@ -658,9 +666,11 @@ footer{
 .child.right {
     color: var(--light-color);
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.07);
+    background-color: rgba(255, 255, 255, 0.3);
     padding: 40px 20px;
     border-radius: 20px;
+    
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 .child.right ul li{
   text-align: left;
@@ -850,19 +860,4 @@ height: 70%;
 .section.dark .cards .card svg{
   width: 30%;
 }
-}
-
-
-.bbody {
-    height: 100vh !important;
-    display: flex !important
-;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-
-.cardSelect{
-   background-color: #e0f0ff !important;
-    box-shadow: 0 4px 10px rgba(0, 0, 255, 0.3) !important;
 }
