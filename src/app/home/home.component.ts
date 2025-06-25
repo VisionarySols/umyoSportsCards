@@ -492,7 +492,11 @@ college:any
       closePackageModal() {
         this.showPackageModal = false;
       }
-      
+      showMore: boolean = false;
+
+toggleContent() {
+  this.showMore = !this.showMore;
+}
       
       // toggle read more buttons 
       toggleMoreText(): void {
@@ -735,7 +739,7 @@ college:any
                 console.error("Failed to execute billing agreement", error);
                 this.showLoadingModal=false
                   alert("We're sorry, it seems that your payment through PayPal was not completed successfully. if you continue to experience difficulties, please contact us!")
-                  window.location.href='https://faithhub.site'
+                  window.location.href='https://umyolgbtq.site'
               }
             );
           }

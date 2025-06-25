@@ -138,7 +138,7 @@
   </div>
 </section>
 
-<!---Faithhub SECTION---->
+<!---LGBTQ SECTION---->
 
 
 <section>
@@ -168,7 +168,7 @@
               <li data-aos="fade-up">Branding and marketing tools to grow your passion or purpose project</li>
               <li data-aos="fade-up">Gated community spaces for privacy, mental wellness, and connection</li>
             </ul>
-          <div class="haven" id="haven" style="display: none">
+          <div class="haven" id="haven" *ngIf="showMore">
 
             <h3 class="fw-bold my-4" data-aos="fade-up">
               Why LGBTQ Hub?
@@ -228,11 +228,11 @@
                  <p> <b>Explore LGBTQ Hub<br>Power the Future of Queer-Led Digital Spaces</b></p>
 
             
-            <button  id="less" class="btn btn-hover-purple border-dark gap-2 mt-4" data-aos="fade-up">
+            <button  (click)="toggleContent()"  class="btn btn-hover-purple border-dark gap-2 mt-4" data-aos="fade-up">
             Read Less
             </button>
             </div>
-            <button  id="more" class="btn btn-hover-purple border-dark gap-2 mt-4">
+            <button  *ngIf="!showMore" (click)="toggleContent()"  class="btn btn-hover-purple border-dark gap-2 mt-4">
             Read More
             </button>
           </div>
@@ -242,7 +242,7 @@
     </div>
   </div>
 </section>
-<!---END Faithhub SECTION---->
+<!---END LGBTQ SECTION---->
 
 <!----POWER SECTION--->
 <section  class="power">
